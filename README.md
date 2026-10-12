@@ -42,7 +42,7 @@ both from OpenStreetMap data.
 
 Search text, bedrooms (2/3 BHK, defaults to 3), max rent, max drive time, property type, furnishing, move-in
 date, posted by (owner/agent), source portal, and an option to include
-listings that are no longer live. Sort by distance, rent, newest or size.
+listings that are no longer live. Sort by newest (the default), distance, rent or size.
 
 ## Run locally
 

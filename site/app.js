@@ -58,7 +58,7 @@
   // very expensive homes don't squash the useful range.
   const rentMax = Math.ceil(sortedRents[Math.floor(sortedRents.length * 0.95)] / 5000) * 5000;
   const DEFAULTS = () => ({
-    q: '', bhk: new Set(['3']), rent: rentMax, min: 30, avail: '', sort: 'minutes',
+    q: '', bhk: new Set(['3']), rent: rentMax, min: 30, avail: '', sort: 'newest',
     type: new Set(), furnishing: new Set(), posted_by: new Set(), source: new Set(), inactive: false,
   });
   let S = DEFAULTS();
@@ -220,6 +220,12 @@
     return true;
   }
   function sorter(key) {
+    if (key === 'newest') {
+      // Newest to this site first, then the most recently posted on the portal.
+      const d = v => v || '';
+      return (a, b) => d(b.first_seen).localeCompare(d(a.first_seen))
+        || d(b.posted_on).localeCompare(d(a.posted_on)) || a.minutes_peak - b.minutes_peak;
+    }
     const desc = key.startsWith('-'); const k = desc ? key.slice(1) : key;
     const f = k === 'minutes' ? 'minutes_peak' : k;
     return (a, b) => {
