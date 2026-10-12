@@ -72,7 +72,7 @@ def convert(x, today, names):
         return None  # lease-only (lump sum), no monthly rent
 
     lat, lon = x.get("latitude"), x.get("longitude")
-    address = x.get("address") or x.get("secondaryTitle")
+    address = (x.get("address") or x.get("secondaryTitle") or "").strip(" ,") or None
     locality = x.get("nbLocality") or x.get("locality")
     if not lat or any(km(lat, lon, a, b) < 0.25 for a, b in PLACEHOLDER_PINS):
         # Unreliable pin: fall back to a known locality named in the address, else skip.
@@ -94,7 +94,7 @@ def convert(x, today, names):
         notes.append("Lift" if x["lift"] else "No lift")
     if x.get("propertyAge") is not None:
         notes.append(f"{x['propertyAge']} yrs old")
-    if x.get("facingDesc"):
+    if x.get("facingDesc") and "know" not in x["facingDesc"].lower():
         notes.append(f"{x['facingDesc']} facing")
     if lat is None:
         notes.append("Location approximate (locality only)")

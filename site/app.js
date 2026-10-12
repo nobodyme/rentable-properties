@@ -37,6 +37,9 @@
     tbody.appendChild(tr);
   }
 
+  // Filters start collapsed on phones so the map and results are visible first.
+  if (matchMedia('(max-width: 860px)').matches) $('filters-wrap').open = false;
+
   // ---- filter controls ----
   const rents = all.map(p => p.rent);
   const rentMax = Math.ceil(Math.max(...rents, 50000) / 5000) * 5000;

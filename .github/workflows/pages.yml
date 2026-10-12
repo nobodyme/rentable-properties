@@ -1,8 +1,17 @@
-name: Deploy site
+name: Deploy to GitHub Pages
 
+# Publishes the static site on every push to main (including the automated
+# data/properties.json refreshes pushed by the every-2-days rental refresh
+# schedule), and can be run on demand from the Actions tab.
 on:
   push:
-    paths: ["site/**", "data/**", "scripts/**", ".github/workflows/pages.yml"]
+    branches: [main]
+    paths:
+      - "site/**"
+      - "data/**"
+      - "scripts/build.sh"
+      - "scripts/update_data.py"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -10,23 +19,33 @@ permissions:
   pages: write
   id-token: write
 
+# Allow one concurrent deployment; a newer refresh supersedes an in-flight one.
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
   deploy:
-    if: github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - run: sh scripts/build.sh
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Validates data/ and assembles site/ (design) + data/ (content) into _site/.
+      - name: Build
+        run: sh scripts/build.sh
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-      - id: deployment
+
+      - name: Deploy
+        id: deployment
         uses: actions/deploy-pages@v4
