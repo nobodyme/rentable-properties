@@ -41,7 +41,7 @@
   };
   const label = (k, v) => (LABEL[k] && LABEL[k][v]) || v || 'Not stated';
   const inr = n => '₹' + Number(n).toLocaleString('en-IN');
-  const short = n => n >= 100000 ? '₹' + (n / 100000).toFixed(n % 100000 ? 1 : 0) + 'L' : '₹' + Math.round(n / 1000) + 'k';
+  const short = n => n >= 100000 ? '₹' + +(n / 100000).toFixed(2) + 'L' : '₹' + +(n / 1000).toFixed(n % 1000 ? 1 : 0) + 'k';
   const fmtDate = d => new Date(d + 'T00:00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const tidy = s => String(s || '').replace(/\s+/g, ' ').replace(/^[\s,]+|[\s,]+$/g, '');
@@ -52,8 +52,11 @@
 
   // ---------- state ----------
   const rents = all.map(p => p.rent);
-  const rentMin = Math.floor(Math.min(...rents) / 5000) * 5000;
-  const rentMax = Math.ceil(Math.max(...rents) / 5000) * 5000;
+  const sortedRents = [...rents].sort((a, b) => a - b);
+  const rentMin = Math.floor(sortedRents[0] / 1000) * 1000;
+  // Top of the slider = "Any"; the scale stops at the 95th percentile so a few
+  // very expensive homes don't squash the useful range.
+  const rentMax = Math.ceil(sortedRents[Math.floor(sortedRents.length * 0.95)] / 5000) * 5000;
   const DEFAULTS = () => ({
     q: '', bhk: new Set(['3']), rent: rentMax, min: 30, avail: '', sort: 'minutes',
     type: new Set(), furnishing: new Set(), posted_by: new Set(), source: new Set(), inactive: false,
@@ -76,7 +79,7 @@
 
   const rentEl = $('f-rent');
   rentEl.min = rentMin; rentEl.max = rentMax;
-  $('rent-lo').textContent = inr(rentMin); $('rent-hi').textContent = inr(rentMax);
+  $('rent-lo').textContent = inr(rentMin); $('rent-hi').textContent = inr(rentMax) + '+';
   rentEl.addEventListener('input', () => { S.rent = +rentEl.value; render(); });
   $('f-min').addEventListener('input', e => { S.min = +e.target.value; render(); });
   $('f-avail').addEventListener('change', e => { S.avail = e.target.value; render(); });
@@ -87,8 +90,19 @@
   // One popover open at a time; close on outside click / Escape.
   const pops = [...document.querySelectorAll('details.pop')];
   pops.forEach(d => d.addEventListener('toggle', () => { if (d.open) pops.forEach(o => { if (o !== d) o.open = false; }); }));
-  document.addEventListener('click', e => { if (!e.target.closest('details.pop')) pops.forEach(d => { d.open = false; }); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') pops.forEach(d => { d.open = false; }); });
+  let swallowClick = false;
+  document.addEventListener('pointerdown', e => {
+    const open = pops.find(d => d.open);
+    if (open && !e.target.closest('details.pop')) { open.open = false; swallowClick = true; }
+  }, true);
+  document.addEventListener('click', e => {
+    if (swallowClick) { swallowClick = false; e.preventDefault(); e.stopPropagation(); }
+  }, true);
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    const open = pops.find(d => d.open);
+    if (open) { open.open = false; open.querySelector('summary').focus(); }
+  });
 
   function optionGroup(boxId, key) {
     const counts = {};
@@ -135,15 +149,19 @@
   syncControls();
 
   // ---------- map ----------
-  const map = L.map('map', { zoomControl: true, scrollWheelZoom: true });
+  const hasMap = !!window.L;
+  if (!hasMap) document.querySelector('.mapwrap').innerHTML = '<p class="empty" style="padding:24px">The map could not load. The list still works.</p>';
+  const map = hasMap ? L.map('map', { zoomControl: true, scrollWheelZoom: true }) : null;
+  let fitZone = () => {};
+  if (hasMap) {
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18, attribution: '&copy; OpenStreetMap contributors · zone: Valhalla',
   }).addTo(map);
   const zoneLayer = L.geoJSON(zones, {
     style: f => ({ className: f.properties.id === 'evening' ? 'zone-eve' : 'zone-mor' }),
-    onEachFeature: (f, l) => l.bindTooltip(f.properties.label, { sticky: true }),
+    interactive: false,
   }).addTo(map);
-  const fitZone = () => map.fitBounds(zoneLayer.getBounds(), { padding: [16, 16] });
+  fitZone = () => map.fitBounds(zoneLayer.getBounds(), { padding: [16, 16] });
   fitZone();
   // Price pills only once zoomed in; dots keep the overview readable.
   const syncZoom = () => map.getContainer().classList.toggle('far', map.getZoom() < 13);
@@ -152,7 +170,8 @@
     icon: L.divIcon({ className: 'pin-wrap', iconSize: [0, 0], html: '<span class="origin" aria-label="Chosen point"></span>' }),
     zIndexOffset: 2000, keyboard: false,
   }).addTo(map).bindTooltip(esc(db.origin.label || 'Chosen point'));
-  const pins = L.layerGroup().addTo(map);
+  }
+  const pins = hasMap ? L.layerGroup().addTo(map) : null;
   const markerById = new Map();
 
   function setActive(id, on) {
@@ -168,7 +187,9 @@
   // Mobile list/map toggle.
   let fittedOnOpen = false;
   $('map-toggle').addEventListener('click', () => {
-    document.body.classList.toggle('map-open');
+    const open = document.body.classList.toggle('map-open');
+    $('map-toggle').setAttribute('aria-pressed', open);
+    if (!hasMap) return;
     setTimeout(() => {
       map.invalidateSize();
       if (!fittedOnOpen) { fitZone(); fittedOnOpen = true; } // map was 0x0 when first fitted
@@ -179,7 +200,7 @@
   function matches(p) {
     if (!S.inactive && p.status !== 'active') return false;
     if (!S.bhk.has(String(p.bhk))) return false;
-    if (p.rent > S.rent || p.minutes_peak > S.min) return false;
+    if ((S.rent < rentMax && p.rent > S.rent) || p.minutes_peak > S.min) return false;
     for (const key of ['type', 'furnishing', 'posted_by', 'source']) {
       if (S[key].size && !S[key].has(p[key] ?? 'unknown')) return false;
     }
@@ -257,12 +278,13 @@
     rows.forEach(p => frag.appendChild(card(p)));
     list.appendChild(frag);
 
+    if (!hasMap) return;
     pins.clearLayers(); markerById.clear();
     for (const p of rows) {
       if (p.lat == null) continue;
       const m = L.marker([p.lat, p.lon], {
         icon: L.divIcon({ className: 'pin-wrap', iconSize: [0, 0], html: `<span class="pin${p.status !== 'active' ? ' dim' : ''}">${short(p.rent)}</span>` }),
-        title: `${p.bhk} BHK, ${tidy(p.locality)}, ${inr(p.rent)}`,
+        title: `${p.bhk} BHK, ${tidy(p.locality)}, ${inr(p.rent)}`, keyboard: false,
       });
       m.on('click', () => openDetail(p));
       m.on('mouseover', () => setActive(p.id, true));
