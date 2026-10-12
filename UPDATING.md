@@ -25,19 +25,42 @@ Write each portal's results to a temp JSON file in the collection format below.
 
 ```sh
 mkdir -p /tmp/refresh
-python3 scripts/collect_nobroker.py    /tmp/refresh/nobroker.json     # public JSON API, ~90 pages, 2+3 BHK
-python3 scripts/collect_olx.py         /tmp/refresh/olx.json          # category pages via curl, 2 and 3 rooms
-python3 scripts/collect_magicbricks.py /tmp/refresh/magicbricks.json  # search pages, one locality per request
+# Independent of each other, so run them in parallel (about 5 minutes in total).
+python3 scripts/collect_nobroker.py    /tmp/refresh/nobroker.json    > /tmp/refresh/nobroker.log 2>&1 &
+python3 scripts/collect_olx.py         /tmp/refresh/olx.json         > /tmp/refresh/olx.log 2>&1 &
+python3 scripts/collect_magicbricks.py /tmp/refresh/magicbricks.json > /tmp/refresh/magicbricks.log 2>&1 &
+wait; cat /tmp/refresh/*.log
 ```
 
-All three collect 2BHK and 3BHK. Each takes a few minutes because it waits between requests.
-MagicBricks searches the locality names listed in `scripts/magicbricks_localities.txt`.
+All three collect 2BHK and 3BHK, and record each listing's first photo URL and photo count. The site
+hot-links the photo from the portal; never download photos into the repo. Each collector prints
+`fetched` and `pass listing checks` counts. Typical counts on 2026-10-12:
+
+| Collector | fetched | pass listing checks | live after merge |
+| --- | --- | --- | --- |
+| NoBroker | ~1,980 | ~540 | ~205 |
+| OLX | ~1,870 | ~820 | ~20 |
+| MagicBricks | ~420 | ~120 | ~65 |
+
+How each portal is reached, in case a collector breaks:
+
+- **NoBroker:** `GET /api/v3/multi/property/RENT/filter?searchParam=<base64 [{lat,lon,placeId,placeName}]>&type=BHK2,BHK3&city=chennai&pageNo=N&radius=9.0`,
+  26 per page until `data` is empty. NoBroker puts listings with no usable address on placeholder pins and
+  appends that pin's address to the owner's. The collector detects these pins and never matches localities
+  against that appended text.
+- **OLX:** the JSON API is blocked, and Python's own HTTP client gets 403, so the collector calls `curl` with
+  full browser headers. Ads are in `window.__APP = {… states: {…}}` on
+  `/chennai_g4059162/for-rent-houses-apartments_c1723?filter=rooms_eq_{2|3}&page=N`.
+- **MagicBricks:** search pages embed results in `window.SERVER_PRELOADED_STATE_`. Search one locality per
+  request: comma-separated multi-locality queries silently drop results. Locality names are in
+  `scripts/magicbricks_localities.txt`. Car parking comes from the `parkingD` field ("1 Covered" etc.).
 
 ### Portals collected by hand
 
 Collect from these with web search and fetch tools. Keep only listings that meet the requirements above.
 
-- **Housing.com.** Search and rent-detail pages are bot-blocked (HTTP 406). Project rent pages work:
+- **Housing.com.** Two listings at present, collected by hand. Leave them as they are unless you can re-check
+  them. Search and rent-detail pages are bot-blocked (HTTP 406), but project rent pages work:
   `https://housing.com/rent-<any-slug>-rpid-AG<base36(projectId)>AH0`. Parse
   `window.__INITIAL_STATE__ = JSON.parse("…")` → `searchResults.data`. Known project with rentals:
   DLF Commanders Court, Egmore (`AGpuoAH0`).
@@ -91,6 +114,14 @@ merge skips those ids.
 
 ## 2. Merge
 
+Always merge **into** the existing `data/properties.json`. Never empty it or rebuild it from scratch: that
+loses `first_seen` dates, the no-longer-live history and hand-collected listings.
+
+Before merging, check the collector counts against the table above. If a collector failed, returned nothing,
+or returned far fewer listings than usual (say under half), the portal probably blocked it or changed its
+format. Fix that collector minimally and re-run it. If you can't, leave its file out of the merge **and its
+name out of `--swept`**, so its listings aren't wrongly marked as gone.
+
 ```sh
 python3 scripts/update_data.py merge /tmp/refresh/*.json --swept nobroker,olx,magicbricks
 ```
@@ -104,13 +135,20 @@ Pass `--swept` only for portals that were **fully** re-searched in this run. The
 
 Listings from hand-collected portals that you could not re-check this run should stay as they are, so leave those portals out of `--swept`.
 
-## 3. Build, commit, push
+## 3. Build, commit, push, verify
 
 ```sh
-sh scripts/build.sh   # fails if data/ is invalid
-git add data/ && git commit -m "Refresh listings: +N new, M no longer live"
-git push origin main  # triggers the GitHub Pages deploy
+sh scripts/build.sh   # validates data/ and assembles _site/ (gitignored; never commit it)
+git add data/ && git commit -m "Refresh listings: +N new, M no longer live (YYYY-MM-DD)"
+git push origin main  # triggers .github/workflows/pages.yml -> GitHub Pages
 ```
+
+The site is https://nobodyme.github.io/rentable-properties/. About a minute after the push, check that
+`https://nobodyme.github.io/rentable-properties/data/properties.json` shows today's date in `updated`. If it
+doesn't, check the "Deploy to GitHub Pages" workflow run on `main`.
+
+The build removes the origin's name from the published data copy, and the site itself refers only to the
+"chosen point". Keep it that way: don't add place names for the origin to the site or to commit messages.
 
 Only `data/` should change in a routine refresh. Re-vet the portals in `data/sources.json` about once a month:
 ratings, whether each portal is still operating, and whether its scam reports have changed.
