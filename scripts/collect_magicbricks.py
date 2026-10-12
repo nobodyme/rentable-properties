@@ -89,8 +89,11 @@ def convert(x, today):
         lat, lon = (float(v) for v in x["ltcoordGeo"].split(","))
     posted = re.search(r"(\w{3}) (\d{1,2}), '(\d{2})", x.get("postedLabelD") or "")
     floor = re.sub(r"\s*Floor$", "", x.get("floorD") or "") or None
+    photos = [u for u in x.get("allImgPath") or [] if isinstance(u, str) and u.startswith("https://")]
     return {
         "source": "magicbricks",
+        "photo": photos[0] if photos else None,
+        "photo_count": num(x.get("allImgCt")) or len(photos),
         "source_url": "https://www.magicbricks.com/propertyDetails/" + x["url"],
         "source_key": x["id"],
         "title": x.get("propertyTitle"),

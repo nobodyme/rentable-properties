@@ -74,7 +74,9 @@ A JSON array of objects:
   "floor": "2 of 4",
   "bathrooms": 3,
   "preferred_tenants": "family | any | bachelors | null",
-  "notes": "short, user-facing (e.g. 'Rent negotiable · Lift')"
+  "notes": "short, user-facing (e.g. 'Rent negotiable · Lift')",
+  "photo": "https://… first photo, hot-linked from the portal (or null)",
+  "photo_count": 6
 }
 ```
 

@@ -230,22 +230,47 @@
     house: '<svg class="glyph" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 22 24 8l18 14"/><path d="M11 18v22h26V18"/><path d="M20 40V29h8v11"/></g></svg>',
   };
 
+  const gmaps = p => `https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lon}`;
+  const directions = p => `https://www.google.com/maps/dir/?api=1&origin=${db.origin.lat},${db.origin.lon}&destination=${p.lat},${p.lon}&travelmode=driving`;
+  const lakh = n => n >= 100000 ? '₹' + +(n / 100000).toFixed(2) + 'L' : inr(n);
+
+  function photoHtml(p, cls) {
+    const fallback = `<div class="${cls}-none">${p.type === 'apartment' ? GLYPH.apartment : GLYPH.house}<span>No photos on ${esc(srcName(p.source))}</span></div>`;
+    if (!p.photo) return fallback;
+    return `<img src="${esc(p.photo)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+      onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'${cls}-none',textContent:'Photo unavailable'}))">
+      ${p.photo_count > 1 ? `<span class="count-badge">${p.photo_count} photos</span>` : ''}`;
+  }
+
   function card(p) {
     const li = document.createElement('li');
     li.className = 'card' + (p.status !== 'active' ? ' inactive' : '');
     li.id = 'p-' + p.id;
-    const meta = [label('type', p.type), p.area_sqft && p.area_sqft.toLocaleString('en-IN') + ' sq ft', label('furnishing', p.furnishing)]
-      .filter(x => x && x !== 'Not stated').join(' · ');
+    const head = [`${p.bhk} BHK ${label('type', p.type).toLowerCase()}`, p.area_sqft && p.area_sqft.toLocaleString('en-IN') + ' sq ft'].filter(Boolean).join(' · ');
+    const sub = [tidy(p.locality), p.deposit && 'Deposit ' + lakh(p.deposit)].filter(Boolean).join(' · ');
+    const chips = [
+      p.furnishing && `<li>${esc(label('furnishing', p.furnishing))}</li>`,
+      `<li>${p.parking === 'car+bike' ? 'Car + bike parking' : 'Car parking'}</li>`,
+      `<li class="${p.available_from ? 'ok' : ''}">${esc(availText(p))}</li>`,
+      site[p.source] && site[p.source].verdict === 'included-with-caution' && '<li class="warn">Unverified site</li>',
+      p.status !== 'active' && '<li class="warn">No longer live</li>',
+    ].filter(Boolean).join('');
+    const approx = p.location_precision !== 'listing';
     li.innerHTML = `
-      <div class="card-cover">
-        <span class="tag">${p.bhk} BHK</span>
-        <div class="cover-time"><b>~${p.minutes_peak}</b> min<small>from chosen point · ${p.road_km} km by road</small></div>
-        ${p.type === 'apartment' ? GLYPH.apartment : GLYPH.house}
+      <div class="thumb">${photoHtml(p, 'thumb')}</div>
+      <div class="main">
+        <p class="price"><b>${inr(p.rent)}</b> <span>/ month</span></p>
+        <h3 class="title">${esc(head)}</h3>
+        <p class="sub">${esc(sub)}</p>
+        <ul class="chips">${chips}</ul>
       </div>
-      <div class="card-row"><h3 class="card-title">${esc(tidy(p.locality) || 'Chennai')}</h3></div>
-      <p class="card-meta">${esc(meta)}</p>
-      <p class="card-meta">${esc(availText(p))} · <a class="src-link" href="${esc(p.source_url)}" target="_blank" rel="noopener noreferrer" title="Open this listing on ${esc(srcName(p.source))}">${esc(srcName(p.source))} ↗</a></p>
-      <p class="card-price"><b>${inr(p.rent)}</b> <span>month</span></p>
+      <div class="side">
+        <p class="time"><b>~${p.minutes_peak}</b> min<small>from chosen point · ${p.road_km} km</small></p>
+        <div class="actions">
+          <a class="btn btn-primary" href="${esc(p.source_url)}" target="_blank" rel="noopener noreferrer">View on ${esc(srcName(p.source))} ↗</a>
+          <a class="btn" href="${gmaps(p)}" target="_blank" rel="noopener noreferrer" title="${approx ? 'Area centre: the listing gives no exact address' : 'Listing location on Google Maps'}">${approx ? 'Area on map' : 'Location'} ↗</a>
+        </div>
+      </div>
       <button class="card-open" type="button" aria-label="${esc(`${p.bhk} BHK in ${tidy(p.locality)}, ${inr(p.rent)} a month, ${p.minutes_peak} minutes away. Open details`)}"></button>`;
     li.querySelector('.card-open').addEventListener('click', () => openDetail(p));
     li.addEventListener('mouseenter', () => setActive(p.id, true));
@@ -318,7 +343,9 @@
       ['Drive, morning rush', `~${p.minutes_morning} min`],
     ].filter(([, v]) => v !== null && v !== undefined && v !== '' && v !== 'Not stated');
 
+    const approx = p.location_precision !== 'listing';
     $('detail-body').innerHTML = `
+      ${p.photo ? `<div class="d-photo">${photoHtml(p, 'd-photo')}</div>` : ''}
       <h2 class="d-title" id="d-title">${esc(tidy(p.title))}</h2>
       <p class="d-sub">${esc([tidy(p.address), tidy(p.locality)].filter(Boolean).filter((v, i, a) => a.indexOf(v) === i).join(', '))}</p>
       <div class="d-price"><b>${inr(p.rent)}</b><span>/ month</span>${p.maintenance ? `<span>+ ${inr(p.maintenance)} maintenance</span>` : ''}</div>
@@ -327,6 +354,10 @@
       ${p.location_precision !== 'listing' ? '<p class="d-notes">Map position and drive time are approximate: the site gives only the area, not the exact address.</p>' : ''}
       ${p.status !== 'active' ? '<p class="warn">This listing is no longer live on the source site.</p>' : ''}
       ${s.verdict === 'included-with-caution' ? `<p class="warn">${esc(s.name)} does not verify posters. See the home in person and never pay a token advance before that.</p>` : ''}
+      <div class="d-links">
+        <a class="btn" href="${gmaps(p)}" target="_blank" rel="noopener noreferrer">${approx ? 'Area on Google Maps' : 'Location on Google Maps'} ↗</a>
+        <a class="btn" href="${directions(p)}" target="_blank" rel="noopener noreferrer">Directions from chosen point ↗</a>
+      </div>
       <div class="d-cta">
         <small>Checked ${fmtDate(p.last_checked)}${p.posted_on ? ' · posted ' + fmtDate(p.posted_on) : ''}</small>
         <a class="primary accent" href="${esc(p.source_url)}" target="_blank" rel="noopener noreferrer">View on ${esc(srcName(p.source))} ↗</a>

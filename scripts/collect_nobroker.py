@@ -107,8 +107,11 @@ def convert(x, today, names, shared_pins):
     if lat is None:
         notes.append("Location approximate (locality only)")
 
+    photos = [ph["imagesMap"]["medium"] for ph in x.get("photos") or [] if (ph.get("imagesMap") or {}).get("medium")]
     return {
         "source": "nobroker",
+        "photo": f"https://assets.nobroker.in/images/{x['id']}/{photos[0]}" if photos else None,
+        "photo_count": len(photos),
         "source_url": "https://www.nobroker.in" + x["detailUrl"],
         "source_key": x["id"],
         "title": x.get("propertyTitle") or x.get("title"),

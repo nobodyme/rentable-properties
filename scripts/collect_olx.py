@@ -81,8 +81,11 @@ def convert(v, today):
     loc = (v.get("locations") or [{}])[0]
     fl, tf = p.get("floorno"), p.get("totalfloors")
     cars = int(p["carparking"])
+    images = [im["url"].replace(":443", "") for im in v.get("images") or [] if im.get("url")]
     return {
         "source": "olx",
+        "photo": images[0] + ";s=480x360" if images else None,
+        "photo_count": len(images),
         "source_url": "https://www.olx.in" + (v["_path"] or f"/item/{slug(v['title'])}-iid-{v['id']}"),
         "source_key": v["id"],
         "title": v["title"].strip(),

@@ -64,7 +64,7 @@ def stated_text(p):
 FIELDS = ["id", "status", "source", "source_url", "title", "type", "bhk", "rent", "maintenance", "deposit",
           "locality", "address", "lat", "lon", "location_precision", "road_km", "minutes_peak",
           "minutes_morning", "area_sqft", "furnishing", "parking", "available_from", "posted_on",
-          "posted_by", "floor", "bathrooms", "preferred_tenants", "notes", "first_seen", "last_checked",
+          "posted_by", "floor", "bathrooms", "preferred_tenants", "notes", "photo", "photo_count", "first_seen", "last_checked",
           "missed_sweeps"]
 
 
@@ -105,6 +105,8 @@ def reject_reason(p):
         return "available after Jan 2027"
     if not p.get("source_url", "").startswith("http"):
         return "missing source_url"
+    if p.get("photo") and not p["photo"].startswith("https://"):
+        return "photo must be an https URL"
     return None
 
 
