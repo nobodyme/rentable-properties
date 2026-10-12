@@ -54,12 +54,10 @@ def save(p, obj):
     p.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n")
 
 
-def listing_id(source, url):
-    return source + "-" + hashlib.sha1(canon_url(url).encode()).hexdigest()[:10]
-
-
-def canon_url(url):
-    return re.sub(r"[?#].*$", "", url.strip()).rstrip("/").lower() if "magicbricks" not in url else url.strip()
+def listing_id(p):
+    """Stable id: the site's own listing id when the collector gives one, else the URL."""
+    key = str(p.get("source_key") or p["source_url"].strip().rstrip("/"))
+    return p["source"] + "-" + hashlib.sha1(key.encode()).hexdigest()[:10]
 
 
 def reject_reason(p):
@@ -72,6 +70,8 @@ def reject_reason(p):
     if not isinstance(p.get("rent"), int) or not 3000 <= p["rent"] <= 1_000_000:
         return f"bad rent {p.get('rent')!r}"
     af = p.get("available_from")
+    if af is None:
+        return None  # site doesn't state a date (e.g. OLX); shown as "ask the poster"
     if af != "immediate" and not (isinstance(af, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", af)):
         return f"bad available_from {af!r}"
     if af != "immediate" and af > LATEST_MOVE_IN:
@@ -119,7 +119,7 @@ def merge(fresh_files, swept):
         if why:
             rejected[why] = rejected.get(why, 0) + 1
             continue
-        p["id"] = listing_id(p["source"], p["source_url"])
+        p["id"] = listing_id(raw)
         if p["id"] in seen:
             continue
         seen.add(p["id"])
@@ -163,7 +163,7 @@ def merge(fresh_files, swept):
 
     # Move-in window can lapse for listings that stop being refreshed.
     for p in existing.values():
-        if p["available_from"] != "immediate" and p["available_from"] > LATEST_MOVE_IN:
+        if p["available_from"] not in ("immediate", None) and p["available_from"] > LATEST_MOVE_IN:
             p["status"] = "inactive"
 
     db["properties"] = sorted(([{k: p.get(k) for k in FIELDS} for p in existing.values()]),

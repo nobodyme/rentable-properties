@@ -8,6 +8,7 @@
   ]);
   const all = db.properties;
   const srcName = Object.fromEntries(sources.sites.map(s => [s.id, s.name]));
+  const caution = new Set(sources.sites.filter(s => s.verdict === 'included-with-caution').map(s => s.id));
 
   const LABEL = {
     type: { apartment: 'Apartment', 'independent-house': 'Independent house', 'independent-floor': 'Independent floor', villa: 'Villa' },
@@ -95,9 +96,10 @@
     if (p.minutes_peak > +$('f-min').value) return false;
     const inSet = (sel, v) => !sel.length || sel.includes(v ?? 'unknown');
     if (!inSet(getType(), p.type) || !inSet(getFurn(), p.furnishing) || !inSet(getBy(), p.posted_by) || !inSet(getSrc(), p.source)) return false;
-    const a = $('f-avail').value;
-    if (a === 'now' && p.available_from !== 'immediate' && p.available_from > db.updated) return false;
-    if (a && a !== 'now' && p.available_from !== 'immediate' && p.available_from > a) return false;
+    const a = $('f-avail').value, af = p.available_from;
+    if (a && af === null) return false;
+    if (a === 'now' && af !== 'immediate' && af > db.updated) return false;
+    if (a && a !== 'now' && af !== 'immediate' && af > a) return false;
     if (q) {
       const hay = [p.title, p.locality, p.address, p.notes, srcName[p.source]].join(' ').toLowerCase();
       if (!q.split(/\s+/).every(t => hay.includes(t))) return false;
@@ -136,14 +138,21 @@
         p.area_sqft && `${p.area_sqft.toLocaleString('en-IN')} sq ft`,
         label('furnishing', p.furnishing),
         p.parking === 'car+bike' ? 'Car + bike parking' : 'Car parking',
-        p.available_from === 'immediate' ? 'Available now' : 'From ' + fmtDate(p.available_from),
+        p.available_from === 'immediate' ? 'Available now' : p.available_from ? 'From ' + fmtDate(p.available_from) : 'Move-in date not stated',
         p.deposit && 'Deposit ' + inr(p.deposit),
         p.floor && 'Floor ' + p.floor,
         p.posted_by && 'By ' + label('posted_by', p.posted_by).toLowerCase(),
       ].filter(Boolean);
       const ul = li.querySelector('.facts');
       facts.forEach(f => { const x = document.createElement('li'); x.textContent = f; ul.appendChild(x); });
-      li.querySelector('.notes').textContent = p.status !== 'active' ? 'No longer live on the source site.' + (p.notes ? ' ' + p.notes : '') : (p.notes || '');
+      const notes = li.querySelector('.notes');
+      notes.textContent = (p.status !== 'active' ? 'No longer live on the source site. ' : '') + (p.notes || '');
+      if (caution.has(p.source)) {
+        const w = document.createElement('span');
+        w.className = 'badge-warn';
+        w.textContent = 'Unverified site: see the home in person before paying anything. ';
+        notes.prepend(w);
+      }
       const a = li.querySelector('.link');
       a.href = p.source_url;
       a.textContent = 'View on ' + (srcName[p.source] || p.source) + ' ↗';

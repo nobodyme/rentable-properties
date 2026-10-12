@@ -102,6 +102,7 @@ def convert(x, today, names):
     return {
         "source": "nobroker",
         "source_url": "https://www.nobroker.in" + x["detailUrl"],
+        "source_key": x["id"],
         "title": x.get("propertyTitle") or x.get("title"),
         "type": BUILDING[x["buildingType"]],
         "bhk": 3,
