@@ -1,0 +1,9 @@
+{
+  "note": "Listings checked by hand and found not to qualify. update_data.py skips these ids on every refresh.",
+  "listings": [
+    {
+      "id": "magicbricks-0013349562",
+      "reason": "Labelled 'The Island' but the listing's own address is Mylapore, outside the 30-minute zone (adversarial review 2026-10-12)."
+    }
+  ]
+}

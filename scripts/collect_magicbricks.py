@@ -100,7 +100,7 @@ def convert(x, today):
         "maintenance": None,
         "deposit": num(x.get("bookingAmtExact")),
         "locality": x.get("lmtDName"),
-        "address": x.get("prjname") or None,
+        "address": ", ".join(v for v in (x.get("prjname"), x.get("catAdd1")) if v) or None,
         "lat": lat,
         "lon": lon,
         "area_sqft": num(x.get("caSqFt")) if x.get("covAreaUnitDesc", "Sq-ft") == "Sq-ft" else None,

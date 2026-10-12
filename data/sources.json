@@ -204,8 +204,8 @@
         }
       ],
       "strengths": "Strong corporate backing (REA Group; REA India revenue AUD 129.2M FY25, +25%). Big app user base, 'verified' listing tags, actively updated.",
-      "risks": "Trustpilot complaints describe fake low-priced listings with wrong numbers used to sell premium plans, RMs sharing broker contacts instead of owners, refund refusals. Could NOT confirm north-Chennai rental inventory: site returns HTTP 406 to automated fetches and web search surfaced only sale/project and price-trend pages for Perambur/Kilpauk/Royapuram.",
-      "reason": "Legitimate, well-capitalised operator but north-Chennai rental coverage unverified and fake-listing complaints are frequent; use only after manually confirming each listing.",
+      "risks": "Trustpilot complaints describe fake low-priced listings with wrong numbers used to sell premium plans, RMs sharing broker contacts instead of owners, refund refusals. Search and listing pages block automated access (HTTP 406), so only rentals reachable through project rent pages (e.g. DLF Commanders Court, Egmore) are collected; parking is shown as covered/open slots without naming the vehicle.",
+      "reason": "Legitimate, well-capitalised operator with frequent fake-listing complaints; only a few north/central Chennai rentals are reachable, so confirm each listing in person.",
       "evidence_urls": [
         "https://housing.com/pin-code/perambur-chennai-pin-code-614404",
         "https://housing.com/price-trends/perambur_chennai-Phtazsrqx1zmbcul",
@@ -248,7 +248,7 @@
         }
       ],
       "strengths": "Listed parent company; huge reach; individual owners in north Chennai often post here and on hyperlocal channels.",
-      "risks": "No listing or owner verification. Well-documented rental scams: fake 'army officer' landlords demanding advance via UPI (TN police crackdown), Punjab arrest for fake rental listings across states, consumer complaints of advance-payment losses. Site blocked automated fetch so north-Chennai 3BHK rental inventory could not be confirmed.",
+      "risks": "No listing or owner verification. Well-documented rental scams: fake 'army officer' landlords demanding advance via UPI (TN police crackdown), Punjab arrest for fake rental listings across states, consumer complaints of advance-payment losses. Ads have no move-in date and their map pins are area-level, not exact.",
       "reason": "Legitimate operator but an unverified free-classifieds marketplace with recurring advance-payment rental scams; usable only as leads that are verified in person with no payment before a visit.",
       "evidence_urls": [
         "https://inc42.com/buzz/cartrade-acquires-olx-india-business-inr-535-54-cr",

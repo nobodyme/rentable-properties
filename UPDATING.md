@@ -12,6 +12,11 @@ The goal is to bring `data/properties.json` up to date without touching anything
 - Available now, or from a date no later than 2027-01-31. A missing date is allowed only when the portal has no date field, as on OLX.
 - At most 36 minutes away at evening rush. The site's slider defaults to 30.
 - From a portal whose verdict in `data/sources.json` is `included` or `included-with-caution`.
+- The listing's own text (title, address, locality, URL) must not name a place that can't be inside the
+  zone. That would mean its pin is wrong. Pins that are only area centres are also checked against
+  neighbourhoods on the zone's edge.
+- No lease (lump-sum) or per-head sharing listings. Implausible deposits are dropped. The same flat posted
+  twice on one portal is kept once, at the lower rent.
 - Real and currently listed. Never invent, guess or "fill in" a listing or a field. Use `null` when unknown.
 
 ## 1. Collect
@@ -75,6 +80,12 @@ A JSON array of objects:
 
 If `lat`/`lon` are missing, `update_data.py` falls back to the locality centre. It uses
 `data/localities.json` first, then the Photon geocoder.
+
+### Listings found wrong by hand
+
+If a listing turns out not to qualify and no rule can catch it (for example, its pin and its text
+disagree but the portal gives no address), add its `id` and a reason to `data/excluded.json`. Every
+merge skips those ids.
 
 ## 2. Merge
 

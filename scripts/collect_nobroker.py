@@ -25,8 +25,13 @@ BUILDING = {"AP": "apartment", "SB": "apartment", "IH": "independent-house", "IF
 FURNISHING = {"NOT_FURNISHED": "unfurnished", "SEMI_FURNISHED": "semi-furnished", "FULLY_FURNISHED": "fully-furnished"}
 PARKING = {"BOTH": "car+bike", "FOUR_WHEELER": "car"}
 BHK = {"BHK2": 2, "BHK3": 3}
-# NoBroker drops listings with no geocoded address onto a generic city-centre pin.
-PLACEHOLDER_PINS = [(13.0834478, 80.2685457), (13.0826802, 80.2707184), (13.0830589, 80.2690060)]
+# NoBroker drops listings with no geocoded address onto generic pins and then
+# appends that pin's reverse-geocoded address to the owner's address.
+PLACEHOLDER_PINS = [(13.0834478, 80.2685457), (13.0826802, 80.2707184), (13.0830589, 80.2690060),
+                    (13.123573, 80.262455)]
+SHARED_PIN_MIN = 3  # a pin used by this many listings with different localities is a placeholder too
+SHARING = re.compile(r"\d+\s*(bachelors?|persons?|people|members|boys|girls)\s*(can|could|will)?\s*(stay|share)"
+                     r"|\bsharing\b|per\s*(head|bed|person)", re.I)
 
 
 def km(a, b, c, d):
@@ -62,25 +67,27 @@ def locality_from_text(text, names):
     return None
 
 
-def convert(x, today, names):
+def convert(x, today, names, shared_pins):
     if x.get("type") not in BHK or x.get("propertyType") != "RENT" or not x.get("active"):
         return None
-    if x.get("accomodationType") or x.get("sharedAccomodation"):
-        return None
+    if x.get("accomodationType") or x.get("sharedAccomodation") or SHARING.search(x.get("ownerDescription") or ""):
+        return None  # room / per-head sharing, not a whole home
     if x.get("parking") not in PARKING or x.get("buildingType") not in BUILDING:
         return None
-    if not x.get("rent") or (x.get("forLease") and x.get("rent") == x.get("deposit")):
-        return None  # lease-only (lump sum), no monthly rent
+    if not x.get("rent") or x.get("forLease") or "lease" in (x.get("propertyTitle") or "").lower():
+        return None  # lease listings quote a lump sum, not monthly rent
 
     lat, lon = x.get("latitude"), x.get("longitude")
     address = (x.get("address") or x.get("secondaryTitle") or "").strip(" ,") or None
     locality = x.get("nbLocality") or x.get("locality")
-    if not lat or any(km(lat, lon, a, b) < 0.25 for a, b in PLACEHOLDER_PINS):
-        # Unreliable pin: fall back to a known locality named in the address, else skip.
-        found = locality_from_text(" ".join(str(x.get(k) or "") for k in ("address", "street", "society")), names)
+    if not lat or (round(lat, 4), round(lon, 4)) in shared_pins or any(km(lat, lon, a, b) < 0.25 for a, b in PLACEHOLDER_PINS):
+        # Unreliable pin, and the address may carry the pin's address too, so only
+        # trust the owner-entered locality/street fields.
+        found = locality_from_text(" ".join(str(x.get(k) or "") for k in ("locality", "street", "society")), names)
         if not found:
             return None
         lat = lon = None
+        address = ", ".join(v for v in (x.get("society"), x.get("street")) if v) or None
         locality = found.title()
 
     af = ist_date(x.get("availableFrom"))
@@ -109,7 +116,9 @@ def convert(x, today, names):
         "bhk": BHK[x["type"]],
         "rent": int(x["rent"]),
         "maintenance": int(x["maintenanceAmount"]) if x.get("maintenanceAmount") not in (None, "", 0) else None,
-        "deposit": int(x["deposit"]) if x.get("deposit") else None,
+        # Owners sometimes type junk deposits (e.g. ₹1 crore); drop implausible ones.
+        "deposit": int(x["deposit"]) if x.get("deposit") and x["deposit"] <= 24 * x["rent"] else None,
+        "stated_locality": x.get("locality"),  # owner-entered; checked against the pin in update_data.py
         "locality": locality,
         "address": address,
         "lat": lat,
@@ -132,7 +141,12 @@ def main(out):
     names = list(json.loads(LOCALITIES.read_text()).keys())
     today = datetime.now(IST).date()
     raw = fetch_all()
-    rows = [r for r in (convert(x, today, names) for x in raw) if r]
+    by_pin = {}
+    for x in raw:
+        if x.get("latitude"):
+            by_pin.setdefault((round(x["latitude"], 4), round(x["longitude"], 4)), set()).add((x.get("locality") or "").lower())
+    shared_pins = {pin for pin, locs in by_pin.items() if len(locs) >= SHARED_PIN_MIN}
+    rows = [r for r in (convert(x, today, names, shared_pins) for x in raw) if r]
     Path(out).write_text(json.dumps(rows, indent=1, ensure_ascii=False))
     print(f"nobroker: {len(raw)} fetched, {len(rows)} pass listing checks -> {out}")
 

@@ -302,7 +302,7 @@
       <div class="d-price"><b>${inr(p.rent)}</b><span>/ month</span>${p.maintenance ? `<span>+ ${inr(p.maintenance)} maintenance</span>` : ''}</div>
       <dl class="d-facts">${facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
       ${p.notes ? `<p class="d-notes">${esc(p.notes)}</p>` : ''}
-      ${p.location_precision === 'locality' ? '<p class="d-notes">Map position is the locality centre; the exact address was not given.</p>' : ''}
+      ${p.location_precision !== 'listing' ? '<p class="d-notes">Map position and drive time are approximate: the site gives only the area, not the exact address.</p>' : ''}
       ${p.status !== 'active' ? '<p class="warn">This listing is no longer live on the source site.</p>' : ''}
       ${s.verdict === 'included-with-caution' ? `<p class="warn">${esc(s.name)} does not verify posters. See the home in person and never pay a token advance before that.</p>` : ''}
       <div class="d-cta">

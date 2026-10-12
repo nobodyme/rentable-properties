@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent
 PROPS = ROOT / "data" / "properties.json"
 LOCALITIES = ROOT / "data" / "localities.json"
 SOURCES = ROOT / "data" / "sources.json"
+EXCLUDED = ROOT / "data" / "excluded.json"
 
 LATEST_MOVE_IN = "2027-01-31"
 MAX_MINUTES = 36          # evening-rush minutes; 36 == 30 min in morning rush. Site defaults to 30.
@@ -36,6 +37,30 @@ TYPES = {"apartment", "independent-house", "independent-floor", "villa"}
 FURNISHING = {"unfurnished", "semi-furnished", "fully-furnished", None}
 POSTED_BY = {"owner", "agent", "builder", None}
 PARKING = {"car", "car+bike"}
+NO_DATE_SOURCES = {"olx", "housing"}  # portals that don't show a move-in date
+# Localities that cannot be inside the zone (40+ min even from their nearest
+# edge). If a listing's own text names one while its pin is inside the zone, the
+# pin is wrong (portal placeholder or bad geocode), so the listing is rejected.
+# Neighbourhoods bordering the zone (Kolathur, Madhavaram, Mylapore, Aminjikarai,
+# Nungambakkam, ...) are deliberately absent: there the pin decides.
+FAR = re.compile(r"\b(" + "|".join([
+    r"velachery", r"val[a-z]{0,3}ravakk?am", r"navalur", r"semmancheri", r"sholinganallur", r"omr", r"perungudi",
+    r"thoraipakkam", r"pallikaranai", r"medavakkam", r"selaiyur", r"tambaram", r"chromepet", r"pallavaram",
+    r"porur", r"vadapalani", r"kodambakkam", r"ashok\s?nagar", r"west\s?mambalam", r"k\.?\s?k\.?\s?nagar",
+    r"t\.?\s?nagar", r"saidapet", r"guindy", r"adyar", r"besant\s?nagar", r"thiruvanmiyur",
+    r"anna\s?nagar(?!\s?east)", r"mogappair", r"arumbakkam", r"koyambedu", r"korattur", r"padi", r"ambattur",
+    r"avadi", r"puzhal", r"surapet", r"red\s?hills", r"ennore", r"minjur"]) + r")\b", re.I)
+# Bordering neighbourhoods: trusted only when the listing has its own exact pin.
+NEAR_EDGE = re.compile(r"\b(kolathur|madhavaram|retteri|aminjikarai|shenoy\s?nagar|nungambakkam|teynampet|"
+                       r"(?<!mannady\s)(?<!mannadi\s)mylapore|villivakkam|manali|alwarpet|anna\s?nagar\s?east)\b", re.I)
+
+
+def stated_text(p):
+    """The listing's own words about where it is: title, address, locality and URL slug."""
+    url = p.get("source_url", "")
+    slug = url.split("/")[-3] if p.get("source") == "nobroker" else url.split("/")[-1]
+    return " ".join(str(p.get(k) or "") for k in ("title", "address", "locality", "stated_locality")) + " " + re.sub(r"[-_/]", " ", slug)
+
 FIELDS = ["id", "status", "source", "source_url", "title", "type", "bhk", "rent", "maintenance", "deposit",
           "locality", "address", "lat", "lon", "location_precision", "road_km", "minutes_peak",
           "minutes_morning", "area_sqft", "furnishing", "parking", "available_from", "posted_on",
@@ -72,7 +97,8 @@ def reject_reason(p):
         return f"bad rent {p.get('rent')!r}"
     af = p.get("available_from")
     if af is None:
-        return None  # site doesn't state a date (e.g. OLX); shown as "ask the poster"
+        # Only portals with no date field may omit it; shown as "ask the poster".
+        return None if p.get("source") in NO_DATE_SOURCES else "missing available_from"
     if af != "immediate" and not (isinstance(af, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", af)):
         return f"bad available_from {af!r}"
     if af != "immediate" and af > LATEST_MOVE_IN:
@@ -111,16 +137,24 @@ def merge(fresh_files, swept):
     for f in fresh_files:
         incoming += json.loads(Path(f).read_text())
 
+    excluded = {x["id"] for x in load(EXCLUDED, {"listings": []})["listings"]}
+    for pid in excluded & existing.keys():
+        del existing[pid]
     todo = []
     for raw in incoming:
         p = {k: raw.get(k) for k in FIELDS if k in raw}
         why = reject_reason(p)
+        if not why and FAR.search(stated_text(raw)):
+            why = "text names a far-away locality"
         if not why and not locate(p, locs):
             why = "could not locate"
         if why:
             rejected[why] = rejected.get(why, 0) + 1
             continue
         p["id"] = listing_id(raw)
+        if p["id"] in excluded:
+            rejected["excluded after review"] = rejected.get("excluded after review", 0) + 1
+            continue
         if p["id"] in seen:
             continue
         seen.add(p["id"])
@@ -148,6 +182,34 @@ def merge(fresh_files, swept):
         else:
             added += 1
             existing[p["id"]] = p
+
+    # Same flat posted twice on one portal: same BHK, area, floor and locality. Keep the lower rent.
+    flats = {}
+    for pid, p in list(existing.items()):
+        if p["status"] != "active" or not p.get("area_sqft") or not p.get("floor"):
+            continue
+        key = (p["source"], p["bhk"], p["area_sqft"], p["floor"], (p.get("locality") or "").lower())
+        if key in flats:
+            keep, drop = sorted([flats[key], pid], key=lambda i: existing[i]["rent"])
+            del existing[drop]
+            flats[key] = keep
+            seen.discard(drop)
+            rejected["duplicate flat"] = rejected.get("duplicate flat", 0) + 1
+        else:
+            flats[key] = pid
+
+    # OLX pins and pins shared by several listings are area centres, not the flat itself.
+    pin_count = {}
+    for p in existing.values():
+        pin_count[(p["source"], round(p["lat"], 4), round(p["lon"], 4))] = pin_count.get((p["source"], round(p["lat"], 4), round(p["lon"], 4)), 0) + 1
+    for p in existing.values():
+        if p["location_precision"] == "listing" and (p["source"] == "olx" or pin_count[(p["source"], round(p["lat"], 4), round(p["lon"], 4))] >= 3):
+            p["location_precision"] = "approximate"
+    for pid, p in list(existing.items()):
+        if p["status"] == "active" and p["location_precision"] != "listing" and NEAR_EDGE.search(stated_text(p)):
+            del existing[pid]  # area-centre pin, and the text puts it on the far side of the zone edge
+            seen.discard(pid)
+            rejected["approximate pin, text names an edge locality"] = rejected.get("approximate pin, text names an edge locality", 0) + 1
 
     deactivated = pruned = 0
     for pid, p in list(existing.items()):
