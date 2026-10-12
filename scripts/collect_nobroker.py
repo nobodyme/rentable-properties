@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Fetch 3BHK rentals around Stanley from NoBroker's public search API.
+"""Fetch 2BHK and 3BHK rentals around the origin from NoBroker's public search API.
 
 Usage: python3 scripts/collect_nobroker.py OUT.json
 
 Writes listings in the collection format (see UPDATING.md). Only basic
-listing-level requirements are applied here (3BHK, full-home rent, car
+listing-level requirements are applied here (2/3BHK, full-home rent, car
 parking, live); drive-time and move-in checks happen in update_data.py.
 """
 import base64, json, math, re, sys, time, urllib.request
@@ -15,8 +15,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 import travel
 
 IST = timezone(timedelta(hours=5, minutes=30))
-RADIUS_KM = 10.0  # straight-line search radius; road-distance filter comes later
-API = "https://www.nobroker.in/api/v3/multi/property/RENT/filter?searchParam={sp}&type=BHK3&city=chennai&pageNo={page}&radius={r}"
+RADIUS_KM = 9.0  # straight-line search radius (zone edge is ~8.85 km by road); road filter comes later
+API = "https://www.nobroker.in/api/v3/multi/property/RENT/filter?searchParam={sp}&type=BHK2,BHK3&city=chennai&pageNo={page}&radius={r}"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
            "Accept": "application/json"}
 LOCALITIES = Path(__file__).resolve().parent.parent / "data" / "localities.json"
@@ -24,6 +24,7 @@ LOCALITIES = Path(__file__).resolve().parent.parent / "data" / "localities.json"
 BUILDING = {"AP": "apartment", "SB": "apartment", "IH": "independent-house", "IF": "independent-floor", "GC": "villa"}
 FURNISHING = {"NOT_FURNISHED": "unfurnished", "SEMI_FURNISHED": "semi-furnished", "FULLY_FURNISHED": "fully-furnished"}
 PARKING = {"BOTH": "car+bike", "FOUR_WHEELER": "car"}
+BHK = {"BHK2": 2, "BHK3": 3}
 # NoBroker drops listings with no geocoded address onto a generic city-centre pin.
 PLACEHOLDER_PINS = [(13.0834478, 80.2685457), (13.0826802, 80.2707184), (13.0830589, 80.2690060)]
 
@@ -42,7 +43,7 @@ def fetch_all():
     sp = base64.b64encode(json.dumps([{"lat": travel.STANLEY[0], "lon": travel.STANLEY[1],
                                        "placeId": "stanley", "placeName": "stanley"}]).encode()).decode()
     seen = {}
-    for page in range(1, 60):
+    for page in range(1, 200):
         req = urllib.request.Request(API.format(sp=sp, page=page, r=RADIUS_KM), headers=HEADERS)
         data = json.load(urllib.request.urlopen(req, timeout=60)).get("data") or []
         if not data:
@@ -62,7 +63,7 @@ def locality_from_text(text, names):
 
 
 def convert(x, today, names):
-    if x.get("type") != "BHK3" or x.get("propertyType") != "RENT" or not x.get("active"):
+    if x.get("type") not in BHK or x.get("propertyType") != "RENT" or not x.get("active"):
         return None
     if x.get("accomodationType") or x.get("sharedAccomodation"):
         return None
@@ -105,7 +106,7 @@ def convert(x, today, names):
         "source_key": x["id"],
         "title": x.get("propertyTitle") or x.get("title"),
         "type": BUILDING[x["buildingType"]],
-        "bhk": 3,
+        "bhk": BHK[x["type"]],
         "rent": int(x["rent"]),
         "maintenance": int(x["maintenanceAmount"]) if x.get("maintenanceAmount") not in (None, "", 0) else None,
         "deposit": int(x["deposit"]) if x.get("deposit") else None,

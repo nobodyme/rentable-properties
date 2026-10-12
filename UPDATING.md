@@ -7,7 +7,7 @@ The goal is to bring `data/properties.json` up to date without touching anything
 
 `update_data.py` enforces all of these. Never hand-edit a listing to get it past a check.
 
-- 3 BHK, whole home for residential rent. No PG, shared rooms, lease-only (lump sum) or sale listings.
+- 2 BHK or 3 BHK, whole home for residential rent. No PG, shared rooms, lease-only (lump sum) or sale listings.
 - The listing explicitly offers four-wheeler / car parking.
 - Available now, or from a date no later than 2027-01-31. A missing date is allowed only when the portal has no date field, as on OLX.
 - At most 36 minutes away at evening rush. The site's slider defaults to 30.
@@ -20,13 +20,13 @@ Write each portal's results to a temp JSON file in the collection format below.
 
 ```sh
 mkdir -p /tmp/refresh
-python3 scripts/collect_nobroker.py /tmp/refresh/nobroker.json   # public JSON API, ~18 pages
-python3 scripts/collect_olx.py      /tmp/refresh/olx.json        # category pages, needs curl
+python3 scripts/collect_nobroker.py    /tmp/refresh/nobroker.json     # public JSON API, ~90 pages, 2+3 BHK
+python3 scripts/collect_olx.py         /tmp/refresh/olx.json          # category pages via curl, 2 and 3 rooms
+python3 scripts/collect_magicbricks.py /tmp/refresh/magicbricks.json  # search pages, one locality per request
 ```
 
-### MagicBricks
-
-See the "MagicBricks" section at the end of this file.
+All three collect 2BHK and 3BHK. Each takes a few minutes because it waits between requests.
+MagicBricks searches the locality names listed in `scripts/magicbricks_localities.txt`.
 
 ### Portals collected by hand
 
@@ -53,7 +53,7 @@ A JSON array of objects:
   "source_key": "portal's own listing id (optional, keeps ids stable if the URL slug changes)",
   "title": "…",
   "type": "apartment | independent-house | independent-floor | villa",
-  "bhk": 3,
+  "bhk": 2,
   "rent": 45000,
   "maintenance": 3000,
   "deposit": 300000,

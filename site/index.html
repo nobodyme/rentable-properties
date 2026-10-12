@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>3BHK Rentals near Stanley</title>
-  <meta name="description" content="3BHK homes with car parking for rent within a 30-minute peak-traffic drive of Stanley Medical College Hospital, Chennai.">
+  <title>2–3BHK Rentals near Stanley</title>
+  <meta name="description" content="2BHK and 3BHK homes with car parking for rent within a 30-minute peak-traffic drive of Stanley Medical College Hospital, Chennai.">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="top">
     <div>
-      <h1>3BHK rentals near Stanley Hospital</h1>
+      <h1>2–3BHK rentals near Stanley Hospital</h1>
       <p class="sub" id="summary">Loading…</p>
     </div>
     <a class="srcbtn" href="#sources">Sources &amp; method</a>
@@ -35,6 +35,11 @@
         <span>Max drive at peak <output id="o-min"></output></span>
         <input id="f-min" type="range" min="5" max="40" step="1">
       </div>
+
+      <fieldset class="field">
+        <legend>Bedrooms</legend>
+        <div id="f-bhk" class="chips"></div>
+      </fieldset>
 
       <fieldset class="field">
         <legend>Property type</legend>

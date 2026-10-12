@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch 3BHK rental ads in Chennai from OLX and keep those with car parking.
+"""Fetch 2BHK and 3BHK rental ads in Chennai from OLX and keep those with car parking.
 
 Usage: python3 scripts/collect_olx.py OUT.json
 
@@ -12,7 +12,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 IST = timezone(timedelta(hours=5, minutes=30))
-LIST = "https://www.olx.in/chennai_g4059162/for-rent-houses-apartments_c1723?filter=rooms_eq_3&page={page}"
+LIST = "https://www.olx.in/chennai_g4059162/for-rent-houses-apartments_c1723?filter=rooms_eq_{rooms}&page={page}"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -25,7 +25,7 @@ MAX_AGE_DAYS = 90
 TYPES = {"rent-apartments": "apartment", "houses": "independent-house", "floors": "independent-floor", "duplex": "independent-house"}
 FURNISHING = {"unfurnished": "unfurnished", "semi": "semi-furnished", "furnished": "fully-furnished"}
 POSTED_BY = {"owner": "owner", "broker": "agent", "builder": "builder"}
-NOT_A_HOME_RENTAL = re.compile(r"\b(for sale|lease only|on lease|office|commercial|2\.5\s*bhk|pg\b|hostel)", re.I)
+NOT_A_HOME_RENTAL = re.compile(r"\b(for sale|lease only|on lease|office|commercial|pg\b|hostel)", re.I)
 
 
 def states(html):
@@ -46,16 +46,16 @@ def get(url):
 
 def fetch_all():
     ads, links = {}, {}
-    for page in range(1, 25):
-        html = get(LIST.format(page=page))
-        links.update({m[1]: m[0] for m in re.findall(r'href="(/item/[^"]*-iid-(\d+))"', html)})
-        st = states(html)
-        items = (st or {}).get("items", {}).get("elements", {})
-        new = {v["id"]: v for v in items.values() if v["id"] not in ads}
-        if not new:
-            break
-        ads.update(new)
-        time.sleep(1.5)
+    for rooms in (2, 3):
+        for page in range(1, 40):
+            html = get(LIST.format(rooms=rooms, page=page))
+            links.update({m[1]: m[0] for m in re.findall(r'href="(/item/[^"]*-iid-(\d+))"', html)})
+            items = (states(html) or {}).get("items", {}).get("elements", {})
+            new = {v["id"]: v for v in items.values() if v["id"] not in ads}
+            if not new:
+                break
+            ads.update(new)
+            time.sleep(1.5)
     for v in ads.values():
         v["_path"] = links.get(v["id"])
     return list(ads.values())
@@ -68,7 +68,7 @@ def slug(text):
 def convert(v, today):
     p = {x["key"]: x.get("value") for x in v.get("parameters", [])}
     text = f"{v.get('title', '')} {v.get('description', '')}"
-    if v.get("status", {}).get("status") != "active" or p.get("rooms") != "3":
+    if v.get("status", {}).get("status") != "active" or p.get("rooms") not in ("2", "3"):
         return None
     if int(p.get("carparking") or 0) < 1 or p.get("type") not in TYPES or NOT_A_HOME_RENTAL.search(text):
         return None
@@ -87,7 +87,7 @@ def convert(v, today):
         "source_key": v["id"],
         "title": v["title"].strip(),
         "type": TYPES[p["type"]],
-        "bhk": 3,
+        "bhk": int(p["rooms"]),
         "rent": int(rent),
         "maintenance": int(m) if (m := p.get("maintenance") or "").isdigit() and int(m) else None,
         "deposit": None,

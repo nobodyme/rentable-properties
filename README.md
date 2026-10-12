@@ -1,6 +1,6 @@
 # Rentable Properties
 
-A static, filterable list of 3BHK homes for rent that are within a 30-minute
+A static, filterable list of 2BHK and 3BHK homes for rent that are within a 30-minute
 peak-traffic drive of a chosen point. Every listing needs four-wheeler parking
 and a move-in date by January 2027.
 
@@ -40,7 +40,7 @@ both from OpenStreetMap data.
 
 ## Filters
 
-Search text, max rent, max drive time, property type, furnishing, move-in
+Search text, bedrooms (2/3 BHK, defaults to 3), max rent, max drive time, property type, furnishing, move-in
 date, posted by (owner/agent), source portal, and an option to include
 listings that are no longer live. Sort by distance, rent, newest or size.
 
@@ -56,7 +56,8 @@ python3 -m http.server -d _site 8000   # open http://localhost:8000
 ```sh
 python3 scripts/collect_nobroker.py /tmp/nobroker.json
 python3 scripts/collect_olx.py /tmp/olx.json
-python3 scripts/update_data.py merge /tmp/nobroker.json /tmp/olx.json --swept nobroker,olx
+python3 scripts/collect_magicbricks.py /tmp/magicbricks.json
+python3 scripts/update_data.py merge /tmp/nobroker.json /tmp/olx.json /tmp/magicbricks.json --swept nobroker,olx,magicbricks
 ```
 
 See [UPDATING.md](UPDATING.md) for the full procedure, including portals that are collected by hand.

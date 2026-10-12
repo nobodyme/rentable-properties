@@ -6,7 +6,7 @@ Usage:
   python3 scripts/update_data.py check          # validate data/ without changing it
 
 FRESH files are JSON arrays in the collection format documented in UPDATING.md.
-Each listing is checked against the hard requirements (3BHK, car parking,
+Each listing is checked against the hard requirements (2 or 3 BHK, car parking,
 available by end of Jan 2027, within the drive zone), geocoded if needed,
 given peak-hour minutes from Stanley, and upserted by source URL.
 
@@ -31,6 +31,7 @@ MAX_MINUTES = 36          # evening-rush minutes; 36 == 30 min in morning rush. 
 MISSES_TO_INACTIVE = 2
 PRUNE_DAYS = 30
 
+BHK = {2, 3}
 TYPES = {"apartment", "independent-house", "independent-floor", "villa"}
 FURNISHING = {"unfurnished", "semi-furnished", "fully-furnished", None}
 POSTED_BY = {"owner", "agent", "builder", None}
@@ -61,8 +62,8 @@ def listing_id(p):
 
 
 def reject_reason(p):
-    if p.get("bhk") != 3:
-        return "not 3BHK"
+    if p.get("bhk") not in BHK:
+        return "not 2/3BHK"
     if p.get("parking") not in PARKING:
         return "no car parking"
     if p.get("type") not in TYPES:

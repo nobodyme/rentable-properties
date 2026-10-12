@@ -14,6 +14,7 @@
     type: { apartment: 'Apartment', 'independent-house': 'Independent house', 'independent-floor': 'Independent floor', villa: 'Villa' },
     furnishing: { unfurnished: 'Unfurnished', 'semi-furnished': 'Semi-furnished', 'fully-furnished': 'Fully furnished' },
     posted_by: { owner: 'Owner', agent: 'Agent / broker', builder: 'Builder' },
+    bhk: { 2: '2 BHK', 3: '3 BHK' },
   };
   const label = (k, v) => (LABEL[k] && LABEL[k][v]) || v || 'Not stated';
   const inr = n => '₹' + Number(n).toLocaleString('en-IN');
@@ -22,7 +23,7 @@
 
   // ---- header + method ----
   $('summary').textContent =
-    `${all.filter(p => p.status === 'active').length} live listings · 3BHK · car parking · available by Jan 2027 · updated ${fmtDate(db.updated)}`;
+    `${all.filter(p => p.status === 'active').length} live listings · 2–3BHK · car parking · available by Jan 2027 · updated ${fmtDate(db.updated)}`;
   $('method').innerHTML = (db.method || []).map(p => `<p>${p}</p>`).join('');
   const tbody = document.querySelector('#src-table tbody');
   for (const s of sources.sites) {
@@ -59,15 +60,17 @@
     return () => [...box.querySelectorAll('input:checked')].map(i => i.value);
   }
   const uniq = key => [...new Set(all.map(p => p[key] ?? 'unknown'))].sort();
+  const getBhk = chips('f-bhk', 'bhk', uniq('bhk').map(String));
   const getType = chips('f-type', 'type', uniq('type'));
   const getFurn = chips('f-furn', 'furnishing', uniq('furnishing'));
   const getBy = chips('f-by', 'posted_by', uniq('posted_by'));
   const getSrc = chips('f-src', 'source', uniq('source'));
 
-  const defaults = { q: '', rent: rentMax, min: 30, avail: '', inactive: false, sort: 'minutes' };
+  const defaults = { q: '', rent: rentMax, min: 30, avail: '', inactive: false, sort: 'minutes', bhk: ['3'] };
   function setControls(s) {
     $('f-q').value = s.q; rentEl.value = s.rent; $('f-min').value = s.min;
     $('f-avail').value = s.avail; $('f-inactive').checked = s.inactive; $('f-sort').value = s.sort;
+    document.querySelectorAll('#f-bhk input').forEach(i => { i.checked = s.bhk.includes(i.value); });
   }
   setControls(defaults);
 
@@ -98,7 +101,7 @@
     if (p.rent > +rentEl.value) return false;
     if (p.minutes_peak > +$('f-min').value) return false;
     const inSet = (sel, v) => !sel.length || sel.includes(v ?? 'unknown');
-    if (!inSet(getType(), p.type) || !inSet(getFurn(), p.furnishing) || !inSet(getBy(), p.posted_by) || !inSet(getSrc(), p.source)) return false;
+    if (!inSet(getBhk(), String(p.bhk)) || !inSet(getType(), p.type) || !inSet(getFurn(), p.furnishing) || !inSet(getBy(), p.posted_by) || !inSet(getSrc(), p.source)) return false;
     const a = $('f-avail').value, af = p.available_from;
     if (a && af === null) return false;
     if (a === 'now' && af !== 'immediate' && af > db.updated) return false;
@@ -137,6 +140,7 @@
       li.querySelector('.title').textContent = p.title;
       li.querySelector('.loc').textContent = [p.address, p.locality].filter(Boolean).join(', ');
       const facts = [
+        p.bhk + ' BHK',
         label('type', p.type),
         p.area_sqft && `${p.area_sqft.toLocaleString('en-IN')} sq ft`,
         label('furnishing', p.furnishing),
@@ -177,8 +181,8 @@
 
   document.querySelector('.filters').addEventListener('input', render);
   $('f-reset').addEventListener('click', () => {
-    setControls(defaults);
     document.querySelectorAll('.chips input').forEach(i => { i.checked = false; });
+    setControls(defaults);
     render();
   });
   render();
