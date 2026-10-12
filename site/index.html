@@ -3,130 +3,159 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>2–3BHK Rentals near Stanley</title>
-  <meta name="description" content="2BHK and 3BHK homes with car parking for rent within a 30-minute peak-traffic drive of Stanley Medical College Hospital, Chennai.">
+  <title>Homes Nearby</title>
+  <meta name="description" content="2BHK and 3BHK homes with car parking for rent within a 30-minute peak-traffic drive of a chosen point in Chennai.">
+  <script>
+    // Apply a saved theme before first paint to avoid a flash.
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="top">
-    <div>
-      <h1>2–3BHK rentals near Stanley Hospital</h1>
-      <p class="sub" id="summary">Loading…</p>
+    <div class="top-row">
+      <a class="brand" href="./" aria-label="Homes nearby, home">
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3z"/></svg>
+        <span>Homes nearby</span>
+      </a>
+      <label class="search">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="m21 21-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"/></svg>
+        <span class="sr">Search</span>
+        <input id="f-q" type="search" placeholder="Search locality, society or street" autocomplete="off">
+      </label>
+      <div class="top-actions">
+        <button id="about-btn" class="ghost" type="button">About</button>
+        <button id="theme-btn" class="icon-btn" type="button" aria-label="Switch to dark mode">
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 14.5A8.5 8.5 0 0 1 9.5 3a8.5 8.5 0 1 0 11.5 11.5Z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></g></svg>
+        </button>
+      </div>
     </div>
-    <a class="srcbtn" href="#sources">Sources &amp; method</a>
+
+    <nav class="filterbar" aria-label="Filters">
+      <div class="seg" role="group" aria-label="Bedrooms" id="f-bhk"></div>
+
+      <details class="pop" id="pop-rent">
+        <summary class="chip">Rent <b id="o-rent"></b></summary>
+        <div class="pop-body">
+          <label for="f-rent">Maximum monthly rent</label>
+          <input id="f-rent" type="range" step="1000">
+          <div class="range-ends"><span id="rent-lo"></span><span id="rent-hi"></span></div>
+        </div>
+      </details>
+
+      <details class="pop" id="pop-min">
+        <summary class="chip">Drive <b id="o-min"></b></summary>
+        <div class="pop-body">
+          <label for="f-min">Maximum drive at evening rush</label>
+          <input id="f-min" type="range" min="5" max="36" step="1">
+          <p class="hint">The zone is 30 minutes. Listings up to 36 minutes away (30 at morning rush) are kept as borderline.</p>
+        </div>
+      </details>
+
+      <details class="pop" id="pop-avail">
+        <summary class="chip">Move-in <b id="o-avail"></b></summary>
+        <div class="pop-body radios" id="f-avail">
+          <label><input type="radio" name="avail" value=""> Any time, including date not stated</label>
+          <label><input type="radio" name="avail" value="2027-01-31"> Stated date, by Jan 2027</label>
+          <label><input type="radio" name="avail" value="2026-12-31"> By end of Dec 2026</label>
+          <label><input type="radio" name="avail" value="2026-11-30"> By end of Nov 2026</label>
+          <label><input type="radio" name="avail" value="now"> Immediately</label>
+        </div>
+      </details>
+
+      <button id="more-btn" class="chip" type="button">
+        <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="10" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
+        Filters <span id="more-count" class="badge" hidden></span>
+      </button>
+    </nav>
   </header>
 
   <main class="layout">
-    <details class="filters-wrap" id="filters-wrap" open>
-    <summary>Filters</summary>
-    <aside class="filters" aria-label="Filters">
-      <label class="field">
-        <span>Search</span>
-        <input id="f-q" type="search" placeholder="Locality, society, street…" autocomplete="off">
-      </label>
-
-      <div class="field">
-        <span>Max rent <output id="o-rent"></output></span>
-        <input id="f-rent" type="range" step="1000">
+    <section class="results" aria-label="Listings">
+      <div class="results-head">
+        <p id="count" class="count" aria-live="polite"></p>
+        <label class="sort">
+          <span>Sort</span>
+          <select id="f-sort">
+            <option value="minutes">Closest</option>
+            <option value="rent">Lowest rent</option>
+            <option value="-rent">Highest rent</option>
+            <option value="-first_seen">Newest</option>
+            <option value="-area_sqft">Largest</option>
+          </select>
+        </label>
       </div>
+      <ol id="list" class="grid"></ol>
+      <footer class="foot">
+        <p id="updated"></p>
+        <p>Always see a home in person before paying any token advance.</p>
+      </footer>
+    </section>
 
-      <div class="field">
-        <span>Max drive at peak <output id="o-min"></output></span>
-        <input id="f-min" type="range" min="5" max="40" step="1">
-      </div>
-
-      <fieldset class="field">
-        <legend>Bedrooms</legend>
-        <div id="f-bhk" class="chips"></div>
-      </fieldset>
-
-      <fieldset class="field">
-        <legend>Property type</legend>
-        <div id="f-type" class="chips"></div>
-      </fieldset>
-
-      <fieldset class="field">
-        <legend>Furnishing</legend>
-        <div id="f-furn" class="chips"></div>
-      </fieldset>
-
-      <fieldset class="field">
-        <legend>Available</legend>
-        <select id="f-avail">
-          <option value="">Any (incl. date not stated)</option>
-          <option value="2027-01-31">Stated date, by Jan 2027</option>
-          <option value="now">Immediately</option>
-          <option value="2026-11-30">By end of Nov 2026</option>
-          <option value="2026-12-31">By end of Dec 2026</option>
-        </select>
-      </fieldset>
-
-      <fieldset class="field">
-        <legend>Posted by</legend>
-        <div id="f-by" class="chips"></div>
-      </fieldset>
-
-      <fieldset class="field">
-        <legend>Source</legend>
-        <div id="f-src" class="chips"></div>
-      </fieldset>
-
-      <label class="check"><input id="f-inactive" type="checkbox"> Show listings no longer live</label>
-
-      <label class="field">
-        <span>Sort by</span>
-        <select id="f-sort">
-          <option value="minutes">Closest first</option>
-          <option value="rent">Cheapest first</option>
-          <option value="-rent">Most expensive first</option>
-          <option value="-first_seen">Newest first</option>
-          <option value="-area_sqft">Largest first</option>
-        </select>
-      </label>
-
-      <button id="f-reset" type="button" class="reset">Reset filters</button>
-    </aside>
-    </details>
-
-    <section class="results">
-      <div id="map" role="region" aria-label="Map of listings and 30-minute drive zone"></div>
+    <aside class="mapwrap" aria-label="Map">
+      <div id="map"></div>
       <div class="legend">
         <span><i class="sw sw-eve"></i>30 min, evening rush</span>
         <span><i class="sw sw-mor"></i>30 min, morning rush</span>
-        <span><i class="dot"></i>Listing</span>
       </div>
-      <p id="count" class="count" aria-live="polite"></p>
-      <ol id="list" class="cards"></ol>
-    </section>
+    </aside>
   </main>
 
-  <section id="sources" class="sources">
-    <h2>How this is built</h2>
-    <div id="method"></div>
-    <h3>Listing sites checked</h3>
-    <div class="tablewrap"><table id="src-table">
-      <thead><tr><th>Site</th><th>Status</th><th>Ratings checked</th><th>Why</th></tr></thead>
-      <tbody></tbody>
-    </table></div>
-  </section>
+  <button id="map-toggle" class="float-btn" type="button">
+    <span class="lbl-map">Map</span><span class="lbl-list">List</span>
+    <svg class="i-map" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="m9 4-6 2.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5zM9 4v13.5M15 6.5V20"/></svg>
+    <svg class="i-list" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg>
+  </button>
 
-  <template id="card-tpl">
-    <li class="card">
-      <div class="card-head">
-        <div class="rent"></div>
-        <div class="mins"></div>
+  <dialog id="more-dlg" class="sheet" aria-labelledby="more-title">
+    <form method="dialog" class="sheet-inner">
+      <div class="sheet-head">
+        <button class="icon-btn" value="close" aria-label="Close">✕</button>
+        <h2 id="more-title">Filters</h2>
+        <span></span>
       </div>
-      <h3 class="title"></h3>
-      <p class="loc"></p>
-      <ul class="facts"></ul>
-      <p class="notes"></p>
-      <div class="card-foot">
-        <a class="link" target="_blank" rel="noopener noreferrer">View on source</a>
-        <span class="seen"></span>
+      <div class="sheet-body">
+        <fieldset><legend>Property type</legend><div id="f-type" class="opts"></div></fieldset>
+        <fieldset><legend>Furnishing</legend><div id="f-furn" class="opts"></div></fieldset>
+        <fieldset><legend>Posted by</legend><div id="f-by" class="opts"></div></fieldset>
+        <fieldset><legend>Listing site</legend><div id="f-src" class="opts"></div></fieldset>
+        <fieldset><legend>Other</legend>
+          <label class="opt"><input id="f-inactive" type="checkbox"> Include listings no longer live</label>
+        </fieldset>
       </div>
-    </li>
-  </template>
+      <div class="sheet-foot">
+        <button id="clear-btn" class="link-btn" type="button">Clear all</button>
+        <button class="primary" value="apply" id="apply-btn">Show homes</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="detail-dlg" class="sheet" aria-labelledby="d-title">
+    <div class="sheet-inner">
+      <div class="sheet-head">
+        <button class="icon-btn" id="detail-close" aria-label="Close">✕</button>
+        <span></span><span></span>
+      </div>
+      <div class="sheet-body" id="detail-body"></div>
+    </div>
+  </dialog>
+
+  <dialog id="about-dlg" class="sheet wide" aria-labelledby="about-title">
+    <form method="dialog" class="sheet-inner">
+      <div class="sheet-head">
+        <button class="icon-btn" value="close" aria-label="Close">✕</button>
+        <h2 id="about-title">About this data</h2>
+        <span></span>
+      </div>
+      <div class="sheet-body">
+        <div id="method" class="prose"></div>
+        <h3>Listing sites checked</h3>
+        <ul id="src-list" class="src-list"></ul>
+      </div>
+    </form>
+  </dialog>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script src="app.js"></script>

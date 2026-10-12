@@ -3,7 +3,8 @@
   "origin": {
     "name": "Stanley Medical College Hospital, Old Jail Rd, Royapuram",
     "lat": 13.1058,
-    "lon": 80.2872
+    "lon": 80.2872,
+    "label": "Chosen point"
   },
   "criteria": {
     "bhk": [
@@ -15,8 +16,8 @@
     "max_minutes_peak": 30
   },
   "method": [
-    "<b>Drive zone.</b> TomTom Traffic Index 2025 puts Chennai's average rush-hour speed at 14.6 km/h in the evening and 17.7 km/h in the morning. In 30 minutes that covers 7.3 km and 8.85 km of road. The shaded zone is everywhere reachable from Stanley within 7.3 km of driving (Valhalla road-network isochrone). The dashed line is the morning-rush equivalent.",
-    "<b>Minutes from Stanley.</b> Driving distance by road (OSRM, OpenStreetMap) divided by the evening-rush speed. This is the worst case, so most trips will be quicker. Hover over the minutes on a card to see the morning-rush figure. Where a listing gives no exact location, the locality centre is used.",
+    "<b>Drive zone.</b> TomTom Traffic Index 2025 puts Chennai's average rush-hour speed at 14.6 km/h in the evening and 17.7 km/h in the morning. In 30 minutes that covers 7.3 km and 8.85 km of road. The shaded zone is everywhere reachable from the chosen point within 7.3 km of driving (Valhalla road-network isochrone). The dashed line is the morning-rush equivalent.",
+    "<b>Minutes from the chosen point.</b> Driving distance by road (OSRM, OpenStreetMap) divided by the evening-rush speed. This is the worst case, so most trips will be quicker. Open a listing to see the morning-rush figure. Where a listing gives no exact location, the locality centre is used.",
     "<b>What qualifies.</b> 2BHK and 3BHK homes for residential rent where the listing explicitly offers car parking, available now or from any date up to January 2027. Listings up to 36 minutes away at evening rush (30 min at morning rush) are kept. The drive-time slider defaults to 30.",
     "<b>Freshness.</b> Every 2 days the approved sites are searched again. New listings are added. A listing that is missing from two searches in a row is marked as no longer live and is removed 30 days later. Always confirm with the owner or agent before paying anything, and never pay a token advance before seeing the home."
   ],
