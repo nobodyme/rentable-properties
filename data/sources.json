@@ -1,1 +1,716 @@
-{"checked":"2026-10-12","sites":[]}
+{
+  "checked": "2026-10-12",
+  "note": "Google reviews are for company office profiles on Google Maps; app-store and Trustpilot scores are listed alongside. A site is used only if it is a real, operating company with current whole-home rental inventory in the target area.",
+  "sites": [
+    {
+      "id": "nobroker",
+      "name": "NoBroker",
+      "url": "https://www.nobroker.in",
+      "verdict": "included",
+      "operator": "NoBroker Technologies Solutions Pvt Ltd (Bengaluru). Founded 2013-14 by Akhil Gupta, Amit Kumar Agarwal, Saurabh Garg. Unicorn since Nov 2021 ($210M Series E led by General Atlantic, Tiger Global, Moore Strategic Ventures). Private, VC-backed.",
+      "ratings": [
+        {
+          "platform": "Google reviews (HQ, Sarjapur Main Rd, Bengaluru)",
+          "rating": 4.5,
+          "count": 34991,
+          "url": "https://maps.google.com/?cid=10655329509760703268",
+          "checked": "2026-10-12",
+          "note": "Google Maps listing currently has review posting turned off"
+        },
+        {
+          "platform": "Google Play (com.nobroker.app)",
+          "rating": 4.7,
+          "count": 500947,
+          "url": "https://play.google.com/store/apps/details?id=com.nobroker.app",
+          "checked": "2026-10-12",
+          "note": "1Cr+ downloads; app updated 12 Oct 2026"
+        },
+        {
+          "platform": "Trustpilot (nobroker.in)",
+          "rating": null,
+          "count": 4562,
+          "url": "https://www.trustpilot.com/review/nobroker.in",
+          "checked": "2026-10-12",
+          "note": "Rating withheld: 'unavailable due to a breach of our guidelines'; Trustpilot says it removed a number of fake reviews. Star split 47% 5-star / 39% 1-star"
+        }
+      ],
+      "strengths": "Owner-listed (no-brokerage) model; Royapuram page describes listings as 'NoBroker verified owner-listed rental homes'. Best north-Chennai coverage found: 3BHK rental pages live for Royapuram (5+), Old Washermanpet (4+), Tondiarpet (7+), Perambur (21+), Purasaiwakkam (10+), Kilpauk (10+), Vepery (48+), Egmore (5+). Sample Royapuram 3BHKs at Rs 19k-40k/month. Very actively maintained app.",
+      "risks": "Trustpilot withheld its rating for guideline breach and removed fake reviews (review-manipulation signal). Many consumer complaints about paid tenant/owner plans, refunds, token-advance disputes (voxya, consumercomplaints.in). Brokers sometimes pose as owners despite the model. Owner contact gated behind paid plan / free-contact quota.",
+      "reason": "Large, well-funded operator with owner-verified listings and the deepest live 3BHK rental inventory across every target north/central Chennai locality.",
+      "evidence_urls": [
+        "https://www.nobroker.in/flats-for-rent-in-royapuram_chennai",
+        "https://www.nobroker.in/3bhk-flats-for-rent-in-perambur_chennai",
+        "https://www.nobroker.in/3bhk-flats-for-rent-in-vepery_chennai",
+        "https://www.trustpilot.com/review/nobroker.in",
+        "https://play.google.com/store/apps/details?id=com.nobroker.app",
+        "https://yourstory.com/2021/11/funding-nobroker-unicorn-club-series-e-round-tiger-global-saif/amp",
+        "https://www.generalatlantic.com/media-article/nobroker-com-raises-usd-51-million-in-series-c-funding-led-by-general-atlantic/",
+        "https://voxya.com/consumer-complaints/refund-of-token-advance/259457",
+        "https://www.consumercomplaints.in/nobroker-fraudulent-activity-and-service-not-provided-c3529549"
+      ]
+    },
+    {
+      "id": "99acres",
+      "name": "99acres",
+      "url": "https://www.99acres.com",
+      "verdict": "included",
+      "operator": "Info Edge (India) Ltd (NSE/BSE-listed; also owns Naukri, Jeevansathi, Shiksha). 99acres launched Sept 2005.",
+      "ratings": [
+        {
+          "platform": "Google reviews (99acres Sales Office Egmore, Chennai)",
+          "rating": 5.0,
+          "count": 1,
+          "url": "https://maps.google.com/?cid=4411940973151210339",
+          "checked": "2026-10-12",
+          "note": "Only 1 review - not meaningful"
+        },
+        {
+          "platform": "Google reviews (Info Edge corporate office, Sector 132 Noida)",
+          "rating": 4.3,
+          "count": null,
+          "url": "https://maps.google.com/?cid=11916278727980333162",
+          "checked": "2026-10-12",
+          "note": "Rating shown, review count not exposed in Maps data"
+        },
+        {
+          "platform": "Google Play (com.nnacres.app)",
+          "rating": 4.8,
+          "count": 215656,
+          "url": "https://play.google.com/store/apps/details?id=com.nnacres.app",
+          "checked": "2026-10-12",
+          "note": "1Cr+ downloads; updated 6 Oct 2026"
+        },
+        {
+          "platform": "Trustpilot (99acres.com)",
+          "rating": 1.2,
+          "count": 134,
+          "url": "https://www.trustpilot.com/review/99acres.com",
+          "checked": "2026-10-12",
+          "note": "~95% 1-star; profile not inviting reviews, so skewed to complainants"
+        }
+      ],
+      "strengths": "Oldest Indian property portal, owned by a listed company with audit/governance obligations. Live north/central Chennai rental pages, e.g. 'Kilpauk 3 BHK flats for rent 24+' and 64+ flats for rent in Kilpauk; listings carry owner/dealer tag and a 'Verified' badge on some listings.",
+      "risks": "Most rental listings in central Chennai are dealer (broker)-posted. Trustpilot complaints: 'verified' tag applied to broker listings without owner consent, stale/already-let listings left up, paid-plan non-delivery. Sept 2025 whistle-blower complaint about some 99acres employees (Info Edge appointed a law firm to investigate; no material financial impact stated). Site blocks automated fetching, so per-locality counts beyond Kilpauk could not be confirmed directly.",
+      "reason": "Listed-company operator with substantial central-Chennai 3BHK rental inventory; broker-heavy, so tag listings by poster type.",
+      "evidence_urls": [
+        "https://www.99acres.com/3-bhk-flats-for-rent-in-kilpauk-chennai-central-ffid",
+        "https://www.99acres.com/flats-for-rent-in-kilpauk-chennai-central-ffid",
+        "https://www.trustpilot.com/review/99acres.com",
+        "https://cases.iima.ac.in/index.php/99acres-com-designing-an-online-offering.html",
+        "https://inc42.com/?p=531562",
+        "https://play.google.com/store/apps/details?id=com.nnacres.app"
+      ]
+    },
+    {
+      "id": "magicbricks",
+      "name": "MagicBricks",
+      "url": "https://www.magicbricks.com",
+      "verdict": "included",
+      "operator": "Magicbricks Realty Services Ltd, a Times Group (Bennett, Coleman & Co / Times Internet) company, Noida. Launched 2006.",
+      "ratings": [
+        {
+          "platform": "Google reviews (Magicbricks Realty Services Ltd, B-20 Sector 3 Noida)",
+          "rating": 3.0,
+          "count": null,
+          "url": "https://maps.google.com/?cid=2769630109075976922",
+          "checked": "2026-10-12",
+          "note": "Count not exposed; posting turned off"
+        },
+        {
+          "platform": "Google reviews (Magicbricks Realty Services Ltd, T. Nagar, Chennai)",
+          "rating": 2.1,
+          "count": null,
+          "url": "https://maps.google.com/?cid=18063695005268142515",
+          "checked": "2026-10-12",
+          "note": "Count not exposed"
+        },
+        {
+          "platform": "Google reviews (Magicbricks, AWFIS Nungambakkam, Chennai)",
+          "rating": 1.0,
+          "count": 2,
+          "url": "https://maps.google.com/?cid=1038129485889720064",
+          "checked": "2026-10-12",
+          "note": "Only 2 reviews"
+        },
+        {
+          "platform": "Google Play (com.timesgroup.magicbricks)",
+          "rating": 4.4,
+          "count": 317028,
+          "url": "https://play.google.com/store/apps/details?id=com.timesgroup.magicbricks",
+          "checked": "2026-10-12",
+          "note": "1Cr+ downloads; updated 23 Sept 2026"
+        },
+        {
+          "platform": "Trustpilot (magicbricks.com)",
+          "rating": 1.1,
+          "count": 289,
+          "url": "https://www.trustpilot.com/review/magicbricks.com",
+          "checked": "2026-10-12",
+          "note": "~98% 1-star; unclaimed profile"
+        }
+      ],
+      "strengths": "Backed by India's largest media group; live locality pages with 3BHK rental counts: Kilpauk 24, Egmore 33, Tondiarpet 5, Perambur 3, Royapuram 1 (Washermanpet/Vepery pages exist; Purasawalkam slug 404). Owner/agent filter available.",
+      "risks": "Trustpilot and voxya complaints of fake/unreachable 'owner' contacts sold under Prime membership, auto-reposted stale listings that look fresh, aggressive sales calls. Chennai office Google ratings are low (2.1, 1.0).",
+      "reason": "Legitimate Times Group portal with confirmed north/central Chennai 3BHK rental inventory; staleness and fake-owner complaints mean each listing should be date-checked.",
+      "evidence_urls": [
+        "https://www.magicbricks.com/3-bhk-flats-for-rent-in-kilpauk-chennai-pppfr",
+        "https://www.magicbricks.com/3-bhk-flats-for-rent-in-egmore-chennai-pppfr",
+        "https://www.magicbricks.com/3-bhk-flats-for-rent-in-tondiarpet-chennai-pppfr",
+        "https://www.magicbricks.com/3-bhk-flats-for-rent-in-royapuram-chennai-pppfr",
+        "https://www.trustpilot.com/review/magicbricks.com",
+        "https://voxya.com/consumer-complaints/fake-properties-in-magic-bricks/177941",
+        "https://www.markhub24.com/post/magicbricks-building-a-real-estate-listing-business-model-in-digital-india",
+        "https://play.google.com/store/apps/details?id=com.timesgroup.magicbricks"
+      ]
+    },
+    {
+      "id": "housing",
+      "name": "Housing.com",
+      "url": "https://housing.com",
+      "verdict": "included-with-caution",
+      "operator": "Locon Solutions Pvt Ltd under REA India (formerly Elara Technologies, Singapore), majority-owned (~61%) by Australia's ASX-listed REA Group (News Corp affiliate). REA India also owns PropTiger and Makaan. Housing.com founded 2012.",
+      "ratings": [
+        {
+          "platform": "Google reviews (Housing.com Head Office, Echelon Square, Gurugram)",
+          "rating": 1.0,
+          "count": 1,
+          "url": "https://maps.google.com/?cid=11043718477211334441",
+          "checked": "2026-10-12",
+          "note": "Only 1 review"
+        },
+        {
+          "platform": "Google reviews (Locon Solutions Pvt Ltd, Abiramapuram, Chennai)",
+          "rating": 3.0,
+          "count": 2,
+          "url": "https://maps.google.com/?cid=2249464475043993319",
+          "checked": "2026-10-12",
+          "note": "Only 2 reviews"
+        },
+        {
+          "platform": "Google Play (com.locon.housing)",
+          "rating": 4.4,
+          "count": 408779,
+          "url": "https://play.google.com/store/apps/details?id=com.locon.housing",
+          "checked": "2026-10-12",
+          "note": "1Cr+ downloads; updated 8 Oct 2026"
+        },
+        {
+          "platform": "Trustpilot (housing.com)",
+          "rating": 1.1,
+          "count": 165,
+          "url": "https://www.trustpilot.com/review/housing.com",
+          "checked": "2026-10-12",
+          "note": "~99% 1-star; unclaimed"
+        }
+      ],
+      "strengths": "Strong corporate backing (REA Group; REA India revenue AUD 129.2M FY25, +25%). Big app user base, 'verified' listing tags, actively updated.",
+      "risks": "Trustpilot complaints describe fake low-priced listings with wrong numbers used to sell premium plans, RMs sharing broker contacts instead of owners, refund refusals. Could NOT confirm north-Chennai rental inventory: site returns HTTP 406 to automated fetches and web search surfaced only sale/project and price-trend pages for Perambur/Kilpauk/Royapuram.",
+      "reason": "Legitimate, well-capitalised operator but north-Chennai rental coverage unverified and fake-listing complaints are frequent; use only after manually confirming each listing.",
+      "evidence_urls": [
+        "https://housing.com/pin-code/perambur-chennai-pin-code-614404",
+        "https://housing.com/price-trends/perambur_chennai-Phtazsrqx1zmbcul",
+        "https://www.trustpilot.com/review/housing.com",
+        "https://eliteagent.com/elara-technologies-rebrands-to-rea-india/",
+        "https://inc42.com/?p=230585",
+        "https://www.theweek.in/wire-updates/business/2025/08/19/dcm32-biz-realty-housing.com.html",
+        "https://play.google.com/store/apps/details?id=com.locon.housing"
+      ]
+    },
+    {
+      "id": "olx",
+      "name": "OLX India",
+      "url": "https://www.olx.in",
+      "verdict": "included-with-caution",
+      "operator": "Sobek Auto India Pvt Ltd, 100% owned by CarTrade Tech Ltd (NSE/BSE-listed) since Aug 2023 (Rs 535.54 Cr from Prosus/OLX Group); covers OLX classifieds incl. non-auto.",
+      "ratings": [
+        {
+          "platform": "Google reviews (OLX India, Udyog Vihar, Gurugram)",
+          "rating": 2.0,
+          "count": 1,
+          "url": "https://maps.google.com/?cid=12146540304420639544",
+          "checked": "2026-10-12",
+          "note": "Only 1 review"
+        },
+        {
+          "platform": "Google Play (com.olx.southasia)",
+          "rating": 4.3,
+          "count": 3188141,
+          "url": "https://play.google.com/store/apps/details?id=com.olx.southasia",
+          "checked": "2026-10-12",
+          "note": "10Cr+ downloads; updated 6 Oct 2026; developer Sobek Auto India"
+        },
+        {
+          "platform": "Trustpilot (olx.in)",
+          "rating": 1.6,
+          "count": 25,
+          "url": "https://www.trustpilot.com/review/olx.in",
+          "checked": "2026-10-12"
+        }
+      ],
+      "strengths": "Listed parent company; huge reach; individual owners in north Chennai often post here and on hyperlocal channels.",
+      "risks": "No listing or owner verification. Well-documented rental scams: fake 'army officer' landlords demanding advance via UPI (TN police crackdown), Punjab arrest for fake rental listings across states, consumer complaints of advance-payment losses. Site blocked automated fetch so north-Chennai 3BHK rental inventory could not be confirmed.",
+      "reason": "Legitimate operator but an unverified free-classifieds marketplace with recurring advance-payment rental scams; usable only as leads that are verified in person with no payment before a visit.",
+      "evidence_urls": [
+        "https://inc42.com/buzz/cartrade-acquires-olx-india-business-inr-535-54-cr",
+        "https://yourstory.com/2023/08/cartrade-tech-takes-100-stake-of-olx-indias-auto-business",
+        "https://www.thenewsminute.com/tamil-nadu/duping-buyers-across-india-posing-army-officers-olx-tn-cops-crack-scam-119709",
+        "https://www.freepressjournal.in/amp/india/punjab-news-mohali-resident-arrested-in-5-lakh-olx-rental-scam-across-multiple-states",
+        "https://www.trustpilot.com/review/olx.in",
+        "https://play.google.com/store/apps/details?id=com.olx.southasia"
+      ]
+    },
+    {
+      "id": "sulekha",
+      "name": "Sulekha Property",
+      "url": "https://property.sulekha.com",
+      "verdict": "included-with-caution",
+      "operator": "Sulekha.com New Media Pvt Ltd, headquartered in Chennai (Perungudi). Founded 1998 by Satya Prabhakar; property vertical launched 2011; core business now local-services lead generation.",
+      "ratings": [
+        {
+          "platform": "Google reviews (Sulekha.com New Media Pvt Ltd, RMZ Millenia, Perungudi, Chennai)",
+          "rating": 4.2,
+          "count": 512,
+          "url": "https://maps.google.com/?cid=14265089845680368808",
+          "checked": "2026-10-12"
+        },
+        {
+          "platform": "Google Play (sulekha.yellowpages.lcf)",
+          "rating": 2.9,
+          "count": 17376,
+          "url": "https://play.google.com/store/apps/details?id=sulekha.yellowpages.lcf",
+          "checked": "2026-10-12",
+          "note": "Main Sulekha app, last updated 9 Aug 2023"
+        },
+        {
+          "platform": "Trustpilot (sulekha.com)",
+          "rating": 4.1,
+          "count": 412,
+          "url": "https://www.trustpilot.com/review/sulekha.com",
+          "checked": "2026-10-12",
+          "note": "Not inviting reviews recently; only 25 in last 12 months; complaints about paid lead packages"
+        }
+      ],
+      "strengths": "Chennai-headquartered company; property.sulekha.com still shows current rent-only ads including Chennai 3BHKs (e.g. Selaivayal independent house, near Tondiarpet/Kodungaiyur).",
+      "risks": "Property is a side vertical; consumer app unmaintained since 2023; listing/search pages geo-block non-Indian traffic (redirect to /403) so inventory depth in target localities could not be measured; no evidence of owner verification; Trustpilot complaints are about paid lead packages for businesses.",
+      "reason": "Legitimate Chennai company with live Chennai rental ads, but thin, unverified inventory - use as a secondary source.",
+      "evidence_urls": [
+        "https://property.sulekha.com/",
+        "http://property.sulekha.com/individual-houses-villas-for-rent-only/1800-sqft-3-bhk-independent-houses-villas-for-rent-only-in-selaivayal-chennai-1001652142-ad",
+        "https://www.medianama.com/2011/10/223-sulekha-launches-property-site-our-take/",
+        "https://yourstory.com/2018/05/staying-relevant-growing-stronger-among-new-startups-sulekha-story/",
+        "https://www.trustpilot.com/review/sulekha.com"
+      ]
+    },
+    {
+      "id": "chennaiproperties",
+      "name": "ChennaiProperties",
+      "url": "https://www.chennaiproperties.com",
+      "verdict": "included-with-caution",
+      "operator": "Chennai-based local portal, operating since 2014 as chennaiproperties.in; moved to chennaiproperties.com on 1 July 2026 (per its own press release). Office at Okkiyam Thoraipakkam, Chennai.",
+      "ratings": [
+        {
+          "platform": "Google reviews (Chennaiproperties.in, Okkiyam Thoraipakkam)",
+          "rating": 3.7,
+          "count": 42,
+          "url": "https://maps.google.com/?cid=2726375005903058701",
+          "checked": "2026-10-12"
+        },
+        {
+          "platform": "Trustpilot",
+          "rating": null,
+          "count": null,
+          "url": "https://www.trustpilot.com/review/chennaiproperties.in",
+          "checked": "2026-10-12",
+          "note": "Not found (404)"
+        }
+      ],
+      "strengths": "Chennai-only focus; locality rent pages exist for all target localities; 3BHK rent listings seen in Kilpauk (e.g. 1,650 sq ft Rs 60k/month), Egmore (1,619 sq ft Rs 60k), Purasawalkam and Vepery.",
+      "risks": "Small operator, no independent reviews beyond 42 Google reviews; legitimacy claims come from paid press release; appears to be primarily a sale/new-project portal; Royapuram/Perambur/Tondiarpet/Washermanpet rent pages showed little or no 3BHK inventory; unclear owner verification.",
+      "reason": "Real local Chennai portal with some central-Chennai 3BHK rentals, but small and weakly evidenced - use as a secondary source.",
+      "evidence_urls": [
+        "https://www.chennaiproperties.com/rent/flats/kilpauk",
+        "https://www.chennaiproperties.com/rent/flats/egmore",
+        "https://www.chennaiproperties.com/rent/flats/vepery",
+        "https://www.tribuneindia.com/news/business/chennaiproperties-ushers-in-a-new-era-of-digital-real-estate-discovery/"
+      ]
+    },
+    {
+      "id": "makaan",
+      "name": "Makaan.com",
+      "url": "https://www.makaan.com",
+      "verdict": "excluded",
+      "operator": "REA India (same group as Housing.com/PropTiger).",
+      "ratings": [
+        {
+          "platform": "Google Play (com.makaan)",
+          "rating": null,
+          "count": null,
+          "url": "https://play.google.com/store/apps/details?id=com.makaan",
+          "checked": "2026-10-12",
+          "note": "Not found: app page returns 404 (delisted)"
+        },
+        {
+          "platform": "Trustpilot (makaan.com)",
+          "rating": 2.6,
+          "count": 4,
+          "url": "https://www.trustpilot.com/review/makaan.com",
+          "checked": "2026-10-12",
+          "note": "Only 4 reviews, all 1-star"
+        }
+      ],
+      "strengths": "Same corporate backing as Housing.com.",
+      "risks": "As of 2026-10-12 www.makaan.com and its Chennai rent URLs 301-redirect to origin.makaan.com/housing-buyer-redirect -> housing.com; app delisted. Ashoka University piece describes Makaan as 'essentially defunct', kept up to route leads to Housing.com.",
+      "reason": "No longer an independent listing source - it redirects to Housing.com, so it would only duplicate Housing listings.",
+      "evidence_urls": [
+        "https://www.makaan.com",
+        "https://www.ashoka.edu.in/from-bricks-to-bits-how-proptech-is-reshaping-the-real-estate-industry/",
+        "https://www.trustpilot.com/review/makaan.com"
+      ]
+    },
+    {
+      "id": "proptiger",
+      "name": "PropTiger",
+      "url": "https://www.proptiger.com",
+      "verdict": "excluded",
+      "operator": "PropTiger Realty Pvt Ltd, REA India / REA Group.",
+      "ratings": [
+        {
+          "platform": "Google reviews (PropTiger Realty Pvt Ltd, Khivraj Complex, Anna Salai, Chennai)",
+          "rating": 3.9,
+          "count": 11,
+          "url": "https://maps.google.com/?cid=17439593757095752660",
+          "checked": "2026-10-12"
+        },
+        {
+          "platform": "Google reviews (Proptiger Office, Nandanam, Chennai)",
+          "rating": 4.1,
+          "count": 12,
+          "url": "https://maps.google.com/?cid=15678594585260055078",
+          "checked": "2026-10-12"
+        },
+        {
+          "platform": "Trustpilot",
+          "rating": null,
+          "count": null,
+          "url": "https://www.trustpilot.com/review/proptiger.com",
+          "checked": "2026-10-12",
+          "note": "Not checked/not found"
+        }
+      ],
+      "strengths": "Legitimate REA-backed company with Chennai offices.",
+      "risks": "Business is new-project sales advisory/brokerage for developers, not rentals; Chennai city page returned an error to automated fetch.",
+      "reason": "Legitimate but irrelevant: it sells new-build projects and has no rental 3BHK marketplace.",
+      "evidence_urls": [
+        "https://www.proptiger.com",
+        "https://eliteagent.com/elara-technologies-rebrands-to-rea-india/"
+      ]
+    },
+    {
+      "id": "commonfloor",
+      "name": "CommonFloor",
+      "url": "https://www.commonfloor.com",
+      "verdict": "excluded",
+      "operator": "Quikr India Pvt Ltd (acquired Jan 2016 for ~US$200M in stock; folded into Quikr Homes; Bangalore office closed and ~150 staff laid off post-merger).",
+      "ratings": [
+        {
+          "platform": "Google Play (com.commonfloor)",
+          "rating": 2.1,
+          "count": 14649,
+          "url": "https://play.google.com/store/apps/details?id=com.commonfloor",
+          "checked": "2026-10-12",
+          "note": "Developer Quikr India; last updated 17 Oct 2025 - effectively unmaintained"
+        },
+        {
+          "platform": "Trustpilot (commonfloor.com)",
+          "rating": null,
+          "count": null,
+          "url": "https://www.trustpilot.com/review/commonfloor.com",
+          "checked": "2026-10-12",
+          "note": "Not found (404)"
+        }
+      ],
+      "strengths": "Site still resolves and still shows some 2026 new-project pages with Quikr disclaimer.",
+      "risks": "Zombie brand: app stale for a year with a 2.1 rating, site returns 403 to automated fetches, no evidence of current north-Chennai rental listings.",
+      "reason": "Effectively a legacy Quikr property with stale app and no verifiable current rental inventory.",
+      "evidence_urls": [
+        "https://www.businessinsider.in/quikr-buys-commmonfloor/amp_articleshow/50495049.cms",
+        "https://inc42.com/?p=33349",
+        "https://www.peoplematters.in/news/recruitment/post-merger-quikr-fires-150-commonfloor-staff-13103",
+        "https://www.commonfloor.com/india-property/projects/status-ongoing/builder-b-ashwin-ganesh-(builder)-ikygan",
+        "https://play.google.com/store/apps/details?id=com.commonfloor"
+      ]
+    },
+    {
+      "id": "quikr-homes",
+      "name": "Quikr Homes",
+      "url": "https://www.quikr.com/homes",
+      "verdict": "excluded",
+      "operator": "Quikr India Pvt Ltd (Bengaluru), horizontal classifieds founded 2008; footer 'Copyright 2008-2026'.",
+      "ratings": [
+        {
+          "platform": "Google reviews (Quikr India Pvt Ltd Chennai, Thousand Lights)",
+          "rating": 2.8,
+          "count": 19,
+          "url": "https://maps.google.com/?cid=7334726300611266208",
+          "checked": "2026-10-12"
+        },
+        {
+          "platform": "Google reviews (Quikr India Pvt Ltd HQ, Thanisandra, Bengaluru)",
+          "rating": 3.4,
+          "count": 1009,
+          "url": "https://maps.google.com/?cid=8124079334518495810",
+          "checked": "2026-10-12"
+        },
+        {
+          "platform": "Google Play (com.quikr)",
+          "rating": 4.2,
+          "count": 881643,
+          "url": "https://play.google.com/store/apps/details?id=com.quikr",
+          "checked": "2026-10-12",
+          "note": "Whole Quikr app (homes, jobs, cars); updated 23 Jul 2026"
+        },
+        {
+          "platform": "Trustpilot (quikr.com)",
+          "rating": 1.2,
+          "count": 90,
+          "url": "https://www.trustpilot.com/review/quikr.com",
+          "checked": "2026-10-12",
+          "note": "93% 1-star; only 11 reviews in last 12 months"
+        }
+      ],
+      "strengths": "Long-running company, still online in 2026.",
+      "risks": "Quikr Homes rent pages fetched today showed no Chennai rental listing cards at all (defaulted to Bangalore/Mumbai); no locality-level north Chennai rentals found via search. Trustpilot complaints centre on paid ads producing no leads and fake job offers. Unverified classifieds model.",
+      "reason": "No evidence of live north-Chennai 3BHK rental inventory and weak trust signals.",
+      "evidence_urls": [
+        "https://www.quikr.com/homes/property/apartments-for-rent-in-chennai",
+        "https://www.quikr.com/homes/property/3-bhk-apartments-for-rent-in-chennai-cid_31",
+        "https://www.trustpilot.com/review/quikr.com",
+        "https://play.google.com/store/apps/details?id=com.quikr"
+      ]
+    },
+    {
+      "id": "squareyards",
+      "name": "Square Yards",
+      "url": "https://www.squareyards.com",
+      "verdict": "excluded",
+      "operator": "Square Yards Consulting Pvt Ltd, Gurugram. Founded 2014 by Tanuj Shori and Kanika Gupta Shori. Brokerage-led proptech; raised Rs 900 Cr (US$95M) in June 2026; FY26 revenue ~Rs 2,086 Cr; IPO planned.",
+      "ratings": [
+        {
+          "platform": "Google reviews (Square Yards - Chennai, Workafella, Sholinganallur)",
+          "rating": 3.8,
+          "count": null,
+          "url": "https://maps.google.com/?cid=13831923987318511518",
+          "checked": "2026-10-12",
+          "note": "Count not exposed"
+        },
+        {
+          "platform": "Google reviews (Square Yards Gurgaon, M3M Urbana, Sector 67)",
+          "rating": 4.7,
+          "count": 3874,
+          "url": "https://maps.google.com/?cid=18177703226357877364",
+          "checked": "2026-10-12"
+        },
+        {
+          "platform": "Google Play (com.sq.yrd.squareyards)",
+          "rating": 4.5,
+          "count": 8826,
+          "url": "https://play.google.com/store/apps/details?id=com.sq.yrd.squareyards",
+          "checked": "2026-10-12",
+          "note": "5L+ downloads; updated 3 Sept 2026"
+        },
+        {
+          "platform": "Trustpilot (squareyards.com)",
+          "rating": null,
+          "count": 844,
+          "url": "https://www.trustpilot.com/review/squareyards.com",
+          "checked": "2026-10-12",
+          "note": "Rating withheld: 'unavailable due to a breach of our guidelines'; Trustpilot removed fake reviews"
+        }
+      ],
+      "strengths": "Large, well-funded company.",
+      "risks": "Chennai 3BHK rent page shows only 8 listings, none in Royapuram/Washermanpet/Tondiarpet/Perambur/Purasawalkam/Kilpauk/Vepery/Egmore; locality rent URL 404s; listings don't show owner vs partner-agent; Trustpilot review-manipulation flag.",
+      "reason": "Legitimate company but negligible rental inventory in north/central Chennai and a Trustpilot fake-review flag.",
+      "evidence_urls": [
+        "https://www.squareyards.com/rent/3-bhk-for-rent-in-chennai",
+        "https://www.trustpilot.com/review/squareyards.com",
+        "https://www.onlinemarketplaces.com/articles/square-yards-raises-95m-with-more-to-come-as-ipo-edges-closer/",
+        "https://www.outlookbusiness.com/corporate/square-yards-taps-bankers-for-300-mn-ipo-at-2-bn-valuation"
+      ]
+    },
+    {
+      "id": "nestaway",
+      "name": "NestAway",
+      "url": "https://www.nestaway.com",
+      "verdict": "excluded",
+      "operator": "Nestaway Technologies Pvt Ltd (Bengaluru), acquired 100% by Aurum PropTech (BSE-listed) in June 2023 for Rs 90 Cr (~95% below its 2019 US$220M valuation).",
+      "ratings": [
+        {
+          "platform": "Google reviews (Nestaway Technologies Corporate, HSR Layout, Bengaluru)",
+          "rating": 3.9,
+          "count": 4747,
+          "url": "https://maps.google.com/?cid=12549183470269572134",
+          "checked": "2026-10-12"
+        },
+        {
+          "platform": "Google Play (com.nestaway.customerapp)",
+          "rating": 4.3,
+          "count": 55489,
+          "url": "https://play.google.com/store/apps/details?id=com.nestaway.customerapp",
+          "checked": "2026-10-12",
+          "note": "Updated 30 Jun 2026"
+        },
+        {
+          "platform": "Trustpilot (nestaway.com)",
+          "rating": 1.5,
+          "count": 214,
+          "url": "https://www.trustpilot.com/review/nestaway.com",
+          "checked": "2026-10-12",
+          "note": "Complaints dominated by withheld/deducted security deposits"
+        }
+      ],
+      "strengths": "Managed-rental model with listed parent.",
+      "risks": "Chennai presence unclear (Chennai city URL 404s); focused on managed furnished rentals/shared housing; heavy deposit-refund complaints.",
+      "reason": "Managed-rental operator with no verifiable north-Chennai 3BHK inventory and a poor deposit-refund record.",
+      "evidence_urls": [
+        "https://dealstreetasia.com/stories/nestaway-aurum-proptech-346346",
+        "https://www.businesstoday.in/amp/entrepreneurship/news/story/ratan-tata-backed-nestaway-acquired-by-aurum-proptech-for-rs-90-crore-384279-2023-06-05",
+        "https://www.trustpilot.com/review/nestaway.com",
+        "https://play.google.com/store/apps/details?id=com.nestaway.customerapp"
+      ]
+    },
+    {
+      "id": "zolo",
+      "name": "Zolo (Zolostays)",
+      "url": "https://zolostays.com",
+      "verdict": "excluded",
+      "operator": "Zolostays Property Solutions Pvt Ltd, Bengaluru - co-living/PG operator.",
+      "ratings": [
+        {
+          "platform": "Google reviews (Zolostays Chennai office, Sholinganallur)",
+          "rating": 4.0,
+          "count": 108,
+          "url": "https://maps.google.com/?cid=11407218208993174013",
+          "checked": "2026-10-12"
+        },
+        {
+          "platform": "Google Play (com.zelo.customer)",
+          "rating": 3.3,
+          "count": 25129,
+          "url": "https://play.google.com/store/apps/details?id=com.zelo.customer",
+          "checked": "2026-10-12"
+        }
+      ],
+      "strengths": "Legitimate operating company.",
+      "risks": "Rents PG beds/rooms, not whole 3BHK homes.",
+      "reason": "Co-living/PG product - not relevant to whole-unit 3BHK family rentals.",
+      "evidence_urls": [
+        "https://play.google.com/store/apps/details?id=com.zelo.customer"
+      ]
+    },
+    {
+      "id": "stanza",
+      "name": "Stanza Living",
+      "url": "https://www.stanzaliving.com",
+      "verdict": "excluded",
+      "operator": "Stanza Living (DTwelve Spaces Pvt Ltd) - managed student/young-professional housing.",
+      "ratings": [
+        {
+          "platform": "Google Play (com.stanzaliving.app)",
+          "rating": 4.5,
+          "count": 34185,
+          "url": "https://play.google.com/store/apps/details?id=com.stanzaliving.app",
+          "checked": "2026-10-12",
+          "note": "Updated 1 Oct 2026"
+        }
+      ],
+      "strengths": "Legitimate operator.",
+      "risks": "Sells PG/hostel beds; individual Chennai properties have mixed Google ratings (3.4-4.4).",
+      "reason": "Co-living/PG product - not relevant to whole-unit 3BHK rentals.",
+      "evidence_urls": [
+        "https://play.google.com/store/apps/details?id=com.stanzaliving.app"
+      ]
+    },
+    {
+      "id": "roofandfloor",
+      "name": "RoofandFloor",
+      "url": "https://www.roofandfloor.com",
+      "verdict": "excluded",
+      "operator": "Launched Sept 2014 by The Hindu Group (Kasturi & Sons / KSL Digital Ventures Ltd, Anna Salai, Chennai); later acquired by IBI Media Technologies (date not confirmed).",
+      "ratings": [
+        {
+          "platform": "Google reviews (RoofandFloor - KSL Digital Ventures, Kasturi Sons Bldg, Anna Salai)",
+          "rating": 3.3,
+          "count": 36,
+          "url": "https://maps.google.com/?cid=12698448437260543205",
+          "checked": "2026-10-12"
+        },
+        {
+          "platform": "Trustpilot",
+          "rating": null,
+          "count": null,
+          "url": "https://www.trustpilot.com/review/roofandfloor.com",
+          "checked": "2026-10-12",
+          "note": "Not found (404)"
+        }
+      ],
+      "strengths": "Chennai-origin portal with reputable media-group history.",
+      "risks": "Chennai flats-for-rent page shows only ~6 listings, none in target north/central localities; focus is new-project sales.",
+      "reason": "Legitimate but has almost no rental inventory in the target area.",
+      "evidence_urls": [
+        "https://www.roofandfloor.com/chennai/flats-for-rent-in-chennai",
+        "https://www.medianama.com/2014/09/223-roofandfloor-hindu/",
+        "https://news.ventureintelligence.com/ma/ibi-media-technologies-acquires-realty-brand-roofandfloor-from-the-hindu-group"
+      ]
+    },
+    {
+      "id": "nestoria-mitula",
+      "name": "Nestoria / Mitula (meta-search aggregators)",
+      "url": "https://www.nestoria.in",
+      "verdict": "excluded",
+      "operator": "Nestoria India launched 2011 by Lokku Ltd (London); vertical search engine that scrapes/aggregates other portals; Mitula (property.mitula.in) is a similar aggregator.",
+      "ratings": [
+        {
+          "platform": "Trustpilot / Google",
+          "rating": null,
+          "count": null,
+          "url": "https://en.wikipedia.org/wiki/Nestoria",
+          "checked": "2026-10-12",
+          "note": "Not checked - aggregators"
+        }
+      ],
+      "strengths": "Surface north-Chennai rentals (e.g. Tondiarpet 3BHK, Royapuram) from multiple portals.",
+      "risks": "Not the originating source; listing dates unclear and often stale; prices in snippets mis-attributed.",
+      "reason": "Meta-aggregators - cite the originating portal instead.",
+      "evidence_urls": [
+        "https://en.wikipedia.org/wiki/Nestoria",
+        "https://www.nestoria.in/salma-classic-terrace/property/rent?page=3",
+        "https://property.mitula.in/property/house-for-rent-perambur-chennai"
+      ]
+    },
+    {
+      "id": "facebook-groups",
+      "name": "Facebook rental groups (e.g. 'Flats/Houses for rent in Chennai without brokers')",
+      "url": "https://www.facebook.com/groups/",
+      "verdict": "excluded",
+      "operator": "User-run groups on Meta; no operator accountability.",
+      "ratings": [
+        {
+          "platform": "Any platform",
+          "rating": null,
+          "count": null,
+          "url": "https://www.facebook.com/groups/",
+          "checked": "2026-10-12",
+          "note": "Not applicable"
+        }
+      ],
+      "strengths": "Widely used by Chennai renters and individual owners (DT Next 2016).",
+      "risks": "No verification, posts not stably linkable/searchable, common vector for fake-landlord and token-advance scams; Chennai lease-advance fraud cases reported.",
+      "reason": "Unverifiable and scam-prone; cannot be cited as a reliable listing source.",
+      "evidence_urls": [
+        "https://www.dtnext.in/city/2016/11/09/single-in-the-city",
+        "https://community.verified.realestate/article/chennai-rental-scam-exposed-one-house-was-illegally-leased-to-multiple-families-in-porur-moulivakkam/",
+        "https://money9.com/news/exclusive/save-yourself-from-being-cheated-on-rental-sites-109141.html"
+      ]
+    }
+  ]
+}
