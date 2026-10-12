@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3BHK Rentals near Stanley</title>
+  <meta name="description" content="3BHK homes with car parking for rent within a 30-minute peak-traffic drive of Stanley Medical College Hospital, Chennai.">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>3BHK rentals near Stanley Hospital</h1>
+      <p class="sub" id="summary">Loading…</p>
+    </div>
+    <a class="srcbtn" href="#sources">Sources &amp; method</a>
+  </header>
+
+  <main class="layout">
+    <aside class="filters" aria-label="Filters">
+      <label class="field">
+        <span>Search</span>
+        <input id="f-q" type="search" placeholder="Locality, society, street…" autocomplete="off">
+      </label>
+
+      <div class="field">
+        <span>Max rent <output id="o-rent"></output></span>
+        <input id="f-rent" type="range" step="1000">
+      </div>
+
+      <div class="field">
+        <span>Max drive at peak <output id="o-min"></output></span>
+        <input id="f-min" type="range" min="5" max="40" step="1">
+      </div>
+
+      <fieldset class="field">
+        <legend>Property type</legend>
+        <div id="f-type" class="chips"></div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Furnishing</legend>
+        <div id="f-furn" class="chips"></div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Available</legend>
+        <select id="f-avail">
+          <option value="">Any time up to Jan 2027</option>
+          <option value="now">Immediately</option>
+          <option value="2026-11-30">By end of Nov 2026</option>
+          <option value="2026-12-31">By end of Dec 2026</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Posted by</legend>
+        <div id="f-by" class="chips"></div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Source</legend>
+        <div id="f-src" class="chips"></div>
+      </fieldset>
+
+      <label class="check"><input id="f-inactive" type="checkbox"> Show listings no longer live</label>
+
+      <label class="field">
+        <span>Sort by</span>
+        <select id="f-sort">
+          <option value="minutes">Closest first</option>
+          <option value="rent">Cheapest first</option>
+          <option value="-rent">Most expensive first</option>
+          <option value="-first_seen">Newest first</option>
+          <option value="-area_sqft">Largest first</option>
+        </select>
+      </label>
+
+      <button id="f-reset" type="button" class="reset">Reset filters</button>
+    </aside>
+
+    <section class="results">
+      <div id="map" role="region" aria-label="Map of listings and 30-minute drive zone"></div>
+      <div class="legend">
+        <span><i class="sw sw-eve"></i>30 min, evening rush</span>
+        <span><i class="sw sw-mor"></i>30 min, morning rush</span>
+        <span><i class="dot"></i>Listing</span>
+      </div>
+      <p id="count" class="count" aria-live="polite"></p>
+      <ol id="list" class="cards"></ol>
+    </section>
+  </main>
+
+  <section id="sources" class="sources">
+    <h2>How this is built</h2>
+    <div id="method"></div>
+    <h3>Listing sites checked</h3>
+    <div class="tablewrap"><table id="src-table">
+      <thead><tr><th>Site</th><th>Status</th><th>Ratings checked</th><th>Why</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <template id="card-tpl">
+    <li class="card">
+      <div class="card-head">
+        <div class="rent"></div>
+        <div class="mins"></div>
+      </div>
+      <h3 class="title"></h3>
+      <p class="loc"></p>
+      <ul class="facts"></ul>
+      <p class="notes"></p>
+      <div class="card-foot">
+        <a class="link" target="_blank" rel="noopener noreferrer">View on source</a>
+        <span class="seen"></span>
+      </div>
+    </li>
+  </template>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>

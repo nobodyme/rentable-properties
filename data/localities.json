@@ -1,0 +1,372 @@
+{
+  "adyar": {
+    "name": "Adyar",
+    "lat": 13.00645,
+    "lon": 80.25778
+  },
+  "agaram perambur": {
+    "name": "Agaram Perambur",
+    "lat": 13.11779,
+    "lon": 80.22871
+  },
+  "alwarpet": {
+    "name": "Alwarpet",
+    "lat": 13.03386,
+    "lon": 80.25455
+  },
+  "aminjikarai": {
+    "name": "Aminjikarai",
+    "lat": 13.07214,
+    "lon": 80.22055
+  },
+  "anna nagar": {
+    "name": "Anna Nagar",
+    "lat": 13.08653,
+    "lon": 80.21425
+  },
+  "anna nagar east": {
+    "name": "Anna Nagar East",
+    "lat": 13.08465,
+    "lon": 80.21953
+  },
+  "arumbakkam": {
+    "name": "Arumbakkam",
+    "lat": 13.07437,
+    "lon": 80.20813
+  },
+  "ayanavaram": {
+    "name": "Ayanavaram",
+    "lat": 13.09462,
+    "lon": 80.23541
+  },
+  "besant nagar": {
+    "name": "Besant Nagar",
+    "lat": 12.99969,
+    "lon": 80.26823
+  },
+  "chetpet": {
+    "name": "Chetpet",
+    "lat": 13.07434,
+    "lon": 80.24242
+  },
+  "chintadripet": {
+    "name": "Chintadripet",
+    "lat": 13.07613,
+    "lon": 80.27078
+  },
+  "choolai": {
+    "name": "Choolai",
+    "lat": 13.09063,
+    "lon": 80.26214
+  },
+  "egmore": {
+    "name": "Egmore",
+    "lat": 13.07283,
+    "lon": 80.25769
+  },
+  "erukkancheri": {
+    "name": "Erukkancheri",
+    "lat": 13.10864,
+    "lon": 80.26786
+  },
+  "george town": {
+    "name": "George Town",
+    "lat": 13.09209,
+    "lon": 80.28224
+  },
+  "gopalapuram": {
+    "name": "Gopalapuram",
+    "lat": 13.04973,
+    "lon": 80.2582
+  },
+  "ice house": {
+    "name": "Ice House",
+    "lat": 13.04904,
+    "lon": 80.28048
+  },
+  "jamalia": {
+    "name": "Jamalia",
+    "lat": 13.1064,
+    "lon": 80.24935
+  },
+  "kasimedu": {
+    "name": "Kasimedu",
+    "lat": 13.1364,
+    "lon": 80.2958
+  },
+  "kellys": {
+    "name": "Kellys",
+    "lat": 13.08282,
+    "lon": 80.24333
+  },
+  "kilpauk": {
+    "name": "Kilpauk",
+    "lat": 13.08321,
+    "lon": 80.23799
+  },
+  "kodungaiyur": {
+    "name": "Kodungaiyur",
+    "lat": 13.13082,
+    "lon": 80.25618
+  },
+  "kolathur": {
+    "name": "Kolathur",
+    "lat": 13.12365,
+    "lon": 80.21288
+  },
+  "kondithope": {
+    "name": "Kondithope",
+    "lat": 13.10004,
+    "lon": 80.27908
+  },
+  "korukkupet": {
+    "name": "Korukkupet",
+    "lat": 13.11942,
+    "lon": 80.27846
+  },
+  "kosapet": {
+    "name": "Kosapet",
+    "lat": 13.09393,
+    "lon": 80.25479
+  },
+  "kotturpuram": {
+    "name": "Kotturpuram",
+    "lat": 13.01937,
+    "lon": 80.24355
+  },
+  "koyambedu": {
+    "name": "Koyambedu",
+    "lat": 13.07152,
+    "lon": 80.19981
+  },
+  "madhavaram": {
+    "name": "Madhavaram",
+    "lat": 13.14837,
+    "lon": 80.24216
+  },
+  "madhavaram milk colony": {
+    "name": "Madhavaram Milk Colony",
+    "lat": 13.15247,
+    "lon": 80.24027
+  },
+  "mannady": {
+    "name": "Mannady",
+    "lat": 13.09594,
+    "lon": 80.2871
+  },
+  "mint": {
+    "name": "Mint",
+    "lat": 13.1049,
+    "lon": 80.2776
+  },
+  "mogappair": {
+    "name": "Mogappair",
+    "lat": 13.08726,
+    "lon": 80.19857
+  },
+  "moolakadai": {
+    "name": "Moolakadai",
+    "lat": 13.12917,
+    "lon": 80.2417
+  },
+  "mylapore": {
+    "name": "Mylapore",
+    "lat": 13.03165,
+    "lon": 80.27002
+  },
+  "new washermanpet": {
+    "name": "New Washermanpet",
+    "lat": 13.13387,
+    "lon": 80.29036
+  },
+  "new washermenpet": {
+    "name": "New Washermanpet",
+    "lat": 13.13387,
+    "lon": 80.29036
+  },
+  "nungambakkam": {
+    "name": "Nungambakkam",
+    "lat": 13.06206,
+    "lon": 80.24049
+  },
+  "old washermanpet": {
+    "name": "Old Washermanpet",
+    "lat": 13.11228,
+    "lon": 80.28938
+  },
+  "old washermenpet": {
+    "name": "Old Washermanpet",
+    "lat": 13.11228,
+    "lon": 80.28938
+  },
+  "otteri": {
+    "name": "Otteri",
+    "lat": 13.09696,
+    "lon": 80.24872
+  },
+  "padi": {
+    "name": "Padi",
+    "lat": 13.10366,
+    "lon": 80.19481
+  },
+  "park town": {
+    "name": "Park Town",
+    "lat": 13.08635,
+    "lon": 80.27273
+  },
+  "parrys": {
+    "name": "Parrys",
+    "lat": 13.08884,
+    "lon": 80.29037
+  },
+  "pattalam": {
+    "name": "Pattalam",
+    "lat": 13.09706,
+    "lon": 80.26053
+  },
+  "perambur": {
+    "name": "Perambur",
+    "lat": 13.11212,
+    "lon": 80.24502
+  },
+  "perambur barracks road": {
+    "name": "Perambur Barracks Road",
+    "lat": 13.09862,
+    "lon": 80.2595
+  },
+  "peravallur": {
+    "name": "Peravallur",
+    "lat": 13.11138,
+    "lon": 80.22638
+  },
+  "periamet": {
+    "name": "Periamet",
+    "lat": 13.08441,
+    "lon": 80.26928
+  },
+  "pudupet": {
+    "name": "Pudupet",
+    "lat": 13.0712,
+    "lon": 80.26696
+  },
+  "pulianthope": {
+    "name": "Pulianthope",
+    "lat": 13.10084,
+    "lon": 80.26262
+  },
+  "purasaiwakkam": {
+    "name": "Purasaiwakkam",
+    "lat": 13.0868,
+    "lon": 80.25747
+  },
+  "purasawalkam": {
+    "name": "Purasawalkam",
+    "lat": 13.08933,
+    "lon": 80.25503
+  },
+  "retteri": {
+    "name": "Retteri",
+    "lat": 13.12987,
+    "lon": 80.21411
+  },
+  "royapettah": {
+    "name": "Royapettah",
+    "lat": 13.05547,
+    "lon": 80.26397
+  },
+  "royapuram": {
+    "name": "Royapuram",
+    "lat": 13.11462,
+    "lon": 80.29403
+  },
+  "santhome": {
+    "name": "Santhome",
+    "lat": 13.03359,
+    "lon": 80.27779
+  },
+  "sembiyam": {
+    "name": "Sembiyam",
+    "lat": 13.12201,
+    "lon": 80.24122
+  },
+  "seven wells": {
+    "name": "Seven Wells",
+    "lat": 13.10057,
+    "lon": 80.28212
+  },
+  "shenoy nagar": {
+    "name": "Shenoy Nagar",
+    "lat": 13.07894,
+    "lon": 80.22513
+  },
+  "sowcarpet": {
+    "name": "Sowcarpet",
+    "lat": 13.0885,
+    "lon": 80.27831
+  },
+  "teynampet": {
+    "name": "Teynampet",
+    "lat": 13.04432,
+    "lon": 80.24985
+  },
+  "thiru vi ka nagar": {
+    "name": "Thiru Vi Ka Nagar",
+    "lat": 13.1209,
+    "lon": 80.22951
+  },
+  "thiruvottiyur": {
+    "name": "Tiruvottiyur",
+    "lat": 13.16361,
+    "lon": 80.31209
+  },
+  "thousand lights": {
+    "name": "Thousand Lights",
+    "lat": 13.0551,
+    "lon": 80.25524
+  },
+  "tiruvottiyur": {
+    "name": "Tiruvottiyur",
+    "lat": 13.16361,
+    "lon": 80.31209
+  },
+  "tondiarpet": {
+    "name": "Tondiarpet",
+    "lat": 13.12752,
+    "lon": 80.28192
+  },
+  "triplicane": {
+    "name": "Triplicane",
+    "lat": 13.06043,
+    "lon": 80.27507
+  },
+  "vepery": {
+    "name": "Vepery",
+    "lat": 13.0843,
+    "lon": 80.26227
+  },
+  "villivakkam": {
+    "name": "Villivakkam",
+    "lat": 13.10405,
+    "lon": 80.20904
+  },
+  "vyasarpadi": {
+    "name": "Vyasarpadi",
+    "lat": 13.11305,
+    "lon": 80.25872
+  },
+  "washermanpet": {
+    "name": "Washermanpet",
+    "lat": 13.10785,
+    "lon": 80.28095
+  },
+  "washermenpet": {
+    "name": "Washermanpet",
+    "lat": 13.10785,
+    "lon": 80.28095
+  },
+  "west mambalam": {
+    "name": "West Mambalam",
+    "lat": 13.04359,
+    "lon": 80.22081
+  }
+}
