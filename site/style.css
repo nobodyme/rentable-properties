@@ -214,6 +214,14 @@ a { color: inherit; }
 .foot { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
 .foot p { margin: 4px 0; }
 .d-photo { position: relative; margin: 16px -24px 0; aspect-ratio: 16 / 9; background: var(--soft); overflow: hidden; }
+.d-map-wrap { margin: 0 0 20px; }
+.d-map { height: 240px; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); background: var(--soft); }
+.d-map-wrap figcaption { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 8px; font-size: .78rem; color: var(--muted); }
+.dot-home, .dot-origin { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+.dot-home { background: var(--ink); }
+.dot-origin { background: var(--accent); }
+.link-line { stroke: var(--ink); stroke-width: 2; stroke-dasharray: 4 6; fill: none; }
+.south-line { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 2 6; opacity: .6; fill: none; }
 .d-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 
 /* ---------- map pins ---------- */

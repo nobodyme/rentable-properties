@@ -60,6 +60,7 @@
   const DEFAULTS = () => ({
     q: '', bhk: new Set(['3']), rent: rentMax, min: 30, avail: '', sort: 'newest',
     type: new Set(), furnishing: new Set(), posted_by: new Set(), source: new Set(), inactive: false,
+    south: true, // only homes south of the chosen point (on by default)
   });
   let S = DEFAULTS();
 
@@ -128,6 +129,7 @@
   optionGroup('f-furn', 'furnishing');
   optionGroup('f-by', 'posted_by');
   optionGroup('f-src', 'source');
+  $('f-south').addEventListener('click', () => { S.south = !S.south; render(); });
   $('f-inactive').addEventListener('change', e => { S.inactive = e.target.checked; render(); });
 
   const moreDlg = $('more-dlg');
@@ -175,6 +177,9 @@
     zIndexOffset: 2000, keyboard: false,
   }).addTo(map).bindTooltip(esc(db.origin.label || 'Chosen point'));
   }
+  // Dashed east-west line through the chosen point while "South only" is on.
+  const southLine = hasMap ? L.polyline([[db.origin.lat, 79.9], [db.origin.lat, 80.6]],
+    { className: 'south-line', interactive: false }) : null;
   const pins = hasMap ? L.layerGroup().addTo(map) : null;
   const markerById = new Map();
 
@@ -203,6 +208,7 @@
   // ---------- filtering ----------
   function matches(p) {
     if (!S.inactive && p.status !== 'active') return false;
+    if (S.south && p.lat > db.origin.lat) return false;
     if (!S.bhk.has(String(p.bhk))) return false;
     if ((S.rent < rentMax && p.rent > S.rent) || p.minutes_peak > S.min) return false;
     for (const key of ['type', 'furnishing', 'posted_by', 'source']) {
@@ -297,6 +303,9 @@
     document.getElementById('pop-min').querySelector('.chip').classList.toggle('on', S.min !== 30);
     document.getElementById('pop-avail').querySelector('.chip').classList.toggle('on', S.avail !== '');
     const extra = S.type.size + S.furnishing.size + S.posted_by.size + S.source.size + (S.inactive ? 1 : 0);
+    $('f-south').setAttribute('aria-pressed', S.south);
+    $('f-south').classList.toggle('on', S.south);
+    if (southLine) S.south ? southLine.addTo(map) : southLine.remove();
     $('more-count').hidden = !extra; $('more-count').textContent = extra;
     $('more-btn').classList.toggle('on', extra > 0);
 
@@ -359,6 +368,8 @@
       <h2 class="d-title" id="d-title">${esc(tidy(p.title))}</h2>
       <p class="d-sub">${esc([tidy(p.address), tidy(p.locality)].filter(Boolean).filter((v, i, a) => a.indexOf(v) === i).join(', '))}</p>
       <div class="d-price"><b>${inr(p.rent)}</b><span>/ month</span>${p.maintenance ? `<span>+ ${inr(p.maintenance)} maintenance</span>` : ''}</div>
+      ${hasMap ? `<figure class="d-map-wrap"><div id="d-map" class="d-map" role="img" aria-label="Map of this home, the chosen point and the 30-minute drive zone"></div>
+        <figcaption><span><i class="dot-home"></i>This home</span><span><i class="dot-origin"></i>Chosen point</span><span><i class="sw sw-eve"></i>30 min, evening rush</span></figcaption></figure>` : ''}
       <dl class="d-facts">${facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
       ${p.notes ? `<p class="d-notes">${esc(p.notes)}</p>` : ''}
       ${p.location_precision !== 'listing' ? '<p class="d-notes">Map position and drive time are approximate: the site gives only the area, not the exact address.</p>' : ''}
@@ -374,7 +385,30 @@
       </div>`;
     detailDlg.showModal();
     detailDlg.querySelector('.sheet-body').scrollTop = 0;
+    if (hasMap) drawMiniMap(p);
   }
+
+  // Small map in the detail dialog: this home, the chosen point and the zone.
+  let miniMap = null;
+  function drawMiniMap(p) {
+    if (miniMap) { miniMap.remove(); miniMap = null; }
+    miniMap = L.map('d-map', { zoomControl: false, attributionControl: false, scrollWheelZoom: false });
+    const zone = L.geoJSON(zones, {
+      style: f => ({ className: f.properties.id === 'evening' ? 'zone-eve' : 'zone-mor' }), interactive: false,
+    });
+    // The view must be set before vector layers are added.
+    miniMap.fitBounds(zone.getBounds().extend([p.lat, p.lon]), { padding: [12, 12] });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18 }).addTo(miniMap);
+    zone.addTo(miniMap);
+    L.polyline([[db.origin.lat, db.origin.lon], [p.lat, p.lon]], { className: 'link-line', interactive: false }).addTo(miniMap);
+    L.marker([db.origin.lat, db.origin.lon], {
+      icon: L.divIcon({ className: 'pin-wrap', iconSize: [0, 0], html: '<span class="origin"></span>' }), keyboard: false, interactive: false,
+    }).addTo(miniMap);
+    L.marker([p.lat, p.lon], {
+      icon: L.divIcon({ className: 'pin-wrap', iconSize: [0, 0], html: `<span class="pin on">${short(p.rent)}</span>` }), keyboard: false, interactive: false,
+    }).addTo(miniMap);
+  }
+  detailDlg.addEventListener('close', () => { if (miniMap) { miniMap.remove(); miniMap = null; } });
 
   // ---------- about ----------
   const aboutDlg = $('about-dlg');
