@@ -90,13 +90,17 @@
   // One popover open at a time; close on outside click / Escape.
   const pops = [...document.querySelectorAll('details.pop')];
   pops.forEach(d => d.addEventListener('toggle', () => { if (d.open) pops.forEach(o => { if (o !== d) o.open = false; }); }));
-  let swallowClick = false;
+  // A tap outside an open popover only closes it. The guard expires quickly so
+  // a scroll gesture (pointerdown with no click) can't swallow a later tap.
+  let swallowUntil = 0;
   document.addEventListener('pointerdown', e => {
     const open = pops.find(d => d.open);
-    if (open && !e.target.closest('details.pop')) { open.open = false; swallowClick = true; }
+    if (open && !e.target.closest('details.pop')) { open.open = false; swallowUntil = Date.now() + 500; }
   }, true);
   document.addEventListener('click', e => {
-    if (swallowClick) { swallowClick = false; e.preventDefault(); e.stopPropagation(); }
+    if (Date.now() < swallowUntil && !e.target.closest('details.pop')) {
+      swallowUntil = 0; e.preventDefault(); e.stopPropagation();
+    }
   }, true);
   document.addEventListener('keydown', e => {
     if (e.key !== 'Escape') return;

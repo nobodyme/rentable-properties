@@ -72,7 +72,7 @@ a { color: inherit; }
   border: 1px solid var(--line); border-radius: 999px; padding: 0 18px; height: 46px;
   box-shadow: var(--shadow-sm); background: var(--surface); color: var(--muted);
 }
-.search input { flex: 1; min-width: 0; width: 0; border: 0; background: transparent; outline: none; color: var(--ink); }
+.search input { -webkit-appearance: none; appearance: none; flex: 1; min-width: 0; width: 0; border: 0; background: transparent; outline: none; color: var(--ink); }
 .search:focus-within { border-color: var(--ink); outline: 2px solid var(--ink); outline-offset: 2px; }
 .top-actions { display: flex; align-items: center; gap: 4px; }
 .ghost, .icon-btn {
@@ -231,6 +231,7 @@ a { color: inherit; }
 .origin {
   display: block; width: 22px; height: 22px; transform: translate(-50%, -50%);
   background: var(--accent); border: 4px solid #fff; border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 25%, transparent), 0 2px 6px rgba(0, 0, 0, .3);
 }
 .zone-eve { stroke: var(--eve); fill: var(--eve); fill-opacity: .07; stroke-width: 2; }
@@ -240,6 +241,7 @@ a { color: inherit; }
   :root:not([data-theme="light"]) .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(.9); }
 }
 .leaflet-container { font: inherit; }
+.leaflet-control-attribution { background: var(--surface); }
 .leaflet-control-attribution { background: color-mix(in srgb, var(--surface) 85%, transparent) !important; color: var(--muted); }
 .leaflet-control-attribution a { color: var(--muted); }
 body:has(dialog[open]) { overflow: hidden; }
@@ -248,7 +250,7 @@ body:has(dialog[open]) { overflow: hidden; }
 /* ---------- dialogs ---------- */
 dialog.sheet {
   border: 0; padding: 0; border-radius: 20px; width: min(560px, calc(100vw - 32px));
-  max-height: calc(100vh - 64px); background: var(--surface); color: var(--ink); box-shadow: var(--shadow);
+  max-height: calc(100vh - 64px); max-height: calc(100dvh - 64px); background: var(--surface); color: var(--ink); box-shadow: var(--shadow);
 }
 dialog.sheet.wide { width: min(780px, calc(100vw - 32px)); }
 dialog::backdrop { background: rgba(0, 0, 0, .45); }
@@ -316,7 +318,7 @@ legend { font-weight: 600; font-size: 1.05rem; padding: 0; margin-bottom: 12px; 
 
 /* ---------- mobile map toggle ---------- */
 .float-btn {
-  display: none; position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 1200;
+  display: none; position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 1200;
   align-items: center; gap: 8px; border: 0; cursor: pointer;
   background: var(--ink); color: var(--bg); padding: 12px 20px; border-radius: 999px;
   font-weight: 600; box-shadow: var(--shadow);
@@ -334,10 +336,11 @@ body.map-open .lbl-map, body.map-open .i-map { display: none; }
   .brand span { display: none; }
   .search { order: 3; flex-basis: 100%; max-width: none; height: 44px; }
   .top-actions { margin-left: auto; }
-  .filterbar { padding: 0 16px 12px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
-  .filterbar::-webkit-scrollbar { display: none; }
+  /* Chips wrap instead of scrolling sideways: a scrolling (or masked) bar clips
+     the popovers inside it, which made the sliders untouchable on phones. */
+  .filterbar { position: relative; padding: 0 16px 12px; gap: 8px 6px; }
   .pop { position: static; }
-  .pop-body { position: fixed; left: 16px; right: 16px; top: auto; width: auto; margin-top: 8px; }
+  .pop-body { position: absolute; left: 16px; right: 16px; top: calc(100% - 4px); width: auto; }
   .layout { display: block; }
   .results { padding: 16px 16px 96px; }
   .card { grid-template-columns: 112px minmax(0, 1fr); gap: 12px; padding: 10px; }
@@ -362,9 +365,10 @@ body.map-open .lbl-map, body.map-open .i-map { display: none; }
   .float-btn { display: inline-flex; }
   .legend { bottom: 96px; }
   body.map-open .leaflet-bottom { bottom: 76px; }
-  .filterbar { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); padding-right: 28px; }
-  dialog.sheet, dialog.sheet.wide { width: 100vw; max-width: 100vw; max-height: 92vh; margin: auto 0 0; border-radius: 20px 20px 0 0; }
-  .sheet-inner { max-height: 92vh; }
+  /* iOS Safari zooms into any focused field under 16px. */
+  input, select { font-size: 16px; }
+  dialog.sheet, dialog.sheet.wide { width: 100vw; max-width: 100vw; max-height: 92vh; max-height: 92dvh; margin: auto 0 0; border-radius: 20px 20px 0 0; }
+  .sheet-inner { max-height: 92vh; max-height: 92dvh; }
   .sheet-body { padding: 8px 20px 20px; }
   .d-facts { grid-template-columns: 1fr 1fr; }
 }
