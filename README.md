@@ -4,7 +4,7 @@ A static, filterable list of 2BHK and 3BHK homes for rent that are within a 30-m
 peak-traffic drive of a chosen point. Every listing needs four-wheeler parking
 and a move-in date by January 2027.
 
-The listings are collected from vetted property portals and refreshed every two days.
+The listings are collected from vetted property portals and refreshed daily.
 
 ## How it works
 
@@ -70,6 +70,6 @@ GitHub Pages. You can also run it from the Actions tab.
 
 ## Automated refresh
 
-An AI agent runs the refresh on a two-day schedule, following `UPDATING.md`.
+An AI agent runs the refresh on a daily schedule, following `UPDATING.md`.
 It pushes the updated `data/properties.json` to `main`, which triggers a
 redeploy. Always confirm a listing with the owner or agent before paying anything.

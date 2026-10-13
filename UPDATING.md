@@ -1,6 +1,6 @@
 # Refresh runbook
 
-The scheduled job follows this runbook every two days. A person can follow it too.
+The scheduled job follows this runbook daily (06:47 IST). A person can follow it too.
 The goal is to bring `data/properties.json` up to date without touching anything in `site/`.
 
 ## Requirements every listing must meet
