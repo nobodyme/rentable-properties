@@ -80,7 +80,10 @@
   <main class="layout">
     <section class="results" aria-label="Listings">
       <div class="results-head">
-        <p id="count" class="count" aria-live="polite"></p>
+        <div class="count-wrap">
+          <p id="count" class="count" aria-live="polite"></p>
+          <button id="f-new" class="chip chip-sm" type="button" aria-pressed="false" hidden></button>
+        </div>
         <label class="sort">
           <span>Sort</span>
           <select id="f-sort">

@@ -50,6 +50,31 @@
 
   $('updated').textContent = `Updated ${fmtDate(db.updated)} · ${all.filter(p => p.status === 'active').length} live listings`;
 
+  // ---------- new since last visit ----------
+  // Remembered per browser: the ids live at the previous visit (a visit ends
+  // after 3 hours, so reloads don't clear the "New" badges).
+  const VISIT_GAP_MS = 3 * 3600 * 1000;
+  const liveIds = all.filter(p => p.status === 'active').map(p => p.id);
+  let newIds = new Set();
+  try {
+    const store = JSON.parse(localStorage.getItem('visits') || '{}');
+    const now = Date.now();
+    if (store.last && now - store.last.at > VISIT_GAP_MS) store.base = store.last;
+    if (store.base) {
+      const seen = new Set(store.base.ids);
+      newIds = new Set(liveIds.filter(id => !seen.has(id)));
+    }
+    store.last = { at: now, ids: liveIds };
+    localStorage.setItem('visits', JSON.stringify(store));
+  } catch (e) {}
+  const postedText = d => {
+    if (!d) return null;
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const days = Math.round((today - new Date(d + 'T00:00:00')) / 864e5);
+    return days <= 0 ? 'Posted today' : days === 1 ? 'Posted yesterday' : days < 7 ? `Posted ${days} days ago`
+      : 'Posted ' + new Date(d + 'T00:00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'short' });
+  };
+
   // ---------- state ----------
   const rents = all.map(p => p.rent);
   const sortedRents = [...rents].sort((a, b) => a - b);
@@ -61,6 +86,7 @@
     q: '', bhk: new Set(['3']), rent: rentMax, min: 30, avail: '', sort: 'newest',
     type: new Set(), furnishing: new Set(), posted_by: new Set(), source: new Set(), inactive: false,
     south: true, // only homes south of the chosen point (on by default)
+    onlyNew: false,
   });
   let S = DEFAULTS();
 
@@ -129,6 +155,7 @@
   optionGroup('f-furn', 'furnishing');
   optionGroup('f-by', 'posted_by');
   optionGroup('f-src', 'source');
+  $('f-new').addEventListener('click', () => { S.onlyNew = !S.onlyNew; render(); });
   $('f-south').addEventListener('click', () => { S.south = !S.south; render(); });
   $('f-inactive').addEventListener('change', e => { S.inactive = e.target.checked; render(); });
 
@@ -209,6 +236,7 @@
   function matches(p) {
     if (!S.inactive && p.status !== 'active') return false;
     if (S.south && p.lat > db.origin.lat) return false;
+    if (S.onlyNew && !p._ignoreNew && !newIds.has(p.id)) return false;
     if (!S.bhk.has(String(p.bhk))) return false;
     if ((S.rent < rentMax && p.rent > S.rent) || p.minutes_peak > S.min) return false;
     for (const key of ['type', 'furnishing', 'posted_by', 'source']) {
@@ -264,7 +292,9 @@
     li.id = 'p-' + p.id;
     const head = [`${p.bhk} BHK ${label('type', p.type).toLowerCase()}`, p.area_sqft && p.area_sqft.toLocaleString('en-IN') + ' sq ft'].filter(Boolean).join(' · ');
     const sub = [tidy(p.locality), p.deposit && 'Deposit ' + lakh(p.deposit)].filter(Boolean).join(' · ');
+    const posted = postedText(p.posted_on);
     const chips = [
+      newIds.has(p.id) && '<li class="new">New</li>',
       p.furnishing && `<li>${esc(label('furnishing', p.furnishing))}</li>`,
       `<li>${p.parking === 'car+bike' ? 'Car + bike parking' : 'Car parking'}</li>`,
       `<li class="${p.available_from ? 'ok' : ''}">${esc(availText(p))}</li>`,
@@ -278,6 +308,7 @@
         <p class="price"><b>${inr(p.rent)}</b> <span>/ month</span></p>
         <h3 class="title">${esc(head)}</h3>
         <p class="sub">${esc(sub)}</p>
+        ${posted ? `<p class="posted">${esc(posted)}</p>` : ''}
         <ul class="chips">${chips}</ul>
       </div>
       <div class="side">
@@ -310,6 +341,11 @@
     $('more-btn').classList.toggle('on', extra > 0);
 
     const rows = all.filter(matches).sort(sorter(S.sort));
+    const newCount = all.filter(p => newIds.has(p.id) && matches(Object.assign({}, p, { _ignoreNew: true }))).length;
+    $('f-new').hidden = !newIds.size;
+    $('f-new').textContent = S.onlyNew ? `Showing new only · show all` : `${newCount} new since your last visit`;
+    $('f-new').setAttribute('aria-pressed', S.onlyNew);
+    $('f-new').classList.toggle('on', S.onlyNew);
     $('count').textContent = `${rows.length} home${rows.length === 1 ? '' : 's'} within ${S.min} min`;
     $('apply-btn').textContent = `Show ${rows.length} home${rows.length === 1 ? '' : 's'}`;
 
