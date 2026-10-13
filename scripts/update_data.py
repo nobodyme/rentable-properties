@@ -63,7 +63,7 @@ def stated_text(p):
 
 FIELDS = ["id", "status", "source", "source_url", "title", "type", "bhk", "rent", "maintenance", "deposit",
           "locality", "address", "lat", "lon", "location_precision", "road_km", "minutes_peak",
-          "minutes_morning", "area_sqft", "furnishing", "parking", "available_from", "posted_on",
+          "minutes_morning", "area_sqft", "furnishing", "parking", "available_from", "posted_on", "posted_at",
           "posted_by", "floor", "bathrooms", "preferred_tenants", "notes", "photo", "photo_count", "first_seen", "last_checked",
           "missed_sweeps"]
 

@@ -67,12 +67,24 @@
     store.last = { at: now, ids: liveIds };
     localStorage.setItem('visits', JSON.stringify(store));
   } catch (e) {}
-  const postedText = d => {
-    if (!d) return null;
+  // Short relative age, e.g. "3 hours ago" / "1 day ago". Uses the exact posting
+  // time when the portal gives one, else the posted date.
+  const plural = (n, unit) => `${n} ${unit}${n === 1 ? '' : 's'} ago`;
+  const postedText = p => {
+    if (p.posted_at) {
+      const mins = Math.max(0, (Date.now() - new Date(p.posted_at)) / 6e4);
+      if (mins < 60) return 'Just now';
+      if (mins < 24 * 60) return plural(Math.floor(mins / 60), 'hour');
+      const days = Math.floor(mins / 1440);
+      if (days <= 30) return plural(days, 'day');
+      return new Date(p.posted_at).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' });
+    }
+    if (!p.posted_on) return null;
     const today = new Date(); today.setHours(0, 0, 0, 0);
-    const days = Math.round((today - new Date(d + 'T00:00:00')) / 864e5);
-    return days <= 0 ? 'Posted today' : days === 1 ? 'Posted yesterday' : days < 7 ? `Posted ${days} days ago`
-      : 'Posted ' + new Date(d + 'T00:00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'short' });
+    const days = Math.round((today - new Date(p.posted_on + 'T00:00:00')) / 864e5);
+    if (days <= 0) return 'Today';
+    if (days <= 30) return plural(days, 'day');
+    return new Date(p.posted_on + 'T00:00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'short' });
   };
 
   // ---------- state ----------
@@ -292,7 +304,7 @@
     li.id = 'p-' + p.id;
     const head = [`${p.bhk} BHK ${label('type', p.type).toLowerCase()}`, p.area_sqft && p.area_sqft.toLocaleString('en-IN') + ' sq ft'].filter(Boolean).join(' · ');
     const sub = [tidy(p.locality), p.deposit && 'Deposit ' + lakh(p.deposit)].filter(Boolean).join(' · ');
-    const posted = postedText(p.posted_on);
+    const posted = postedText(p);
     const chips = [
       newIds.has(p.id) && '<li class="new">New</li>',
       p.furnishing && `<li>${esc(label('furnishing', p.furnishing))}</li>`,
@@ -303,12 +315,14 @@
     ].filter(Boolean).join('');
     const approx = p.location_precision !== 'listing';
     li.innerHTML = `
-      <div class="thumb">${photoHtml(p, 'thumb')}</div>
+      <div class="media">
+        <div class="thumb">${photoHtml(p, 'thumb')}</div>
+        ${posted ? `<p class="posted" title="When the listing was posted on ${esc(srcName(p.source))}">${esc(posted)}</p>` : ''}
+      </div>
       <div class="main">
         <p class="price"><b>${inr(p.rent)}</b> <span>/ month</span></p>
         <h3 class="title">${esc(head)}</h3>
         <p class="sub">${esc(sub)}</p>
-        ${posted ? `<p class="posted">${esc(posted)}</p>` : ''}
         <ul class="chips">${chips}</ul>
       </div>
       <div class="side">

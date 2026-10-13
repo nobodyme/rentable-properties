@@ -31,7 +31,12 @@ MONTHS = {m: i for i, m in enumerate("Jan Feb Mar Apr May Jun Jul Aug Sep Oct No
 
 def get(url):
     cmd = ["curl", "-sS", "--compressed", "-m", "60", "-A", UA, url]
-    return subprocess.run(cmd, capture_output=True, text=True, check=True).stdout
+    for attempt in range(3):  # brief TLS/network hiccups (curl exit 35) are common; retry
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        if r.returncode == 0:
+            return r.stdout
+        time.sleep(3 * (attempt + 1))
+    r.check_returncode()
 
 
 def state(html):
@@ -110,6 +115,8 @@ def convert(x, today):
         "furnishing": FURNISHING.get(x.get("furnishedD")),
         "parking": "car",
         "available_from": available,
+        "posted_at": (datetime.fromisoformat(x["postDateT"].replace("Z", "+00:00")).astimezone(IST).isoformat(timespec="minutes")
+                      if x.get("postDateT") else None),
         "posted_on": f"20{posted[3]}-{MONTHS[posted[1].title()]:02d}-{int(posted[2]):02d}" if posted else None,
         "posted_by": POSTED_BY.get((x.get("userType") or "").lower()),
         "floor": floor,

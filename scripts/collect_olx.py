@@ -41,7 +41,12 @@ def states(html):
 def get(url):
     # OLX's CDN rejects Python's TLS client; curl with browser headers gets through.
     cmd = ["curl", "-sS", "--compressed", "-m", "60"] + [a for k, v in HEADERS.items() for a in ("-H", f"{k}: {v}")] + [url]
-    return subprocess.run(cmd, capture_output=True, text=True, check=True).stdout
+    for attempt in range(3):  # brief TLS/network hiccups (curl exit 35) are common; retry
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        if r.returncode == 0:
+            return r.stdout
+        time.sleep(3 * (attempt + 1))
+    r.check_returncode()
 
 
 def fetch_all():
@@ -103,6 +108,7 @@ def convert(v, today):
         "parking": "car",
         "available_from": None,
         "posted_on": created.isoformat(),
+        "posted_at": datetime.fromisoformat(v["created_at"]).isoformat(timespec="minutes"),
         "posted_by": POSTED_BY.get(p.get("listed_by")),
         "floor": None if fl is None else ("Ground" if fl == "0" else fl) + (f" of {tf}" if tf else ""),
         "bathrooms": int(p["bathrooms"]) if (p.get("bathrooms") or "").isdigit() else None,

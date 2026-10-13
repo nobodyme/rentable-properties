@@ -131,6 +131,7 @@ def convert(x, today, names, shared_pins):
         "parking": PARKING[x["parking"]],
         "available_from": "immediate" if af is None or af <= today else af.isoformat(),
         "posted_on": ist_date(x.get("activationDate")).isoformat() if x.get("activationDate") else None,
+        "posted_at": datetime.fromtimestamp(x["activationDate"] / 1000, IST).isoformat(timespec="minutes") if x.get("activationDate") else None,
         "posted_by": "owner",  # NoBroker is owner-listed only
         "floor": None if fl is None else ("Ground" if fl == 0 else str(fl)) + (f" of {tf}" if tf is not None else ""),
         "bathrooms": x.get("bathroom"),

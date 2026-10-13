@@ -17,7 +17,7 @@ The goal is to bring `data/properties.json` up to date without touching anything
   neighbourhoods on the zone's edge.
 - No lease (lump-sum) or per-head sharing listings. Implausible deposits are dropped. The same flat posted
   twice on one portal is kept once, at the lower rent.
-- Record `posted_on` whenever the portal shows a posted or refreshed date. The site shows it on every
+- Record `posted_on` (and `posted_at`, the exact time, when available) whenever the portal shows a posted or refreshed date. The site shows it on every
   card, and uses it with `first_seen` for the "Newest" sort and the "New since your last visit" badges.
 - Real and currently listed. Never invent, guess or "fill in" a listing or a field. Use `null` when unknown.
 
@@ -95,6 +95,7 @@ A JSON array of objects:
   "parking": "car | car+bike",
   "available_from": "immediate | YYYY-MM-DD | null",
   "posted_on": "YYYY-MM-DD: the date the portal shows as posted / last refreshed (shown on the card)",
+  "posted_at": "ISO time with offset when the portal gives one (e.g. 2026-10-12T15:37+05:30); the card shows '3 hours ago'",
   "posted_by": "owner | agent | builder | null",
   "floor": "2 of 4",
   "bathrooms": 3,
