@@ -338,7 +338,6 @@
     document.getElementById('pop-avail').querySelector('.chip').classList.toggle('on', S.avail !== '');
     const extra = S.type.size + S.furnishing.size + S.posted_by.size + S.source.size + (S.inactive ? 1 : 0);
     $('f-south').setAttribute('aria-pressed', S.south);
-    $('f-south').classList.toggle('on', S.south);
     if (southLine) S.south ? southLine.addTo(map) : southLine.remove();
     $('more-count').hidden = !extra; $('more-count').textContent = extra;
     $('more-btn').classList.toggle('on', extra > 0);
@@ -348,7 +347,6 @@
     $('f-new').hidden = !newIds.size;
     $('f-new').textContent = S.onlyNew ? `Showing new only · show all` : `${newCount} new since your last visit`;
     $('f-new').setAttribute('aria-pressed', S.onlyNew);
-    $('f-new').classList.toggle('on', S.onlyNew);
     $('count').textContent = `${rows.length} home${rows.length === 1 ? '' : 's'} within ${S.min} min`;
     $('apply-btn').textContent = `Show ${rows.length} home${rows.length === 1 ? '' : 's'}`;
 
