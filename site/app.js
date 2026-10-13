@@ -95,7 +95,8 @@
   // very expensive homes don't squash the useful range.
   const rentMax = Math.ceil(sortedRents[Math.floor(sortedRents.length * 0.95)] / 5000) * 5000;
   const DEFAULTS = () => ({
-    q: '', bhk: new Set(['3']), rent: rentMax, min: 30, avail: '', sort: 'newest',
+    // Owner's default max rent is ₹45,000 (adjustable).
+    q: '', bhk: new Set(['3']), rent: Math.min(45000, rentMax), min: 30, avail: '', sort: 'newest',
     type: new Set(), furnishing: new Set(), posted_by: new Set(), source: new Set(), inactive: false,
     south: true, // only homes south of the chosen point (on by default)
     onlyNew: false,

@@ -47,6 +47,7 @@ The owner mainly uses the site on an iPhone. A change is not done until it works
 - Never invent listings or fields. Routine refreshes change only `data/` (see `UPDATING.md`).
 - Defaults the owner chose:
   - 3 BHK;
+  - max rent ₹45,000;
   - South only on;
   - drive time 30 min;
   - sort Newest.

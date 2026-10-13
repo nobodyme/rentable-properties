@@ -40,7 +40,7 @@ both from OpenStreetMap data.
 
 ## Filters
 
-Search text, south of the chosen point only (on by default), bedrooms (2/3 BHK, defaults to 3), max rent, max drive time, property type, furnishing, move-in
+Search text, south of the chosen point only (on by default), bedrooms (2/3 BHK, defaults to 3), max rent (defaults to ₹45,000), max drive time, property type, furnishing, move-in
 date, posted by (owner/agent), source portal, and an option to include
 listings that are no longer live. Sort by newest (the default), distance, rent or size.
 
