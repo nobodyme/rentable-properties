@@ -39,8 +39,7 @@
       <details class="pop" id="pop-rent">
         <summary class="chip">Rent <b id="o-rent"></b></summary>
         <div class="pop-body">
-          <label for="f-rent">Maximum monthly rent</label>
-          <output id="v-rent" class="pick-value" for="f-rent" aria-live="polite"></output>
+          <div class="pick-head"><label for="f-rent">Max rent</label><output id="v-rent" class="pick-value" for="f-rent" aria-live="polite"></output></div>
           <input id="f-rent" type="range" step="1000">
           <div class="range-ends"><span id="rent-lo"></span><span id="rent-hi"></span></div>
         </div>
@@ -49,8 +48,7 @@
       <details class="pop" id="pop-min">
         <summary class="chip">Drive <b id="o-min"></b></summary>
         <div class="pop-body">
-          <label for="f-min">Maximum drive at evening rush</label>
-          <output id="v-min" class="pick-value" for="f-min" aria-live="polite"></output>
+          <div class="pick-head"><label for="f-min">Max drive, evening rush</label><output id="v-min" class="pick-value" for="f-min" aria-live="polite"></output></div>
           <input id="f-min" type="range" min="5" max="36" step="1">
           <p class="hint">The zone is 30 minutes. Listings up to 36 minutes away (30 at morning rush) are kept as borderline.</p>
         </div>
