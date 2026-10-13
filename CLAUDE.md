@@ -23,7 +23,12 @@ The owner mainly uses the site on an iPhone. A change is not done until it works
 - **Viewport height:** use `dvh` with a `vh` fallback. Respect `env(safe-area-inset-bottom)` for fixed bottom UI.
 - **Popovers and dropdowns:** must not live inside an `overflow`, `mask` or `transform` container that clips them. That made the rent slider untouchable on phones.
 - **Leaflet:** set a map's view (`fitBounds` / `setView`) before adding vector layers, and create maps only once their container is visible.
-- **Caching:** the build versions `style.css` and `app.js` by content hash (`?v=…`) and data is fetched with `cache: 'no-cache'`. Keep both, or phones show a new page with an old stylesheet. When telling the owner to check a change on the phone, mention a pull-to-refresh.
+- **Caching:** GitHub Pages lets browsers cache every file for 10 minutes, and its CDN ignores `?query` strings. So:
+  - The build publishes `style.<hash>.css` and `app.<hash>.js`. Each `index.html` points at files that never change.
+  - The deploy workflow (`KEEP_LIVE_ASSETS`) copies the currently-live hashed files into the new build, so a phone still on the previous page keeps working.
+  - Data is fetched with `cache: 'no-cache'`.
+
+  Never reference plain `style.css` / `app.js` from the page, and never drop `KEEP_LIVE_ASSETS`. When asking the owner to check a change on the phone, say it can take up to 10 minutes or a pull-to-refresh.
 
 ### Before pushing a UI change
 
@@ -34,7 +39,7 @@ The owner mainly uses the site on an iPhone. A change is not done until it works
    - each changed control in both states, with a screenshot.
    - Check for: no console errors, no horizontal scroll, and every popover/slider actually hit-testable (`elementFromPoint`).
 3. WebKit can't be installed in the cloud sandbox, so review the diff against the Safari rules above line by line. Say plainly that real Safari was not run.
-4. After deploying, confirm the live `index.html` references the new `?v=` hashes.
+4. After deploying, confirm the live `index.html` references the new hashed file names.
 
 ### Content rules
 

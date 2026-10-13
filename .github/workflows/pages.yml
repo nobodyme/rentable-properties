@@ -37,6 +37,9 @@ jobs:
       # Validates data/ and assembles site/ (design) + data/ (content) into _site/.
       - name: Build
         run: sh scripts/build.sh
+        env:
+          # Carry over the currently-live hashed CSS/JS so cached pages keep working.
+          KEEP_LIVE_ASSETS: https://nobodyme.github.io/rentable-properties/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
