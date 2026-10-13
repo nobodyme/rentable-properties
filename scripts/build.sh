@@ -15,7 +15,8 @@ python3 -c "import json; d = json.load(open('data/properties.json')); d['origin'
 # stylesheet (or the reverse).
 # With KEEP_LIVE_ASSETS=<site url>, the files the live page uses right now are
 # copied into this build too, so a phone still showing the previous page keeps
-# getting the previous page's files instead of a 404.
+# getting the previous page's files instead of a 404. Each deploy starts from an
+# empty _site/, so at most two versions (current + previous) are ever published.
 python3 - <<'PY'
 import hashlib, os, pathlib, re, urllib.request
 site = pathlib.Path("_site")
@@ -25,6 +26,7 @@ for name in ("style.css", "app.js"):
     stem, ext = name.rsplit(".", 1)
     hashed = f"{stem}.{hashlib.sha1(data).hexdigest()[:10]}.{ext}"
     (site / hashed).write_bytes(data)
+    (site / name).unlink()  # only hashed copies are published
     html = html.replace(f'"{name}"', f'"{hashed}"')
 (site / "index.html").write_text(html)
 
