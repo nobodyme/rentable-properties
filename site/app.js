@@ -329,6 +329,9 @@
     bhkBox.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', S.bhk.has(b.dataset.v)));
     $('o-rent').textContent = S.rent >= rentMax ? 'Any' : 'up to ' + short(S.rent);
     $('o-min').textContent = S.min + ' min';
+    // The chosen value, shown inside the picker too.
+    $('v-rent').textContent = S.rent >= rentMax ? `Any rent (${inr(rentMax)}+)` : `Up to ${inr(S.rent)} / month`;
+    $('v-min').textContent = `Up to ${S.min} min`;
     $('o-avail').textContent = { '': 'Any', '2027-01-31': 'By Jan', '2026-12-31': 'By Dec', '2026-11-30': 'By Nov', now: 'Now' }[S.avail];
     document.getElementById('pop-rent').querySelector('.chip').classList.toggle('on', S.rent < rentMax);
     document.getElementById('pop-min').querySelector('.chip').classList.toggle('on', S.min !== 30);

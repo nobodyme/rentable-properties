@@ -130,7 +130,8 @@ a { color: inherit; }
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
   box-shadow: var(--shadow); padding: 18px;
 }
-.pop-body > label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: 10px; }
+.pop-body > label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: 4px; color: var(--muted); }
+.pick-value { display: block; font-size: 1.35rem; font-weight: 700; letter-spacing: -.01em; margin-bottom: 12px; font-variant-numeric: tabular-nums; }
 .pop-body input[type=range] { width: 100%; accent-color: var(--ink); }
 .range-ends { display: flex; justify-content: space-between; color: var(--muted); font-size: .8rem; }
 .hint { margin: 10px 0 0; color: var(--muted); font-size: .8rem; }
