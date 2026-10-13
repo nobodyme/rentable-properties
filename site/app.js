@@ -24,7 +24,7 @@
   let db, sources, zones;
   try {
     [db, sources, zones] = await Promise.all(['properties.json', 'sources.json', 'isochrone.geojson']
-      .map(f => fetch(DATA + f).then(r => { if (!r.ok) throw new Error(f + ' ' + r.status); return r.json(); })));
+      .map(f => fetch(DATA + f, { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(f + ' ' + r.status); return r.json(); })));
   } catch (err) {
     $('count').textContent = 'Could not load listings (' + err.message + '). Please refresh.';
     return;
