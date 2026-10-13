@@ -267,10 +267,11 @@
   }
   function sorter(key) {
     if (key === 'newest') {
-      // Newest to this site first, then the most recently posted on the portal.
-      const d = v => v || '';
-      return (a, b) => d(b.first_seen).localeCompare(d(a.first_seen))
-        || d(b.posted_on).localeCompare(d(a.posted_on)) || a.minutes_peak - b.minutes_peak;
+      // Most recently published on the portal first: the exact posting time when
+      // known, else the posted date (as midnight). Undated listings go last.
+      const t = p => p.posted_at ? Date.parse(p.posted_at)
+        : p.posted_on ? Date.parse(p.posted_on + 'T00:00:00+05:30') : -Infinity;
+      return (a, b) => (t(b) - t(a)) || a.minutes_peak - b.minutes_peak;
     }
     const desc = key.startsWith('-'); const k = desc ? key.slice(1) : key;
     const f = k === 'minutes' ? 'minutes_peak' : k;
