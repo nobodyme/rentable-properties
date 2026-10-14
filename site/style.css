@@ -211,6 +211,15 @@ button.chip[aria-pressed="true"] .i-off { display: none; }
 .chips li.new { background: var(--accent); color: var(--accent-ink); font-weight: 700; }
 .media { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 .posted { margin: 0; font-size: .78rem; color: var(--muted); }
+.today-line {
+  display: flex; align-items: baseline; gap: 8px;
+  margin: -4px 0 14px; font-size: .85rem; line-height: 1.4; color: var(--ink);
+}
+.today-line b { font-weight: 700; }
+.today-line .muted { color: var(--muted); }
+.today-line .dot { width: 8px; height: 8px; border-radius: 50%; background-color: var(--accent); flex: none; position: relative; top: -1px; }
+.today-line.none { color: var(--muted); }
+.today-line.none .dot { background-color: var(--line-strong); }
 .count-wrap { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; min-width: 0; }
 .chip-sm { height: 30px; padding: 0 12px; font-size: .8rem; }
 .chip-sm[hidden] { display: none; }

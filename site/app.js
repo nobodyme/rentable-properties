@@ -359,6 +359,17 @@
     $('more-btn').classList.toggle('on', extra > 0);
 
     const rows = all.filter(matches).sort(sorter(S.sort));
+
+    // "N listings added today": first seen by the daily refresh on today's date.
+    const today = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD, local time
+    const addedToday = all.filter(p => p.status === 'active' && p.first_seen === today);
+    const inView = addedToday.filter(matches).length;
+    const tl = $('today-line');
+    tl.classList.toggle('none', !addedToday.length);
+    tl.innerHTML = '<span class="dot"></span><span>' + (!addedToday.length
+      ? 'No new listings today'
+      : `<b>${addedToday.length}</b> listing${addedToday.length === 1 ? '' : 's'} added today`
+        + (inView === addedToday.length ? '' : ` <span class="muted">· ${inView} match${inView === 1 ? 'es' : ''} your filters</span>`)) + '</span>';
     const newCount = all.filter(p => newIds.has(p.id) && matches(Object.assign({}, p, { _ignoreNew: true }))).length;
     $('f-new').hidden = !newIds.size;
     $('f-new').textContent = S.onlyNew ? `Showing new only · show all` : `${newCount} new since your last visit`;
