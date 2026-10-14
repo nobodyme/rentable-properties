@@ -310,7 +310,6 @@
     const chips = [
       newIds.has(p.id) && '<li class="new">New</li>',
       p.furnishing && `<li>${esc(label('furnishing', p.furnishing))}</li>`,
-      `<li>${p.parking === 'car+bike' ? 'Car + bike parking' : 'Car parking'}</li>`,
       `<li class="${p.available_from ? 'ok' : ''}">${esc(availText(p))}</li>`,
       site[p.source] && site[p.source].verdict === 'included-with-caution' && '<li class="warn">Unverified site</li>',
       p.status !== 'active' && '<li class="warn">No longer live</li>',
