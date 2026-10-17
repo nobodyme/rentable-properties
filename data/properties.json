@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "origin": {
     "name": "Stanley Medical College Hospital, Old Jail Rd, Royapuram",
     "lat": 13.1058,
@@ -55,7 +55,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a97aa008a14e01a008e6e22425bc/8aa9a97aa008a14e01a008e6e22425bc_97570_52639_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -91,7 +91,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a1d8a10afba201a10b4fb4e23af1/8aa9a1d8a10afba201a10b4fb4e23af1_53797_469915_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -127,7 +127,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b4619d844215019d84bfdc190956/8aa9b4619d844215019d84bfdc190956_12546_992331_medium.jpg",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -163,7 +163,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fb1827bc1000a017bc113e0090505/8a9fb1827bc1000a017bc113e0090505_59440_156373_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -199,7 +199,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f91438fae709f018fae86bdba0cd0/8a9f91438fae709f018fae86bdba0cd0_30122_740592_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -235,7 +235,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f93438cdf1fcd018ce19d627517f5/8a9f93438cdf1fcd018ce19d627517f5_52113_732488_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -271,7 +271,7 @@
       "photo": "https://assets.nobroker.in/images/8a9ff98284fa345e0184faa7d4d55d4a/8a9ff98284fa345e0184faa7d4d55d4a_756838_458080_medium.jpg",
       "photo_count": 16,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -307,7 +307,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b51e9d764f2e019d779a37ea0d24/8aa9b51e9d764f2e019d779a37ea0d24_26601_362751_medium.jpg",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -343,7 +343,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -379,7 +379,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9ab30a11bef0101a11c1cc33013f5/8aa9ab30a11bef0101a11c1cc33013f5_56209_502669_medium.jpg",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -415,44 +415,8 @@
       "photo": "https://assets.nobroker.in/images/8aa9aa66a0ecf11e01a0ed0974cb0fad/8aa9aa66a0ecf11e01a0ed0974cb0fad_27251_963005_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
-    },
-    {
-      "id": "nobroker-2b239198dd",
-      "status": "active",
-      "source": "nobroker",
-      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-raja-annamalai-puram-chennai-for-rs-30000/8aa9a67da1345dba01a134a83806317d/detail",
-      "title": "2 BHK Flat In Sri Raman Enclave for Rent  In Raja Annamalai Puram",
-      "type": "apartment",
-      "bhk": 2,
-      "rent": 30000,
-      "maintenance": null,
-      "deposit": 300000,
-      "locality": "Washermanpet",
-      "address": "R A Puram, Chennai, Tamil Nadu 600028, Raja Annamalai Puram, chennai",
-      "lat": 13.12016,
-      "lon": 80.279239,
-      "location_precision": "listing",
-      "road_km": 2.6,
-      "minutes_peak": 11,
-      "minutes_morning": 9,
-      "area_sqft": 675,
-      "furnishing": "fully-furnished",
-      "parking": "car+bike",
-      "available_from": "immediate",
-      "posted_on": "2026-10-13",
-      "posted_at": "2026-10-13T15:35+05:30",
-      "posted_by": "owner",
-      "floor": "3 of 3",
-      "bathrooms": 2,
-      "preferred_tenants": "any",
-      "notes": "Rent negotiable · Lift · 10 yrs old · East facing",
-      "photo": "https://assets.nobroker.in/images/8aa9a67da1345dba01a134a83806317d/8aa9a67da1345dba01a134a83806317d_42555_771783_medium.jpg",
-      "photo_count": 1,
-      "first_seen": "2026-10-13",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
     },
     {
       "id": "nobroker-fda8b32c1b",
@@ -487,7 +451,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fe18383acc0410183ad5305076760/8a9fe18383acc0410183ad5305076760_24077_762173_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-15",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -523,7 +487,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b384a0fc63b701a0fca5382f2eb0/8aa9b384a0fc63b701a0fca5382f2eb0_24412_590103_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -559,7 +523,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f82da764fff8601765052bbc8144e/8a9f82da764fff8601765052bbc8144e_25367_21572_medium.jpg",
       "photo_count": 8,
       "first_seen": "2026-10-15",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -595,7 +559,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9bceda093bac601a0944a638565f3/8aa9bceda093bac601a0944a638565f3_73170_914870_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -631,7 +595,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -668,7 +632,7 @@
       "photo_count": 10,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "nobroker-a95858cd06",
@@ -703,7 +667,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f8e8496b06cb60196b0b777651031/8a9f8e8496b06cb60196b0b777651031_63814_512213_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -739,7 +703,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a2e9a0e3491e01a0e60aa8dc2932/8aa9a2e9a0e3491e01a0e60aa8dc2932_11280_653726_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -775,7 +739,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a3769e73421b019e7356c41806e4/8aa9a3769e73421b019e7356c41806e4_32162_37624_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -811,7 +775,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dczATmrxVd9B7YPa7jwz7Es1/Photo_h470_w1080/86485401_3_hatsAppImage20260916at12.04.48PM_470_1080.jpeg",
       "photo_count": 10,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -847,7 +811,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnjVE88E9dck_PCoLc298UeEWNV8RC2hY/Photo_h470_w1080/82068249_3_PropertyImage812-1409445465471_470_1080.jpg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -883,7 +847,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVB48U9d8sabKbEaGwLufy3u1cCklrT/Photo_h470_w1080/86139011_3_PropertyImage1788153883573_470_1080.jpg",
       "photo_count": 20,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -919,7 +883,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b031a024bde801a024f1cb01172a/8aa9b031a024bde801a024f1cb01172a_54881_115794_medium.jpg",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -956,7 +920,7 @@
       "photo_count": 0,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "nobroker-b8c1655e25",
@@ -991,7 +955,7 @@
       "photo": "https://assets.nobroker.in/images/8aa99ca3a12596fa01a125e4e59e3548/8aa99ca3a12596fa01a125e4e59e3548_97799_391884_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1027,7 +991,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1063,7 +1027,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081816488f65801648900298606bc/ff8081816488f65801648900298606bc_73752_885169_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1099,7 +1063,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1135,43 +1099,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9bd84a00dc88a01a00df63631133e/8aa9bd84a00dc88a01a00df63631133e_95139_794764_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
-      "missed_sweeps": 0
-    },
-    {
-      "id": "nobroker-ce300d194e",
-      "status": "active",
-      "source": "nobroker",
-      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-vyasarpadi-chennai-for-rs-21000/8a9f8f856f857930016f888d08633305/detail",
-      "title": "2 BHK Flat In Lilly Enclave for Rent  In Vyasarpadi",
-      "type": "apartment",
-      "bhk": 2,
-      "rent": 21000,
-      "maintenance": 1500,
-      "deposit": 200000,
-      "locality": "Perambur",
-      "address": "Near Radiance Empire, Vyasarpadi, chennai",
-      "lat": 13.10959137020379,
-      "lon": 80.25718698875328,
-      "location_precision": "listing",
-      "road_km": 4.5,
-      "minutes_peak": 19,
-      "minutes_morning": 15,
-      "area_sqft": 900,
-      "furnishing": "semi-furnished",
-      "parking": "car",
-      "available_from": "2026-10-17",
-      "posted_on": "2026-09-24",
-      "posted_at": "2026-09-24T14:00+05:30",
-      "posted_by": "owner",
-      "floor": "1 of 2",
-      "bathrooms": 2,
-      "preferred_tenants": "family",
-      "notes": "Rent negotiable · Maintenance included · Lift · 5 yrs old · East facing",
-      "photo": "https://assets.nobroker.in/images/8a9f8f856f857930016f888d08633305/8a9f8f856f857930016f888d08633305_35406_788804_medium.jpg",
-      "photo_count": 4,
-      "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1207,7 +1135,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1243,7 +1171,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fc582810dfbf701810e9629370a16/8a9fc582810dfbf701810e9629370a16_24876_694380_medium.jpg",
       "photo_count": 8,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1279,7 +1207,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9c8949da62908019da69462f31a9f/8aa9c8949da62908019da69462f31a9f_53829_265940_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1315,7 +1243,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f02838a0214ef018a024c446a2b9f/8a9f02838a0214ef018a024c446a2b9f_54727_872494_medium.jpg",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1351,7 +1279,43 @@
       "photo": "https://assets.nobroker.in/images/8a9f92fb77e81aca0177e840ad5d131f/8a9f92fb77e81aca0177e840ad5d131f_21232_229537_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
+    },
+    {
+      "id": "nobroker-34b36abc71",
+      "status": "active",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-47-kattur-sadayappanstreet-periamet-poongavanapuram-chennai-tamil-nadu-600003-india-chennai-for-rs-22000/8aa9a0efa13ffc3b01a1423df17d099f/detail",
+      "title": "2 BHK Flat In 2 Bh Apartmwnt, 1 St Crossvstreet, Venkag Iconia for Rent  In 47, Kattur Sadayappanstreet, Periamet, Poongavanapuram, Chennai, Tamil Nadu 600003, India",
+      "type": "apartment",
+      "bhk": 2,
+      "rent": 22000,
+      "maintenance": null,
+      "deposit": 100000,
+      "locality": "Periamet",
+      "address": "2 BH apartmwnt, 1 st crossvstreet, venkag iconia, 1 st cross street.rayalanagar.ramapuram.chennai",
+      "lat": 13.08441,
+      "lon": 80.26928,
+      "location_precision": "locality",
+      "road_km": 4.6,
+      "minutes_peak": 19,
+      "minutes_morning": 16,
+      "area_sqft": 1000,
+      "furnishing": "semi-furnished",
+      "parking": "car+bike",
+      "available_from": "immediate",
+      "posted_on": "2026-10-16",
+      "posted_at": "2026-10-16T06:50+05:30",
+      "posted_by": "owner",
+      "floor": "1 of 2",
+      "bathrooms": 2,
+      "preferred_tenants": "family",
+      "notes": "No lift · 3 yrs old · West facing · Location approximate (locality only)",
+      "photo": "https://assets.nobroker.in/images/8aa9a0efa13ffc3b01a1423df17d099f/8aa9a0efa13ffc3b01a1423df17d099f_96951_921463_medium.jpg",
+      "photo_count": 1,
+      "first_seen": "2026-10-17",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1387,7 +1351,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081816de1fa74016de3ca5366166d/ff8081816de1fa74016de3ca5366166d_24860_73743_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1423,7 +1387,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fdc8284ad998d0184ae06687f4b64/8a9fdc8284ad998d0184ae06687f4b64_95550_239091_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1459,7 +1423,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f933d7527390a017529afb6247cd6/8a9f933d7527390a017529afb6247cd6_80782_30109_medium.jpg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1495,7 +1459,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fae8278494fd20178495c84ee04b7/8a9fae8278494fd20178495c84ee04b7_2951_890457_medium.jpg",
       "photo_count": 41,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1531,7 +1495,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fbd838a646857018a649081611e6d/8a9fbd838a646857018a649081611e6d_13804_458799_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1567,7 +1531,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081816a25a159016a25deb30538ba/ff8081816a25a159016a25deb30538ba_55610_888564_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1603,7 +1567,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081815c3913f5015c399d74c14126/ff8081815c3913f5015c399d74c14126_76872_290599_medium.jpg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1639,7 +1603,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b384a138789d01a1397fd2d729a1/8aa9b384a138789d01a1397fd2d729a1_75844_231959_medium.jpg",
       "photo_count": 3,
       "first_seen": "2026-10-15",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1675,7 +1639,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a2eea13d9f8301a13e2e52434fc0/8aa9a2eea13d9f8301a13e2e52434fc0_94989_828955_medium.jpg",
       "photo_count": 14,
       "first_seen": "2026-10-16",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1711,7 +1675,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVP9dY9dMKCM6_z2Bgq8V9URB-mRkDJ/Photo_h470_w1080/86833437_5_all_470_1080.jpg",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1747,7 +1711,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVB5tA9d8oDzQGLDhR-XuSw8CmpPsNU/Photo_h470_w1080/66665689_8_fe6ac41c76c4efd95b158ef6444b5eb1all194_470_1080.jpg",
       "photo_count": 14,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1783,7 +1747,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1819,7 +1783,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fbc8396670ab6019667549baa1ac0/8a9fbc8396670ab6019667549baa1ac0_98277_955629_medium.jpg",
       "photo_count": 4,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1855,7 +1819,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fed8284efe7650184f039ecb8323f/8a9fed8284efe7650184f039ecb8323f_39381_670889_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1891,7 +1855,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b6e5a0a0561301a0a300b25f0145/8aa9b6e5a0a0561301a0a300b25f0145_5524_936565_medium.jpg",
       "photo_count": 11,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1927,7 +1891,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f8ec393d826860193d84c14580bdf/8a9f8ec393d826860193d84c14580bdf_86688_362161_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1963,7 +1927,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9bf06a0807d6601a080a221b219fc/8aa9bf06a0807d6601a080a221b219fc_55128_547983_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -1999,7 +1963,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f85c391db2cf90191db90e4652050/8a9f85c391db2cf90191db90e4652050_14842_113844_medium.jpg",
       "photo_count": 24,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2035,7 +1999,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fae8a98504da10198507a2dbe1229/8a9fae8a98504da10198507a2dbe1229_49790_326998_medium.jpg",
       "photo_count": 8,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2071,7 +2035,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2107,7 +2071,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2144,7 +2108,7 @@
       "photo_count": 4,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "nobroker-a2eae41eb7",
@@ -2179,7 +2143,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b484a1350a1b01a13576bb13470c/8aa9b484a1350a1b01a13576bb13470c_84838_938135_medium.jpg",
       "photo_count": 4,
       "first_seen": "2026-10-13",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2215,7 +2179,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dsuENgTHxNC_axDeLwBe0jEd/Photo_h470_w1080/86577097_5_hatsAppImage20260908at4.39.51PM1_470_1080.jpeg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2251,7 +2215,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dM_79daeF_Fdoi51kcOBYD-S/Photo_h470_w1080/86328445_12_hatsAppImage20260903at13.49.04_470_1080.jpeg",
       "photo_count": 12,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2277,7 +2241,7 @@
       "furnishing": "fully-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": null,
+      "posted_on": "2026-10-15",
       "posted_at": "2026-10-15T05:15+05:30",
       "posted_by": "agent",
       "floor": "2 of 3",
@@ -2287,44 +2251,8 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
-    },
-    {
-      "id": "nobroker-fdc357fde3",
-      "status": "active",
-      "source": "nobroker",
-      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-perambur-chennai-for-rs-25000/ff8081815b0aa050015b0e31f93b1266/detail",
-      "title": "2 BHK House for Rent  In Perambur",
-      "type": "independent-house",
-      "bhk": 2,
-      "rent": 25000,
-      "maintenance": 1000,
-      "deposit": 100000,
-      "locality": "Perambur",
-      "address": "Independent House, Kannabiraan Koil St near Kaligi Ranganathan Montford Matric Hr. Sec. School, Perambur, chennai",
-      "lat": 13.110535341070817,
-      "lon": 80.24731694214749,
-      "location_precision": "listing",
-      "road_km": 5.7,
-      "minutes_peak": 23,
-      "minutes_morning": 19,
-      "area_sqft": 850,
-      "furnishing": "unfurnished",
-      "parking": "car+bike",
-      "available_from": "immediate",
-      "posted_on": "2026-08-30",
-      "posted_at": "2026-08-30T14:45+05:30",
-      "posted_by": "owner",
-      "floor": "1 of 1",
-      "bathrooms": 2,
-      "preferred_tenants": "family",
-      "notes": "Maintenance included · Lift · 5 yrs old · North facing",
-      "photo": "https://assets.nobroker.in/images/ff8081815b0aa050015b0e31f93b1266/ff8081815b0aa050015b0e31f93b1266_48475_570105_medium.jpg",
-      "photo_count": 20,
-      "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
     },
     {
       "id": "nobroker-ad3ea94fb8",
@@ -2359,7 +2287,7 @@
       "photo": "https://assets.nobroker.in/images/ff80818163ca7f280163cac77a6a3673/ff80818163ca7f280163cac77a6a3673_59705_172802_medium.jpg",
       "photo_count": 21,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2395,7 +2323,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f07848aa8ac67018aa938823b3764/8a9f07848aa8ac67018aa938823b3764_10784_867418_medium.jpg",
       "photo_count": 13,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2432,7 +2360,7 @@
       "photo_count": 9,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "olx-a1382c3d56",
@@ -2467,7 +2395,7 @@
       "photo": "https://apollo.olx.in/v1/files/a5cvvoef9qbc3-IN/image;s=480x360",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2503,7 +2431,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-15",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2539,7 +2467,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2575,7 +2503,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f82a97062bcbc0170712e579a7cc4/8a9f82a97062bcbc0170712e579a7cc4_24158_163880_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2611,7 +2539,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fa28a96b005c30196b01a2fd106a4/8a9fa28a96b005c30196b01a2fd106a4_122275_881317_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2647,7 +2575,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a98aa0fb88fe01a0fc1780ff6f2f/8aa9a98aa0fb88fe01a0fc1780ff6f2f_57077_692388_medium.jpg",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2683,7 +2611,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fb98282b48bed0182b4a417e10e2a/8a9fb98282b48bed0182b4a417e10e2a_41262_54777_medium.jpg",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2719,7 +2647,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081816324bdab016324e4924517ee/ff8081816324bdab016324e4924517ee_98740_418541_medium.jpg",
       "photo_count": 11,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2755,7 +2683,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a9b0a138789c01a13949926003b0/8aa9a9b0a138789c01a13949926003b0_43910_541405_medium.jpg",
       "photo_count": 9,
       "first_seen": "2026-10-15",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2781,8 +2709,8 @@
       "furnishing": "semi-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": "2026-10-14",
-      "posted_at": "2026-10-14T05:15+05:30",
+      "posted_on": null,
+      "posted_at": "2026-10-17T05:15+05:30",
       "posted_by": "agent",
       "floor": "12 of 14",
       "bathrooms": 3,
@@ -2791,7 +2719,7 @@
       "photo": null,
       "photo_count": 51,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2827,7 +2755,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2863,7 +2791,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVP9dY9dMtFu1CtLlGug_p74HMRuKwt/Photo_h470_w1080/86720809_9_hatsAppImage20261001at2.14.56PM_470_1080.jpeg",
       "photo_count": 15,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2899,7 +2827,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dshp2PsDOBOIFkfRzqK5LaU8/Photo_h470_w1080/86589305_3_hatsAppImage20260921at17.14.551_470_1080.jpeg",
       "photo_count": 11,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2935,7 +2863,7 @@
       "photo": null,
       "photo_count": 40,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2971,7 +2899,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVN99A9dsLNxyL5z9ge0f-XoUERg6rl/Photo_h470_w1080/27154193_9_all1_470_1080.jpg",
       "photo_count": 10,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -2997,7 +2925,7 @@
       "furnishing": "fully-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": null,
+      "posted_on": "2026-10-15",
       "posted_at": "2026-10-15T05:15+05:30",
       "posted_by": "agent",
       "floor": "4 of 18",
@@ -3007,7 +2935,7 @@
       "photo": null,
       "photo_count": 34,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3033,8 +2961,8 @@
       "furnishing": "semi-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": "2026-10-13",
-      "posted_at": "2026-10-13T05:15+05:30",
+      "posted_on": null,
+      "posted_at": "2026-10-16T05:15+05:30",
       "posted_by": "agent",
       "floor": "4 of 4",
       "bathrooms": 3,
@@ -3043,8 +2971,8 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
     },
     {
       "id": "magicbricks-e15e5e7b28",
@@ -3069,8 +2997,8 @@
       "furnishing": "semi-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": "2026-10-14",
-      "posted_at": "2026-10-14T05:15+05:30",
+      "posted_on": null,
+      "posted_at": "2026-10-17T05:15+05:30",
       "posted_by": "agent",
       "floor": "5 of 12",
       "bathrooms": 3,
@@ -3079,7 +3007,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnjVE88E9dczLDypGdiol1hgGF7g5C9Q6/Photo_h470_w1080/82607489_7_1765904582276-592_470_1080.jpg",
       "photo_count": 15,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3105,8 +3033,8 @@
       "furnishing": "fully-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": "2026-10-13",
-      "posted_at": "2026-10-13T05:15+05:30",
+      "posted_on": null,
+      "posted_at": "2026-10-16T05:15+05:30",
       "posted_by": "agent",
       "floor": "2 of 17",
       "bathrooms": 3,
@@ -3115,8 +3043,8 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnjVB5tA9dcg2hCO6hlQN-VWPd3pdWE6v/Photo_h470_w1080/78889319_6_MG20250412WA0005_470_1080.jpg",
       "photo_count": 13,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
     },
     {
       "id": "magicbricks-e7ef8357f2",
@@ -3141,8 +3069,8 @@
       "furnishing": "semi-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": "2026-10-13",
-      "posted_at": "2026-10-13T05:15+05:30",
+      "posted_on": null,
+      "posted_at": "2026-10-16T05:15+05:30",
       "posted_by": "agent",
       "floor": "7 of 13",
       "bathrooms": 3,
@@ -3151,8 +3079,8 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnjVP9dY9dMLRZKASev_VZX7fvspCbev-/Photo_h470_w1080/81685935_10_MG20221001WA0006_470_1080.jpg",
       "photo_count": 11,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
     },
     {
       "id": "magicbricks-3a60b4a786",
@@ -3177,8 +3105,8 @@
       "furnishing": "fully-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": "2026-10-13",
-      "posted_at": "2026-10-13T05:15+05:30",
+      "posted_on": null,
+      "posted_at": "2026-10-16T05:15+05:30",
       "posted_by": "agent",
       "floor": "5 of 17",
       "bathrooms": 3,
@@ -3187,8 +3115,8 @@
       "photo": null,
       "photo_count": 34,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
     },
     {
       "id": "magicbricks-6eb448afbc",
@@ -3213,8 +3141,8 @@
       "furnishing": "semi-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": "2026-10-13",
-      "posted_at": "2026-10-13T05:15+05:30",
+      "posted_on": null,
+      "posted_at": "2026-10-16T05:15+05:30",
       "posted_by": "agent",
       "floor": "9 of 13",
       "bathrooms": 2,
@@ -3223,8 +3151,8 @@
       "photo": null,
       "photo_count": 27,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
     },
     {
       "id": "magicbricks-422cba169d",
@@ -3249,8 +3177,8 @@
       "furnishing": "fully-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": "2026-10-13",
-      "posted_at": "2026-10-13T05:15+05:30",
+      "posted_on": null,
+      "posted_at": "2026-10-16T05:15+05:30",
       "posted_by": "agent",
       "floor": "5 of 17",
       "bathrooms": 3,
@@ -3259,8 +3187,8 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnjVG88A9dMzhK4FlFrTI_tYcHZvfmCU9/Photo_h470_w1080/77631985_5_MG20240203WA0013_470_1080.jpg",
       "photo_count": 10,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
     },
     {
       "id": "magicbricks-de058c6c96",
@@ -3285,8 +3213,8 @@
       "furnishing": "fully-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": "2026-10-13",
-      "posted_at": "2026-10-13T05:15+05:30",
+      "posted_on": null,
+      "posted_at": "2026-10-16T05:15+05:30",
       "posted_by": "agent",
       "floor": "4 of 17",
       "bathrooms": 3,
@@ -3295,8 +3223,8 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h470_w1080/84543313_3_MG20260507WA0001_470_1080.jpg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
     },
     {
       "id": "magicbricks-02d0c65e9e",
@@ -3331,7 +3259,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVK4849dcpiY2ROQC06Hz8KVsZn0VuR/Photo_h470_w1080/85487409_2_hatsAppImage20260703at4.53.45PM1_470_1080.jpeg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3368,7 +3296,7 @@
       "photo_count": 0,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "nobroker-6aa5efa673",
@@ -3403,7 +3331,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3439,7 +3367,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9af6ea0d255f001a0d2faf35c7210/8aa9af6ea0d255f001a0d2faf35c7210_55794_443379_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3475,7 +3403,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f830391cf96a60191cfbe79d40552/8a9f830391cf96a60191cfbe79d40552_51545_270719_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3511,7 +3439,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fb784998ffe5e0199904d3e6622f8/8a9fb784998ffe5e0199904d3e6622f8_76519_611132_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3547,7 +3475,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b365a079edba01a07a645445429f/8aa9b365a079edba01a07a645445429f_421358_528698_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3583,7 +3511,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3620,7 +3548,7 @@
       "photo_count": 0,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "nobroker-c9acc22f65",
@@ -3655,7 +3583,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fa7849753813c019753e40fc629ef/8a9fa7849753813c019753e40fc629ef_96239_22318_medium.jpg",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3691,7 +3619,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fa78499ce38530199cea55e4d21f6/8a9fa78499ce38530199cea55e4d21f6_59903_190040_medium.jpg",
       "photo_count": 50,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3727,7 +3655,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9ac79a0c2070601a0c252de28239d/8aa9ac79a0c2070601a0c252de28239d_85336_953549_medium.jpg",
       "photo_count": 4,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3763,7 +3691,7 @@
       "photo": "https://apollo.olx.in/v1/files/e2sp83hw1tgd-IN/image;s=480x360",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3799,7 +3727,43 @@
       "photo": "https://apollo.olx.in/v1/files/93xaeeqfso3y-IN/image;s=480x360",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
+    },
+    {
+      "id": "magicbricks-df02d1aac9",
+      "status": "active",
+      "source": "magicbricks",
+      "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1660-Sq-ft-Multistorey-Apartment-FOR-Rent-Egmore-in-Chennai&id=4d423836353331363237",
+      "title": "2BHK Multistorey Apartment for Rent in Ceebros  The Atlantic Residences By Ceebros at Egmore",
+      "type": "apartment",
+      "bhk": 2,
+      "rent": 150000,
+      "maintenance": null,
+      "deposit": 1500000,
+      "locality": "Egmore",
+      "address": "Ceebros  The Atlantic Residences By Ceebros, 2 BHK Flat No 50 Door No 6 tower b The Atlantic Residences By Ceebros Egmore Chennai 60008",
+      "lat": 13.0710425,
+      "lon": 80.260245,
+      "location_precision": "approximate",
+      "road_km": 6.0,
+      "minutes_peak": 25,
+      "minutes_morning": 20,
+      "area_sqft": 1660,
+      "furnishing": "semi-furnished",
+      "parking": "car",
+      "available_from": "immediate",
+      "posted_on": null,
+      "posted_at": "2026-10-17T05:12+05:30",
+      "posted_by": "owner",
+      "floor": "5 of 18",
+      "bathrooms": 3,
+      "preferred_tenants": "bachelors",
+      "notes": "Car parking: 2 Covered",
+      "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dshp2PsDOBOIFkfRzqK5LaU8/Photo_h470_w1080/86531627_3_PropertyImage1790088669757_470_1080.jpg",
+      "photo_count": 20,
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3835,7 +3799,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fd78288f6bb510188f75251336a03/8a9fd78288f6bb510188f75251336a03_81249_766434_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3871,7 +3835,7 @@
       "photo": "https://assets.nobroker.in/images/8a9ff282862f31a601862fc844416835/8a9ff282862f31a601862fc844416835_77851_306824_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3907,7 +3871,7 @@
       "photo": "https://assets.nobroker.in/images/8a9ff0828514989a018514b1aeca0eda/8a9ff0828514989a018514b1aeca0eda_473547_382613_medium.jpg",
       "photo_count": 10,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -3943,44 +3907,8 @@
       "photo": "https://assets.nobroker.in/images/8aa9b2849ece7db2019ece98cfe606ad/8aa9b2849ece7db2019ece98cfe606ad_6717_571734_medium.jpg",
       "photo_count": 13,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
-    },
-    {
-      "id": "nobroker-f321512282",
-      "status": "active",
-      "source": "nobroker",
-      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-perambur-chennai-for-rs-15000/8a9fe38283499e01018349db24b92a09/detail",
-      "title": "2 BHK House for Rent  In Perambur",
-      "type": "independent-house",
-      "bhk": 2,
-      "rent": 15000,
-      "maintenance": null,
-      "deposit": 150000,
-      "locality": "Perambur",
-      "address": "Independent House,  Bunder Garden St, near Sen Hospital, Perambur, chennai",
-      "lat": 13.110805250760707,
-      "lon": 80.24188708531538,
-      "location_precision": "listing",
-      "road_km": 6.3,
-      "minutes_peak": 26,
-      "minutes_morning": 21,
-      "area_sqft": 1200,
-      "furnishing": "unfurnished",
-      "parking": "car+bike",
-      "available_from": "immediate",
-      "posted_on": "2026-10-04",
-      "posted_at": "2026-10-04T16:00+05:30",
-      "posted_by": "owner",
-      "floor": "Ground of 1",
-      "bathrooms": 2,
-      "preferred_tenants": "family",
-      "notes": "No lift · 10 yrs old",
-      "photo": null,
-      "photo_count": 0,
-      "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
     },
     {
       "id": "nobroker-8786ccf2ec",
@@ -4015,7 +3943,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4051,7 +3979,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f9fc8942263d5019422851c7e06f1/8a9f9fc8942263d5019422851c7e06f1_189119_53945_medium.jpg",
       "photo_count": 12,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4076,7 +4004,7 @@
       "area_sqft": 770,
       "furnishing": "semi-furnished",
       "parking": "car",
-      "available_from": "2026-10-22",
+      "available_from": "2026-11-02",
       "posted_on": "2026-10-07",
       "posted_at": "2026-10-07T19:45+05:30",
       "posted_by": "owner",
@@ -4087,7 +4015,7 @@
       "photo": "https://assets.nobroker.in/images/8aa989b49fe6cfe5019fe6ec60e91049/8aa989b49fe6cfe5019fe6ec60e91049_33240_815366_medium.jpg",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4123,7 +4051,43 @@
       "photo": "https://assets.nobroker.in/images/8aa9aa0ea13a30a401a13a6e6e972295/8aa9aa0ea13a30a401a13a6e6e972295_11913_369775_medium.jpg",
       "photo_count": 7,
       "first_seen": "2026-10-15",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
+    },
+    {
+      "id": "nobroker-a984e61463",
+      "status": "active",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-perambur-chennai-for-rs-22000/ff80818162f29f2a0162f3661b44586e/detail",
+      "title": "2 BHK Flat In Standalone  Building  for Rent  In Perambur",
+      "type": "apartment",
+      "bhk": 2,
+      "rent": 22000,
+      "maintenance": 1500,
+      "deposit": 80000,
+      "locality": "Perambur",
+      "address": "Raghavachari Street  near  CSI puthyuir school, Perambur, chennai",
+      "lat": 13.113256825114302,
+      "lon": 80.23878900765745,
+      "location_precision": "listing",
+      "road_km": 6.4,
+      "minutes_peak": 26,
+      "minutes_morning": 22,
+      "area_sqft": 750,
+      "furnishing": "semi-furnished",
+      "parking": "car+bike",
+      "available_from": "immediate",
+      "posted_on": "2026-10-16",
+      "posted_at": "2026-10-16T20:05+05:30",
+      "posted_by": "owner",
+      "floor": "2 of 3",
+      "bathrooms": 2,
+      "preferred_tenants": "family",
+      "notes": "Maintenance included · Lift · 0 yrs old · East facing",
+      "photo": "https://assets.nobroker.in/images/ff80818162f29f2a0162f3661b44586e/ff80818162f29f2a0162f3661b44586e_35122_306329_medium.jpg",
+      "photo_count": 9,
+      "first_seen": "2026-10-17",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4159,20 +4123,20 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
       "id": "nobroker-705c34ad62",
       "status": "active",
       "source": "nobroker",
-      "source_url": "https://www.nobroker.in/property/3-bhk-apartment-for-rent-in-egmore-chennai-for-rs-125000/8a9fae83951402420195140907200149/detail",
+      "source_url": "https://www.nobroker.in/property/3-bhk-apartment-for-rent-in-egmore-chennai-for-rs-115000/8a9fae83951402420195140907200149/detail",
       "title": "3 BHK House for Rent  In Egmore",
       "type": "independent-house",
       "bhk": 3,
-      "rent": 125000,
+      "rent": 115000,
       "maintenance": 5000,
-      "deposit": 750000,
+      "deposit": 690000,
       "locality": "Egmore",
       "address": "Independent House, SAIT Colony 2nd Street, Egmore, chennai",
       "lat": 13.073032815435996,
@@ -4195,7 +4159,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fae83951402420195140907200149/8a9fae83951402420195140907200149_60022_46482_medium.jpg",
       "photo_count": 14,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4231,7 +4195,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4267,7 +4231,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b44f9c5fae6c019c605a107f4dec/8aa9b44f9c5fae6c019c605a107f4dec_844721_935431_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4292,18 +4256,18 @@
       "area_sqft": 1300,
       "furnishing": "semi-furnished",
       "parking": "car",
-      "available_from": "immediate",
+      "available_from": "2026-10-21",
       "posted_on": "2026-09-30",
       "posted_at": "2026-09-30T16:35+05:30",
       "posted_by": "owner",
       "floor": "1 of 1",
       "bathrooms": 2,
       "preferred_tenants": "family",
-      "notes": "Rent negotiable · No lift · 10 yrs old · North facing",
+      "notes": "No lift · 10 yrs old · North facing",
       "photo": "https://assets.nobroker.in/images/8a9faa839607c49a019607e5dac2010f/8a9faa839607c49a019607e5dac2010f_9549_821422_medium.jpg",
-      "photo_count": 15,
+      "photo_count": 16,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4339,7 +4303,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f922472f47f2c0172f9955e10771e/8a9f922472f47f2c0172f9955e10771e_63037_525444_medium.jpg",
       "photo_count": 12,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4375,7 +4339,7 @@
       "photo": "https://assets.nobroker.in/images/8aa99767a0ba184101a0ba3e19fb1178/8aa99767a0ba184101a0ba3e19fb1178_70361_716531_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4411,7 +4375,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a25ba1018a4301a101b17e2b1a85/8aa9a25ba1018a4301a101b17e2b1a85_96256_386033_medium.jpg",
       "photo_count": 4,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4447,7 +4411,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b91b9ee57302019ee694334e4740/8aa9b91b9ee57302019ee694334e4740_11359_736699_medium.jpg",
       "photo_count": 3,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4483,7 +4447,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9993c9f067e80019f070edb9a0d4c/8aa9993c9f067e80019f070edb9a0d4c_18011_750134_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4591,7 +4555,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVK4849dMNzvti7CImVX2CFbPeFXFfz/Photo_h470_w1080/85472655_1_hatsAppImage20260709at18.04.27_470_1080.jpeg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4627,7 +4591,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dMPITimN5P2AV3JKF0genm8U/Photo_h470_w1080/86376103_8_all_470_1080.jpg",
       "photo_count": 8,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4663,7 +4627,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4689,8 +4653,8 @@
       "furnishing": "fully-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": "2026-10-13",
-      "posted_at": "2026-10-13T05:15+05:30",
+      "posted_on": null,
+      "posted_at": "2026-10-16T05:15+05:30",
       "posted_by": "agent",
       "floor": "6 of 17",
       "bathrooms": 3,
@@ -4699,8 +4663,8 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAmDVO-dQ9dsx22eYPFmGWHAd0qotC3JM1/Photo_h470_w1080/70191041_4_MG20231126WA0031_470_1080.jpg",
       "photo_count": 16,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
     },
     {
       "id": "nobroker-49c85a1255",
@@ -4735,7 +4699,7 @@
       "photo": "https://assets.nobroker.in/images/8aa99565a12f07c301a12fc4838b0560/8aa99565a12f07c301a12fc4838b0560_61171_759046_medium.jpg",
       "photo_count": 3,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4771,7 +4735,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a0019f9d57a5019f9e23409f2ed1/8aa9a0019f9d57a5019f9e23409f2ed1_14038_206225_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4807,7 +4771,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fb58594a106d40194a1325c5e111b/8a9fb58594a106d40194a1325c5e111b_80843_924214_medium.jpg",
       "photo_count": 12,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4843,7 +4807,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081816b6eecd4016b6ef4254d0446/ff8081816b6eecd4016b6ef4254d0446_92209_897857_medium.jpg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4879,7 +4843,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4915,7 +4879,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b9849fabef1c019fac3fc34b26c9/8aa9b9849fabef1c019fac3fc34b26c9_70020_953743_medium.jpg",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4951,7 +4915,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fab838bb84cc4018bb90f61330bf6/8a9fab838bb84cc4018bb90f61330bf6_41247_26719_medium.jpg",
       "photo_count": 10,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -4987,7 +4951,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081816d29d362016d29e5f4aa0b3a/ff8081816d29d362016d29e5f4aa0b3a_55269_603164_medium.jpg",
       "photo_count": 15,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5023,7 +4987,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f8b4391d9e34c0191da18927a080b/8a9f8b4391d9e34c0191da18927a080b_103461_82280_medium.jpg",
       "photo_count": 8,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5059,7 +5023,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b379a107557601a107e955af404c/8aa9b379a107557601a107e955af404c_24720_48806_medium.jpg",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5095,7 +5059,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a7ad9d66dc4f019d67a9a4206325/8aa9a7ad9d66dc4f019d67a9a4206325_72973_43949_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5131,7 +5095,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5168,7 +5132,7 @@
       "photo_count": 1,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "olx-e68f2836c3",
@@ -5203,7 +5167,7 @@
       "photo": "https://apollo.olx.in/v1/files/f033vad9njdt2-IN/image;s=480x360",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5239,44 +5203,8 @@
       "photo": "https://assets.nobroker.in/images/8aa9aa62a13509f901a13514bac10455/8aa9aa62a13509f901a13514bac10455_94504_179892_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-13",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
-    },
-    {
-      "id": "nobroker-aa536d76a1",
-      "status": "active",
-      "source": "nobroker",
-      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-kodungaiyur-chennai-for-rs-15000/8a9fff838a790216018a799c8d8018d0/detail",
-      "title": "2 BHK House for Rent  In Kodungaiyur",
-      "type": "independent-house",
-      "bhk": 2,
-      "rent": 15000,
-      "maintenance": null,
-      "deposit": 150000,
-      "locality": "Kodungaiyur",
-      "address": "Independent House, Sastri Nagar near medplus pharmacy, Kodungaiyur, chennai",
-      "lat": 13.13409394512964,
-      "lon": 80.25278675112203,
-      "location_precision": "listing",
-      "road_km": 7.2,
-      "minutes_peak": 29,
-      "minutes_morning": 24,
-      "area_sqft": 1200,
-      "furnishing": "unfurnished",
-      "parking": "car",
-      "available_from": "2026-11-10",
-      "posted_on": "2026-10-13",
-      "posted_at": "2026-10-13T11:00+05:30",
-      "posted_by": "owner",
-      "floor": "Ground of 2",
-      "bathrooms": 2,
-      "preferred_tenants": "family",
-      "notes": "No lift · 1 yrs old",
-      "photo": "https://assets.nobroker.in/images/8a9fff838a790216018a799c8d8018d0/8a9fff838a790216018a799c8d8018d0_17843_457454_medium.jpg",
-      "photo_count": 10,
-      "first_seen": "2026-10-13",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
     },
     {
       "id": "nobroker-89dbfdb94a",
@@ -5311,7 +5239,7 @@
       "photo": "https://assets.nobroker.in/images/8aa99893a0f13b3601a0f1d04f286789/8aa99893a0f13b3601a0f1d04f286789_68648_907964_medium.jpg",
       "photo_count": 4,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5347,7 +5275,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9d9a79db94bf9019dbac1dd6829b5/8aa9d9a79db94bf9019dbac1dd6829b5_53032_505027_medium.jpg",
       "photo_count": 8,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5383,7 +5311,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a5129f0723a7019f0728e9d80048/8aa9a5129f0723a7019f0728e9d80048_649607_363405_medium_enhance.jpg",
       "photo_count": 21,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5419,7 +5347,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fbc8280f62a6e0180f65c27371b01/8a9fbc8280f62a6e0180f65c27371b01_37980_297184_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5455,7 +5383,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5491,7 +5419,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b7e99e52e4d2019e537a7dcd431f/8aa9b7e99e52e4d2019e537a7dcd431f_57291_370272_medium.jpg",
       "photo_count": 12,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5525,9 +5453,45 @@
       "preferred_tenants": "family",
       "notes": "Lift · 5 yrs old · North-East facing",
       "photo": "https://assets.nobroker.in/images/8aa9a69ba13f15da01a13f3fb99118e5/8aa9a69ba13f15da01a13f3fb99118e5_3766_749120_medium.jpg",
-      "photo_count": 14,
+      "photo_count": 13,
       "first_seen": "2026-10-16",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
+    },
+    {
+      "id": "nobroker-7ba2790dee",
+      "status": "active",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-kilpauk-chennai-for-rs-35000/8aa996e19f01fd5b019f021c382c07a0/detail",
+      "title": "2 BHK House for Rent  In Kilpauk",
+      "type": "independent-house",
+      "bhk": 2,
+      "rent": 35000,
+      "maintenance": 2000,
+      "deposit": 210000,
+      "locality": "Purasaiwakkam",
+      "address": "Independent House, TNHB Colony,  near by Paddle Rattle  Pickleball Arena, Kilpauk, chennai",
+      "lat": 13.090653704879186,
+      "lon": 80.24750879408774,
+      "location_precision": "listing",
+      "road_km": 7.4,
+      "minutes_peak": 30,
+      "minutes_morning": 25,
+      "area_sqft": 1500,
+      "furnishing": "semi-furnished",
+      "parking": "car+bike",
+      "available_from": "immediate",
+      "posted_on": "2026-10-16",
+      "posted_at": "2026-10-16T09:45+05:30",
+      "posted_by": "owner",
+      "floor": "Ground of 2",
+      "bathrooms": 2,
+      "preferred_tenants": "family",
+      "notes": "Lift · 3 yrs old · North facing",
+      "photo": "https://assets.nobroker.in/images/8aa996e19f01fd5b019f021c382c07a0/8aa996e19f01fd5b019f021c382c07a0_50065_167666_medium.jpg",
+      "photo_count": 6,
+      "first_seen": "2026-10-17",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5563,7 +5527,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dc0lFD-y_mGsxrEgTqJuuTjV/Photo_h470_w1080/86510987_8_leaningAfter7_470_1080.jpeg",
       "photo_count": 17,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5600,7 +5564,7 @@
       "photo_count": 1,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "nobroker-5254637457",
@@ -5635,7 +5599,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a05da115489401a115d8a3065b7a/8aa9a05da115489401a115d8a3065b7a_50102_174153_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5671,7 +5635,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fb3827b95decc017b95f4ea7209e5/8a9fb3827b95decc017b95f4ea7209e5_91677_258422_medium.jpg",
       "photo_count": 35,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5707,7 +5671,7 @@
       "photo": "https://assets.nobroker.in/images/ff80818154e2bbff0154e6a68e0826e1/ff80818154e2bbff0154e6a68e0826e1_99553_554591_medium.jpg",
       "photo_count": 13,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5743,7 +5707,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5779,7 +5743,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f915d750cdded017510a43f285954/8a9f915d750cdded017510a43f285954_89984_724276_medium.jpg",
       "photo_count": 23,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5815,7 +5779,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f9203900ad50801900b15fac81fda/8a9f9203900ad50801900b15fac81fda_57100_747315_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5851,7 +5815,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fa6838b311d15018b323163a0275b/8a9fa6838b311d15018b323163a0275b_16613_819016_medium.jpg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5887,7 +5851,7 @@
       "photo": "https://assets.nobroker.in/images/ff808181636808f101636847a054216e/ff808181636808f101636847a054216e_801979_48784_medium.jpg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5923,7 +5887,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a69ea0a9fe2301a0aa1851a41097/8aa9a69ea0a9fe2301a0aa1851a41097_28140_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5959,7 +5923,7 @@
       "photo": "https://assets.nobroker.in/images/ff80818163977bbd016397959a2f071a/ff80818163977bbd016397959a2f071a_70244_106374_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -5995,7 +5959,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fb88499ccef240199cd38c3431b40/8a9fb88499ccef240199cd38c3431b40_95534_28147_medium.jpg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6031,7 +5995,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f8c839016da5c01901705e43311dd/8a9f8c839016da5c01901705e43311dd_16479_548439_medium.jpg",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6067,7 +6031,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-16",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6103,7 +6067,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dcjRJz__-yT1QUgwbEVGuYS3/Photo_h470_w1080/86432339_16__470_1080.jpeg",
       "photo_count": 17,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6139,7 +6103,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6175,7 +6139,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mDkjVP9dY9dsil-_n7Yc9afnRr-Q0Djsmf/Photo_h470_w1080/45587229_5_Hall_470_1080.jpeg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6211,7 +6175,7 @@
       "photo": "https://assets.nobroker.in/images/8a9ff3848afdb09a018afe8187b973d5/8a9ff3848afdb09a018afe8187b973d5_96844_20210_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6247,7 +6211,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081816e40f191016e412eba4626b5/ff8081816e40f191016e412eba4626b5_16535_688201_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6283,7 +6247,7 @@
       "photo": "https://assets.nobroker.in/images/8aa991b09dd31b6d019dd4105e9277ec/8aa991b09dd31b6d019dd4105e9277ec_99262_271360_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6319,7 +6283,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6355,7 +6319,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9ad03a116c90e01a1176015974278/8aa9ad03a116c90e01a1176015974278_75252_182769_medium.jpg",
       "photo_count": 8,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6391,7 +6355,7 @@
       "photo": "https://assets.nobroker.in/images/8aa985dea00ea39801a00fed5e497f0c/8aa985dea00ea39801a00fed5e497f0c_21096_26577_medium.jpg",
       "photo_count": 3,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6427,44 +6391,8 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
-    },
-    {
-      "id": "nobroker-833fdc5d0c",
-      "status": "active",
-      "source": "nobroker",
-      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-kodungaiyur-chennai-for-rs-23000/ff808181649417780164987968f61e20/detail",
-      "title": "2 BHK Flat In Jains Green Garden for Rent  In Kodungaiyur",
-      "type": "apartment",
-      "bhk": 2,
-      "rent": 23000,
-      "maintenance": null,
-      "deposit": 120000,
-      "locality": "Kodungaiyur",
-      "address": "Kamaraj Rd, Near Star Murukku, Kodungaiyur, chennai",
-      "lat": 13.131756541368732,
-      "lon": 80.24235424418032,
-      "location_precision": "listing",
-      "road_km": 7.8,
-      "minutes_peak": 32,
-      "minutes_morning": 26,
-      "area_sqft": 900,
-      "furnishing": "fully-furnished",
-      "parking": "car",
-      "available_from": "immediate",
-      "posted_on": "2026-10-10",
-      "posted_at": "2026-10-10T14:25+05:30",
-      "posted_by": "owner",
-      "floor": "2 of 4",
-      "bathrooms": 2,
-      "preferred_tenants": "any",
-      "notes": "Rent negotiable · No lift · 3 yrs old",
-      "photo": "https://assets.nobroker.in/images/ff808181649417780164987968f61e20/ff808181649417780164987968f61e20_47918_488572_medium.jpg",
-      "photo_count": 1,
-      "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
     },
     {
       "id": "nobroker-e50b0db22e",
@@ -6499,7 +6427,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9bae29b9b8ef3019b9c58e33747ab/8aa9bae29b9b8ef3019b9c58e33747ab_84687_981902_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6535,7 +6463,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6571,7 +6499,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6607,7 +6535,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f93f67028d13901702d93e4a448ab/8a9f93f67028d13901702d93e4a448ab_83478_809134_medium.jpg",
       "photo_count": 13,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6643,7 +6571,7 @@
       "photo": "https://assets.nobroker.in/images/8a9ffb828712c80a018712d6b975061c/8a9ffb828712c80a018712d6b975061c_68958_794535_medium.jpg",
       "photo_count": 32,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6679,7 +6607,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b8899d3f2994019d3ffdf8a841a9/8aa9b8899d3f2994019d3ffdf8a841a9_58376_883457_medium.jpg",
       "photo_count": 11,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6715,7 +6643,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f85438e22abc2018e22d51b621e0b/8a9f85438e22abc2018e22d51b621e0b_76679_105348_medium.jpg",
       "photo_count": 8,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6751,7 +6679,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9af209cd652a9019cd6e5380a4a00/8aa9af209cd652a9019cd6e5380a4a00_74215_213638_medium.jpg",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6788,7 +6716,7 @@
       "photo_count": 0,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "nobroker-c630b1d06c",
@@ -6823,7 +6751,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a839a056cd0c01a057946be71b0b/8aa9a839a056cd0c01a057946be71b0b_84098_74924_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6859,7 +6787,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f80ee7033520d017033c45cac338c/8a9f80ee7033520d017033c45cac338c_51693_526820_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6895,7 +6823,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fbc83958e511901958e618a310560/8a9fbc83958e511901958e618a310560_48137_457091_medium.jpg",
       "photo_count": 8,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6931,7 +6859,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b2129c028dfb019c03854e2b5e37/8aa9b2129c028dfb019c03854e2b5e37_53476_568417_medium.jpg",
       "photo_count": 11,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -6967,7 +6895,7 @@
       "photo": "https://apollo.olx.in/v1/files/bctj1sm7pxkq1-IN/image;s=480x360",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7003,7 +6931,79 @@
       "photo": "https://assets.nobroker.in/images/8a9feb838afd9d74018afe7ddd8b6f98/8a9feb838afd9d74018afe7ddd8b6f98_16600_171098_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
+    },
+    {
+      "id": "nobroker-0b4280af97",
+      "status": "active",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/3-bhk-apartment-for-rent-in-duplex-house-in-ashok-nagr-chennai-for-rs-45000/8a9f82af755597cf01756369206b0cc2/detail",
+      "title": "3 BHK House for Rent  In Duplex House In Ashok Nagr",
+      "type": "independent-house",
+      "bhk": 3,
+      "rent": 45000,
+      "maintenance": 1000,
+      "deposit": 200000,
+      "locality": "Kilpauk",
+      "address": "Independent House, Kamaraj Salai, Duplex house in ashok nagr, chennai",
+      "lat": 13.0782571,
+      "lon": 80.23882909999999,
+      "location_precision": "listing",
+      "road_km": 7.8,
+      "minutes_peak": 32,
+      "minutes_morning": 27,
+      "area_sqft": 1400,
+      "furnishing": "semi-furnished",
+      "parking": "car+bike",
+      "available_from": "immediate",
+      "posted_on": "2026-10-10",
+      "posted_at": "2026-10-10T13:20+05:30",
+      "posted_by": "owner",
+      "floor": "Ground of 2",
+      "bathrooms": 3,
+      "preferred_tenants": "family",
+      "notes": "Rent negotiable · No lift · 10 yrs old · North facing",
+      "photo": "https://assets.nobroker.in/images/8a9f82af755597cf01756369206b0cc2/8a9f82af755597cf01756369206b0cc2_17504_519686_medium.jpg",
+      "photo_count": 11,
+      "first_seen": "2026-10-17",
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
+    },
+    {
+      "id": "nobroker-193ab3fab0",
+      "status": "active",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-royapettah-chennai-for-rs-10000/8aa9ad35a08bbcb501a08c223f992a62/detail",
+      "title": "2 BHK House for Rent  In Royapettah",
+      "type": "independent-house",
+      "bhk": 2,
+      "rent": 10000,
+      "maintenance": 500,
+      "deposit": 60000,
+      "locality": "Gopalapuram",
+      "address": "Independent House, TTKRoad, Royapettah, Royapettah, chennai",
+      "lat": 13.0539587,
+      "lon": 80.2640711,
+      "location_precision": "listing",
+      "road_km": 7.8,
+      "minutes_peak": 32,
+      "minutes_morning": 27,
+      "area_sqft": 1200,
+      "furnishing": "semi-furnished",
+      "parking": "car+bike",
+      "available_from": "immediate",
+      "posted_on": "2026-10-16",
+      "posted_at": "2026-10-16T18:10+05:30",
+      "posted_by": "owner",
+      "floor": "Ground of 1",
+      "bathrooms": 1,
+      "preferred_tenants": "family",
+      "notes": "Rent negotiable · Maintenance included · No lift · 1 yrs old",
+      "photo": null,
+      "photo_count": 0,
+      "first_seen": "2026-10-17",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7039,7 +7039,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9ds-VX1HJaisLx9s0rXkrh_6f/Photo_h470_w1080/86638571_1__470_1080.jpeg",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7075,7 +7075,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAmDVO-dQ9dMgJGjRWxUB01TnfFEidbp26/Photo_h470_w1080/69860249_3_PXL20231028094928713_470_1080.jpg",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7111,7 +7111,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f83c591177a1e019117e136432bcc/8a9f83c591177a1e019117e136432bcc_23191_29146_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7147,7 +7147,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7183,7 +7183,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7216,10 +7216,10 @@
       "bathrooms": 2,
       "preferred_tenants": "family",
       "notes": "No lift · 5 yrs old",
-      "photo": null,
-      "photo_count": 0,
+      "photo": "https://assets.nobroker.in/images/8aa9b114a0f5862501a0f6522d8a0265/8aa9b114a0f5862501a0f6522d8a0265_44455_262386_medium.jpg",
+      "photo_count": 4,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7255,7 +7255,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081816d73268d016d76e58c0e06dd/ff8081816d73268d016d76e58c0e06dd_96659_811609_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7292,7 +7292,7 @@
       "photo_count": 0,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "nobroker-727fe22132",
@@ -7327,7 +7327,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a90fa0ecf0ff01a0ed90300c6af2/8aa9a90fa0ecf0ff01a0ed90300c6af2_53606_890377_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7363,7 +7363,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f86bd714238d50171492d055078b0/8a9f86bd714238d50171492d055078b0_7038_38557_medium.jpg",
       "photo_count": 8,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7399,7 +7399,7 @@
       "photo": "https://apollo.olx.in/v1/files/mohj31y717jw2-IN/image;s=480x360",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7435,7 +7435,7 @@
       "photo": "https://apollo.olx.in/v1/files/oi9ihevfffcl1-IN/image;s=480x360",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7471,7 +7471,7 @@
       "photo": "https://apollo.olx.in/v1/files/7uux726yli0v1-IN/image;s=480x360",
       "photo_count": 4,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7507,7 +7507,7 @@
       "photo": "https://apollo.olx.in/v1/files/7a30fwjlfp63-IN/image;s=480x360",
       "photo_count": 11,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7543,7 +7543,7 @@
       "photo": "https://apollo.olx.in/v1/files/12yi5nqe9rc62-IN/image;s=480x360",
       "photo_count": 3,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7579,7 +7579,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f8cda712a374501712ec7951b7568/8a9f8cda712a374501712ec7951b7568_32606_18299_medium.jpg",
       "photo_count": 30,
       "first_seen": "2026-10-13",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7615,7 +7615,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-15",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7651,7 +7651,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVP9dY9dMlND_oqeSx01Z-OoU-rEkvs/Photo_h470_w1080/86758489_7_472342_470_1080.jpeg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7687,7 +7687,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVK98w9dslLMESzzfwO6PtcTu7OikXs/Photo_h470_w1080/83098331_6_hatsAppImage20260123at13.35.02_470_1080.jpeg",
       "photo_count": 16,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7723,7 +7723,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnzVP9dY9dMLgVlqy5KKAFp5ZF3kedI0T/Photo_h470_w1080/75342523_2_hatsAppImage20241007at4.40.34PM2_470_1080.jpeg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7759,7 +7759,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVP9dY9dMy5PPpnfGktUmaeg6iDEveO/Photo_h470_w1080/86798085_3_hatsAppImage20261006at12.07.58PM2_470_1080.jpeg",
       "photo_count": 4,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7796,7 +7796,7 @@
       "photo_count": 0,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "nobroker-737884ac82",
@@ -7831,7 +7831,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b153a120717801a120b18f602964/8aa9b153a120717801a120b18f602964_469700_400181_medium.jpg",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7867,7 +7867,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081816df1eca6016df20529eb0e10/ff8081816df1eca6016df20529eb0e10_93513_63088_medium.jpg",
       "photo_count": 13,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7903,7 +7903,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081816a151c04016a15f934174109/ff8081816a151c04016a15f934174109_748361_438152_medium.jpg",
       "photo_count": 47,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7939,7 +7939,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f8ec390bfef370190c022607d1867/8a9f8ec390bfef370190c022607d1867_73288_974655_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -7975,7 +7975,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8011,7 +8011,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b3119fb115a9019fb14967891568/8aa9b3119fb115a9019fb14967891568_44584_477207_medium.jpg",
       "photo_count": 10,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8047,7 +8047,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fad8797786f96019778bf2aeb1f54/8a9fad8797786f96019778bf2aeb1f54_28372_323463_medium.jpg",
       "photo_count": 10,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8083,7 +8083,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8119,7 +8119,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9ca0f9daf0688019daf54babc205d/8aa9ca0f9daf0688019daf54babc205d_25581_125374_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8155,7 +8155,7 @@
       "photo": "https://assets.nobroker.in/images/8aa99e92a0c8651501a0c8b5bdcd39eb/8aa99e92a0c8651501a0c8b5bdcd39eb_395211_591627_medium.jpg",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8191,7 +8191,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8227,7 +8227,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8263,7 +8263,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fee8284d815d70184d849e68b221b/8a9fee8284d815d70184d849e68b221b_34626_528279_medium.jpg",
       "photo_count": 3,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8299,7 +8299,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f938496a5b2b60196a60bc7cc2196/8a9f938496a5b2b60196a60bc7cc2196_32762_992539_medium.jpg",
       "photo_count": 28,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8335,7 +8335,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8371,7 +8371,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f088288cc3ed50188cc82667f0e25/8a9f088288cc3ed50188cc82667f0e25_87131_273210_medium.jpg",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8407,7 +8407,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b7859f546306019f54bf3ea7329a/8aa9b7859f546306019f54bf3ea7329a_199874_373443_medium.jpg",
       "photo_count": 25,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8443,7 +8443,7 @@
       "photo": "https://apollo.olx.in/v1/files/ks8a4kcc2lar1-IN/image;s=480x360",
       "photo_count": 18,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8479,7 +8479,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9b2eea139b48301a139c234fd0650/8aa9b2eea139b48301a139c234fd0650_49984_429227_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-15",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8515,7 +8515,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVP9dY9dc5n3RNLlfncNvnLXMlsy_DJ/Photo_h470_w1080/86929143_2_hatsAppImage20261014at4.57.38PM1_470_1080.jpeg",
       "photo_count": 17,
       "first_seen": "2026-10-15",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8541,7 +8541,7 @@
       "furnishing": "fully-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": null,
+      "posted_on": "2026-10-15",
       "posted_at": "2026-10-15T10:04+05:30",
       "posted_by": "agent",
       "floor": "2 of 4",
@@ -8551,7 +8551,79 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-16",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
+    },
+    {
+      "id": "nobroker-11739d55e9",
+      "status": "active",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/3-bhk-apartment-for-rent-in--kilpauk-chennai-for-rs-30000/8aa9b6849fa6c8d4019fa708b06f1d4c/detail",
+      "title": "3 BHK Flat In Rajendra Apartments for Rent  In  Kilpauk",
+      "type": "apartment",
+      "bhk": 3,
+      "rent": 30000,
+      "maintenance": 2000,
+      "deposit": 180000,
+      "locality": "Purasaiwakkam",
+      "address": "Rajendra Apartments,  Kilpauk, chennai",
+      "lat": 13.0893303,
+      "lon": 80.2444702,
+      "location_precision": "listing",
+      "road_km": 8.3,
+      "minutes_peak": 34,
+      "minutes_morning": 28,
+      "area_sqft": 1500,
+      "furnishing": "semi-furnished",
+      "parking": "car+bike",
+      "available_from": "immediate",
+      "posted_on": "2026-10-16",
+      "posted_at": "2026-10-16T16:15+05:30",
+      "posted_by": "owner",
+      "floor": "3 of 7",
+      "bathrooms": 3,
+      "preferred_tenants": "family",
+      "notes": "Maintenance included · Lift · 10 yrs old",
+      "photo": "https://assets.nobroker.in/images/8aa9b6849fa6c8d4019fa708b06f1d4c/8aa9b6849fa6c8d4019fa708b06f1d4c_31732_65160_medium.jpg",
+      "photo_count": 1,
+      "first_seen": "2026-10-17",
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
+    },
+    {
+      "id": "nobroker-640b05cecd",
+      "status": "active",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/3-bhk-apartment-for-rent-in-perambur-chennai-for-rs-35000/8aa99e84a13f7bfa01a13fb2ec232235/detail",
+      "title": "3 BHK House for Rent  In Perambur",
+      "type": "independent-house",
+      "bhk": 3,
+      "rent": 35000,
+      "maintenance": 1000,
+      "deposit": 350000,
+      "locality": "Perambur",
+      "address": "Independent House, Kanakkar St near Sundararaja Perumal Koil, Perambur, chennai",
+      "lat": 13.110581541888182,
+      "lon": 80.23142232715311,
+      "location_precision": "listing",
+      "road_km": 8.2,
+      "minutes_peak": 34,
+      "minutes_morning": 28,
+      "area_sqft": 2200,
+      "furnishing": "semi-furnished",
+      "parking": "car+bike",
+      "available_from": "immediate",
+      "posted_on": "2026-10-16",
+      "posted_at": "2026-10-16T12:05+05:30",
+      "posted_by": "owner",
+      "floor": "Ground of 1",
+      "bathrooms": 3,
+      "preferred_tenants": "family",
+      "notes": "Maintenance included · No lift · 5 yrs old · East facing",
+      "photo": "https://assets.nobroker.in/images/8aa99e84a13f7bfa01a13fb2ec232235/8aa99e84a13f7bfa01a13fb2ec232235_6142_95690_medium.jpg",
+      "photo_count": 29,
+      "first_seen": "2026-10-17",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8577,8 +8649,8 @@
       "furnishing": "semi-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": "2026-10-14",
-      "posted_at": "2026-10-14T05:15+05:30",
+      "posted_on": null,
+      "posted_at": "2026-10-17T05:15+05:30",
       "posted_by": "agent",
       "floor": "3 of 3",
       "bathrooms": 3,
@@ -8587,7 +8659,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVP9dY9dMioVa9p0pKZ_q10AdH2RzgM/Photo_h470_w1080/86739283_1_PropertyImage136-22828846933444_470_1080.jpg",
       "photo_count": 4,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8623,7 +8695,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVK48w9dM-LUlpyreC96wAAQJvbr1QT/Photo_h470_w1080/84875651_3_PropertyImage1780674450168_470_1080.jpg",
       "photo_count": 20,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8659,7 +8731,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAmTVN99A9dc1vpgxQelXcwXlcwkLmc9R9/Photo_h470_w1080/47666747_5_PropertyImage1647497080415_470_1080.jpg",
       "photo_count": 12,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8695,7 +8767,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081815769a42001576a1a0b560f06/ff8081815769a42001576a1a0b560f06_72179_326549_medium.jpg",
       "photo_count": 10,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8732,7 +8804,7 @@
       "photo_count": 13,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "nobroker-44350bba2b",
@@ -8767,7 +8839,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a1c0a10f45e601a1101d27ca10ac/8aa9a1c0a10f45e601a1101d27ca10ac_2814_231400_medium.jpg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8803,7 +8875,7 @@
       "photo": "https://assets.nobroker.in/images/8aa99c88a0dbc63201a0dc5ef73b6624/8aa99c88a0dbc63201a0dc5ef73b6624_33263_250520_medium.jpg",
       "photo_count": 4,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8839,7 +8911,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8875,7 +8947,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f9182a081703001a0842c81fe4037/8a9f9182a081703001a0842c81fe4037_72111_29253_medium.jpg",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8911,7 +8983,7 @@
       "photo": "https://assets.nobroker.in/images/8a9f93827c51323b017c516a69b52488/8a9f93827c51323b017c516a69b52488_60270_374575_medium.jpg",
       "photo_count": 26,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8947,7 +9019,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -8983,7 +9055,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9aa85a100aeb801a10112920b49e1/8aa9aa85a100aeb801a10112920b49e1_90283_287267_medium.jpg",
       "photo_count": 10,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9019,7 +9091,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9055,7 +9127,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9091,7 +9163,7 @@
       "photo": "https://assets.nobroker.in/images/8a9feb83898086b5018981472e9b68bd/8a9feb83898086b5018981472e9b68bd_64344_388589_medium.jpg",
       "photo_count": 8,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9127,7 +9199,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9bcbba09fb18101a09fd15fcc12c6/8aa9bcbba09fb18101a09fd15fcc12c6_55401_552178_medium.jpg",
       "photo_count": 8,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9163,7 +9235,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a3d89efa0cc1019efa51af48141a/8aa9a3d89efa0cc1019efa51af48141a_63353_648009_medium.jpg",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9199,7 +9271,7 @@
       "photo": "https://apollo.olx.in/v1/files/q7up45vjrc9h-IN/image;s=480x360",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9235,7 +9307,7 @@
       "photo": "https://apollo.olx.in/v1/files/93xecyq2yaki1-IN/image;s=480x360",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9271,7 +9343,43 @@
       "photo": "https://assets.nobroker.in/images/8aa990a2a0b1ede801a0b29797ae1b31/8aa990a2a0b1ede801a0b29797ae1b31_70579_409188_medium.jpg",
       "photo_count": 5,
       "first_seen": "2026-10-16",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
+    },
+    {
+      "id": "nobroker-fe53616446",
+      "status": "active",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/3-bhk-apartment-for-rent-in-madambakkam-chennai-for-rs-23000/8a9f9e8399ecb54e0199ecef6430115f/detail",
+      "title": "3 BHK Flat In Golden Nest,  for Rent  In Madambakkam",
+      "type": "apartment",
+      "bhk": 3,
+      "rent": 23000,
+      "maintenance": null,
+      "deposit": 100000,
+      "locality": "Purasaiwakkam",
+      "address": "V5WC+F28, Manickam Nagar, Noothencheri, Madambakkam, , Madambakkam, chennai",
+      "lat": 13.0890232,
+      "lon": 80.2453748,
+      "location_precision": "listing",
+      "road_km": 8.4,
+      "minutes_peak": 35,
+      "minutes_morning": 29,
+      "area_sqft": 1300,
+      "furnishing": "semi-furnished",
+      "parking": "car+bike",
+      "available_from": "2026-11-01",
+      "posted_on": "2026-10-16",
+      "posted_at": "2026-10-16T17:40+05:30",
+      "posted_by": "owner",
+      "floor": "1 of 2",
+      "bathrooms": 2,
+      "preferred_tenants": "family",
+      "notes": "Rent negotiable · No lift · 3 yrs old · South facing",
+      "photo": "https://assets.nobroker.in/images/8a9f9e8399ecb54e0199ecef6430115f/8a9f9e8399ecb54e0199ecef6430115f_60323_31581_medium.jpg",
+      "photo_count": 9,
+      "first_seen": "2026-10-17",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9307,7 +9415,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVP9dY9dM9U0gWjgKoaLzGRYgpk7WOv/Photo_h470_w1080/86784421_5_hatsAppImage20260910at6.26.03PM21_470_1080.jpeg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9343,7 +9451,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVK48w9dM-LUlpyreC96wAAQJvbr1QT/Photo_h470_w1080/84896695_3_PropertyImage1780675668709_470_1080.jpg",
       "photo_count": 20,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9379,7 +9487,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dsuENgTHxNC_axDeLwBe0jEd/Photo_h470_w1080/4174_1789987345507.127_470_1080.jpg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9415,7 +9523,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dcMeG2omWhCrZYjqiRVL7Y-S/Photo_h470_w1080/86557189_2_hatsAppImage20260918at11.20.393_470_1080.jpeg",
       "photo_count": 15,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9451,7 +9559,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dsmMgq5Ak61lPXUrbjzkeNbc/Photo_h470_w1080/86609859_2_hatsAppImage20260923at1.50.00PM_470_1080.jpeg",
       "photo_count": 15,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9477,8 +9585,8 @@
       "furnishing": "semi-furnished",
       "parking": "car",
       "available_from": "immediate",
-      "posted_on": "2026-10-13",
-      "posted_at": "2026-10-13T05:15+05:30",
+      "posted_on": null,
+      "posted_at": "2026-10-16T05:15+05:30",
       "posted_by": "agent",
       "floor": "3 of 7",
       "bathrooms": 3,
@@ -9487,44 +9595,8 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dshp2PsDOBOIFkfRzqK5LaU8/Photo_h470_w1080/86591871_10_0260915124807_470_1080.jpg",
       "photo_count": 12,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
-    },
-    {
-      "id": "magicbricks-503b167502",
-      "status": "active",
-      "source": "magicbricks",
-      "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Residential-House-FOR-Rent-Kilpauk-in-Chennai&id=4d423232343332393435",
-      "title": "3BHK Residential House for Rent in Kilpauk",
-      "type": "independent-house",
-      "bhk": 3,
-      "rent": 42000,
-      "maintenance": null,
-      "deposit": 300000,
-      "locality": "Kilpauk",
-      "address": "No:904, flat no:4 , sree jaganath apt, evr periyar road, poonamalee high road, chennai -84Landmark - near sangam theatre",
-      "lat": 13.0839192,
-      "lon": 80.2388421,
-      "location_precision": "approximate",
-      "road_km": 8.7,
-      "minutes_peak": 36,
-      "minutes_morning": 30,
-      "area_sqft": 1400,
-      "furnishing": "semi-furnished",
-      "parking": "car",
-      "available_from": "immediate",
-      "posted_on": "2026-09-24",
-      "posted_at": "2026-09-24T10:10+05:30",
-      "posted_by": "owner",
-      "floor": "2 of 2",
-      "bathrooms": 2,
-      "preferred_tenants": "bachelors",
-      "notes": "Car parking: 1 Covered",
-      "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVN99s9dcxJlofPjF6-wJmxkBru_Ytm/Photo_h470_w1080/22432945_1_HOTO20250527095458_470_1080.jpg",
-      "photo_count": 1,
-      "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
     },
     {
       "id": "magicbricks-5d7423c2a9",
@@ -9559,7 +9631,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVK4849dsranKCygxpHSDDr9CGYRXoa/Photo_h470_w1080/85634727_1_PropertyImage967-4003838343932_470_1080.jpg",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9595,7 +9667,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVK48w9dcKL5rOJS7-mB5Rl-NNMd5fz/Photo_h470_w1080/85161127_3_hatsAppImage20260618at13.04.18_470_1080.jpeg",
       "photo_count": 12,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9631,7 +9703,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVB5tA9dsrVmEIgsPlVbB4QbnT8TSPS/Photo_h470_w1080/84321521_5_hatsAppImage20260418at16.17.52_470_1080.jpeg",
       "photo_count": 10,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9667,7 +9739,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9703,7 +9775,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dMvqnIOQuQrpDuWfE7r0NfAQ/Photo_h470_w1080/86241443_1_hatsAppImage20260831at08.45.552_470_1080.jpeg",
       "photo_count": 7,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9739,7 +9811,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9775,7 +9847,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVK98w9dsKEDBFqbMhQzDuGq77D3k7J/Photo_h470_w1080/83155197_6_hatsAppImage20260128at13.12.081_470_1080.jpeg",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9811,7 +9883,7 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVK48w9dc9dBxnZEw2W2fqg3saO3LSV/Photo_h470_w1080/85117779_2_hatsAppImage20260608at11.41.182_470_1080.jpeg",
       "photo_count": 6,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -9847,44 +9919,8 @@
       "photo": "https://assets.nobroker.in/images/8aa9c46ca0a8470001a0a8eda8b96531/8aa9c46ca0a8470001a0a8eda8b96531_14673_81032_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
-    },
-    {
-      "id": "nobroker-de327591e6",
-      "status": "active",
-      "source": "nobroker",
-      "source_url": "https://www.nobroker.in/property/3-bhk-apartment-for-rent-in-jawahar-nagar-chennai-for-rs-30000/8a9fe28283345f6b018334b5b4eb0be7/detail",
-      "title": "3 BHK Flat In Haritham By Ganga Foundations for Rent  In Jawahar Nagar",
-      "type": "apartment",
-      "bhk": 3,
-      "rent": 30000,
-      "maintenance": null,
-      "deposit": 300000,
-      "locality": "Perambur",
-      "address": "5th Street, Jawahar Nagar, chennai",
-      "lat": 13.110854499999999,
-      "lon": 80.22743140000003,
-      "location_precision": "listing",
-      "road_km": 8.7,
-      "minutes_peak": 36,
-      "minutes_morning": 30,
-      "area_sqft": 1100,
-      "furnishing": "unfurnished",
-      "parking": "car+bike",
-      "available_from": "immediate",
-      "posted_on": "2026-09-12",
-      "posted_at": "2026-09-12T00:40+05:30",
-      "posted_by": "owner",
-      "floor": "Ground of 2",
-      "bathrooms": 2,
-      "preferred_tenants": "family",
-      "notes": "No lift · 10 yrs old · South-East facing",
-      "photo": "https://assets.nobroker.in/images/8a9fe28283345f6b018334b5b4eb0be7/8a9fe28283345f6b018334b5b4eb0be7_21502_479575_medium.jpg",
-      "photo_count": 15,
-      "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
     },
     {
       "id": "nobroker-f0378dd405",
@@ -9919,44 +9955,8 @@
       "photo": "https://assets.nobroker.in/images/8a9ffb838ad46a44018ad590368726ce/8a9ffb838ad46a44018ad590368726ce_47756_412234_medium.jpg",
       "photo_count": 3,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
-    },
-    {
-      "id": "nobroker-0b3ea40593",
-      "status": "active",
-      "source": "nobroker",
-      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-kolathur-chennai-for-rs-20000/8a9f88838d9c11cb018d9c172e3402af/detail",
-      "title": "2 BHK Flat In Diamond Flats, Kolathur for Rent  In Kolathur",
-      "type": "apartment",
-      "bhk": 2,
-      "rent": 20000,
-      "maintenance": 1000,
-      "deposit": 200000,
-      "locality": "Perambur",
-      "address": "Vetri Nagar, Perambur, Kolathur, Chennai, Tamil Nadu 600082, Kolathur, chennai",
-      "lat": 13.124591,
-      "lon": 80.2278,
-      "location_precision": "listing",
-      "road_km": 8.7,
-      "minutes_peak": 36,
-      "minutes_morning": 29,
-      "area_sqft": 800,
-      "furnishing": "semi-furnished",
-      "parking": "car",
-      "available_from": "immediate",
-      "posted_on": "2026-09-22",
-      "posted_at": "2026-09-22T12:50+05:30",
-      "posted_by": "owner",
-      "floor": "Ground of 1",
-      "bathrooms": 2,
-      "preferred_tenants": "any",
-      "notes": "Rent negotiable · Maintenance included · No lift · 10 yrs old · North facing",
-      "photo": "https://assets.nobroker.in/images/8a9f88838d9c11cb018d9c172e3402af/8a9f88838d9c11cb018d9c172e3402af_85860_884769_medium.jpg",
-      "photo_count": 18,
-      "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
     },
     {
       "id": "nobroker-2ecc57bbd2",
@@ -9991,7 +9991,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -10027,7 +10027,7 @@
       "photo": "https://assets.nobroker.in/images/ff8081815e1d947c015e2324aeba42b5/ff8081815e1d947c015e2324aeba42b5_88636_434959_medium.jpg",
       "photo_count": 2,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -10063,44 +10063,8 @@
       "photo": "https://assets.nobroker.in/images/8aa99871a12e2c3101a12e98f04d37a9/8aa99871a12e2c3101a12e98f04d37a9_16920_164540_medium.jpg",
       "photo_count": 11,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
-    },
-    {
-      "id": "nobroker-b652dff968",
-      "status": "active",
-      "source": "nobroker",
-      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-kolathur-chennai-for-rs-28000/8a9f82839e0accb8019e0b90b179417b/detail",
-      "title": "2 BHK House for Rent  In Kolathur",
-      "type": "independent-house",
-      "bhk": 2,
-      "rent": 28000,
-      "maintenance": null,
-      "deposit": 200000,
-      "locality": "Kolathur",
-      "address": "Independent House, 2nd St, Santhi Nagar, Kolathur, Chennai, Tamil Nadu 600099, Kolathur, chennai",
-      "lat": 13.119834144733803,
-      "lon": 80.22234532982111,
-      "location_precision": "listing",
-      "road_km": 8.8,
-      "minutes_peak": 36,
-      "minutes_morning": 30,
-      "area_sqft": 770,
-      "furnishing": "semi-furnished",
-      "parking": "car+bike",
-      "available_from": "immediate",
-      "posted_on": "2026-08-03",
-      "posted_at": "2026-08-03T20:25+05:30",
-      "posted_by": "owner",
-      "floor": "Ground of 0",
-      "bathrooms": 2,
-      "preferred_tenants": "any",
-      "notes": "Rent negotiable · No lift · 10 yrs old · North facing",
-      "photo": "https://assets.nobroker.in/images/8a9f82839e0accb8019e0b90b179417b/8a9f82839e0accb8019e0b90b179417b_40442_887290_medium.jpg",
-      "photo_count": 27,
-      "first_seen": "2026-10-12",
-      "last_checked": "2026-10-15",
-      "missed_sweeps": 1
     },
     {
       "id": "nobroker-2083b9a998",
@@ -10135,7 +10099,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -10171,7 +10135,7 @@
       "photo": null,
       "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -10207,7 +10171,7 @@
       "photo": "https://assets.nobroker.in/images/8a9fbd8286307b400186309a15b211d1/8a9fbd8286307b400186309a15b211d1_22342_858357_medium.jpg",
       "photo_count": 3,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -10243,7 +10207,7 @@
       "photo": "https://apollo.olx.in/v1/files/ptistzcki49f2-IN/image;s=480x360",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -10279,7 +10243,7 @@
       "photo": "https://apollo.olx.in/v1/files/gd9pm6zsxahq2-IN/image;s=480x360",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -10315,7 +10279,7 @@
       "photo": "https://apollo.olx.in/v1/files/aw6ygfee6axa2-IN/image;s=480x360",
       "photo_count": 9,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -10351,7 +10315,7 @@
       "photo": "https://apollo.olx.in/v1/files/va3o6z6ecup5-IN/image;s=480x360",
       "photo_count": 1,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -10387,7 +10351,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9ad67a12f07ca01a12fbbf359030a/8aa9ad67a12f07ca01a12fbbf359030a_31336_206661_medium.jpg",
       "photo_count": 3,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -10424,7 +10388,7 @@
       "photo_count": 9,
       "first_seen": "2026-10-13",
       "last_checked": "2026-10-16",
-      "missed_sweeps": 0
+      "missed_sweeps": 1
     },
     {
       "id": "nobroker-0491c9078e",
@@ -10459,7 +10423,7 @@
       "photo": "https://assets.nobroker.in/images/8aa9a00da133525901a13367ec0f06d0/8aa9a00da133525901a13367ec0f06d0_87712_683258_medium.jpg",
       "photo_count": 1,
       "first_seen": "2026-10-13",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -10495,7 +10459,79 @@
       "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVB48U9dM-z-jc2BaDCQji8m8mIU7Ta/Photo_h470_w1080/85863077_2_hatsAppImage20260805at14.20.521_470_1080.jpeg",
       "photo_count": 10,
       "first_seen": "2026-10-13",
-      "last_checked": "2026-10-16",
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
+    },
+    {
+      "id": "nobroker-869af18f32",
+      "status": "active",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-perambur-chennai-for-rs-20000/8a9fc18280308ae9018030b7c4391648/detail",
+      "title": "2 BHK House for Rent  In Perambur",
+      "type": "independent-house",
+      "bhk": 2,
+      "rent": 20000,
+      "maintenance": null,
+      "deposit": 200000,
+      "locality": "Perambur",
+      "address": "Independent House,   Chitharanjan Colony, near Niranjana Hospital,, Perambur, chennai",
+      "lat": 13.11015361044674,
+      "lon": 80.22453323865777,
+      "location_precision": "listing",
+      "road_km": 8.8,
+      "minutes_peak": 36,
+      "minutes_morning": 30,
+      "area_sqft": 900,
+      "furnishing": "semi-furnished",
+      "parking": "car+bike",
+      "available_from": "immediate",
+      "posted_on": "2026-10-16",
+      "posted_at": "2026-10-16T12:05+05:30",
+      "posted_by": "owner",
+      "floor": "1 of 2",
+      "bathrooms": 2,
+      "preferred_tenants": "family",
+      "notes": "No lift · 0 yrs old · East facing",
+      "photo": "https://assets.nobroker.in/images/8a9fc18280308ae9018030b7c4391648/8a9fc18280308ae9018030b7c4391648_12438_955053_medium.jpg",
+      "photo_count": 7,
+      "first_seen": "2026-10-17",
+      "last_checked": "2026-10-17",
+      "missed_sweeps": 0
+    },
+    {
+      "id": "nobroker-91c98c5086",
+      "status": "active",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-kolathur-chennai-for-rs-25000/8aa9a90fa142c55c01a142f6a8ee11ea/detail",
+      "title": "2 BHK Flat for Rent  In Kolathur",
+      "type": "apartment",
+      "bhk": 2,
+      "rent": 25000,
+      "maintenance": null,
+      "deposit": 250000,
+      "locality": "Kolathur",
+      "address": "standalone building, Balaji Nagar, Ponniammanmedu near Sekar Bhavan, Kolathur, chennai",
+      "lat": 13.12318887025483,
+      "lon": 80.22313588220902,
+      "location_precision": "listing",
+      "road_km": 8.8,
+      "minutes_peak": 36,
+      "minutes_morning": 30,
+      "area_sqft": 1150,
+      "furnishing": "unfurnished",
+      "parking": "car+bike",
+      "available_from": "2026-12-15",
+      "posted_on": "2026-10-16",
+      "posted_at": "2026-10-16T10:00+05:30",
+      "posted_by": "owner",
+      "floor": "1 of 3",
+      "bathrooms": 2,
+      "preferred_tenants": "family",
+      "notes": "No lift · -1 yrs old · East facing",
+      "photo": null,
+      "photo_count": 0,
+      "first_seen": "2026-10-17",
+      "last_checked": "2026-10-17",
       "missed_sweeps": 0
     },
     {
@@ -10532,6 +10568,42 @@
       "photo_count": 1,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-12",
+      "missed_sweeps": 2
+    },
+    {
+      "id": "nobroker-2b239198dd",
+      "status": "inactive",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-raja-annamalai-puram-chennai-for-rs-30000/8aa9a67da1345dba01a134a83806317d/detail",
+      "title": "2 BHK Flat In Sri Raman Enclave for Rent  In Raja Annamalai Puram",
+      "type": "apartment",
+      "bhk": 2,
+      "rent": 30000,
+      "maintenance": null,
+      "deposit": 300000,
+      "locality": "Washermanpet",
+      "address": "R A Puram, Chennai, Tamil Nadu 600028, Raja Annamalai Puram, chennai",
+      "lat": 13.12016,
+      "lon": 80.279239,
+      "location_precision": "listing",
+      "road_km": 2.6,
+      "minutes_peak": 11,
+      "minutes_morning": 9,
+      "area_sqft": 675,
+      "furnishing": "fully-furnished",
+      "parking": "car+bike",
+      "available_from": "immediate",
+      "posted_on": "2026-10-13",
+      "posted_at": "2026-10-13T15:35+05:30",
+      "posted_by": "owner",
+      "floor": "3 of 3",
+      "bathrooms": 2,
+      "preferred_tenants": "any",
+      "notes": "Rent negotiable · Lift · 10 yrs old · East facing",
+      "photo": "https://assets.nobroker.in/images/8aa9a67da1345dba01a134a83806317d/8aa9a67da1345dba01a134a83806317d_42555_771783_medium.jpg",
+      "photo_count": 1,
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-15",
       "missed_sweeps": 2
     },
     {
@@ -10679,6 +10751,42 @@
       "missed_sweeps": 2
     },
     {
+      "id": "nobroker-fdc357fde3",
+      "status": "inactive",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-perambur-chennai-for-rs-25000/ff8081815b0aa050015b0e31f93b1266/detail",
+      "title": "2 BHK House for Rent  In Perambur",
+      "type": "independent-house",
+      "bhk": 2,
+      "rent": 25000,
+      "maintenance": 1000,
+      "deposit": 100000,
+      "locality": "Perambur",
+      "address": "Independent House, Kannabiraan Koil St near Kaligi Ranganathan Montford Matric Hr. Sec. School, Perambur, chennai",
+      "lat": 13.110535341070817,
+      "lon": 80.24731694214749,
+      "location_precision": "listing",
+      "road_km": 5.7,
+      "minutes_peak": 23,
+      "minutes_morning": 19,
+      "area_sqft": 850,
+      "furnishing": "unfurnished",
+      "parking": "car+bike",
+      "available_from": "immediate",
+      "posted_on": "2026-08-30",
+      "posted_at": "2026-08-30T14:45+05:30",
+      "posted_by": "owner",
+      "floor": "1 of 1",
+      "bathrooms": 2,
+      "preferred_tenants": "family",
+      "notes": "Maintenance included · Lift · 5 yrs old · North facing",
+      "photo": "https://assets.nobroker.in/images/ff8081815b0aa050015b0e31f93b1266/ff8081815b0aa050015b0e31f93b1266_48475_570105_medium.jpg",
+      "photo_count": 20,
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-15",
+      "missed_sweeps": 2
+    },
+    {
       "id": "nobroker-55a555709a",
       "status": "inactive",
       "source": "nobroker",
@@ -10751,39 +10859,39 @@
       "missed_sweeps": 2
     },
     {
-      "id": "magicbricks-df02d1aac9",
+      "id": "nobroker-f321512282",
       "status": "inactive",
-      "source": "magicbricks",
-      "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1660-Sq-ft-Multistorey-Apartment-FOR-Rent-Egmore-in-Chennai&id=4d423836353331363237",
-      "title": "2BHK Multistorey Apartment for Rent in Ceebros  The Atlantic Residences By Ceebros at Egmore",
-      "type": "apartment",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-perambur-chennai-for-rs-15000/8a9fe38283499e01018349db24b92a09/detail",
+      "title": "2 BHK House for Rent  In Perambur",
+      "type": "independent-house",
       "bhk": 2,
-      "rent": 150000,
+      "rent": 15000,
       "maintenance": null,
-      "deposit": 1500000,
-      "locality": "Egmore",
-      "address": "Ceebros  The Atlantic Residences By Ceebros, 2 BHK Flat No 50 Door No 6 tower b The Atlantic Residences By Ceebros Egmore Chennai 60008",
-      "lat": 13.0710425,
-      "lon": 80.260245,
-      "location_precision": "approximate",
-      "road_km": 6.0,
-      "minutes_peak": 25,
-      "minutes_morning": 20,
-      "area_sqft": 1660,
-      "furnishing": "semi-furnished",
-      "parking": "car",
+      "deposit": 150000,
+      "locality": "Perambur",
+      "address": "Independent House,  Bunder Garden St, near Sen Hospital, Perambur, chennai",
+      "lat": 13.110805250760707,
+      "lon": 80.24188708531538,
+      "location_precision": "listing",
+      "road_km": 6.3,
+      "minutes_peak": 26,
+      "minutes_morning": 21,
+      "area_sqft": 1200,
+      "furnishing": "unfurnished",
+      "parking": "car+bike",
       "available_from": "immediate",
-      "posted_on": null,
-      "posted_at": "2026-10-13T05:13+05:30",
+      "posted_on": "2026-10-04",
+      "posted_at": "2026-10-04T16:00+05:30",
       "posted_by": "owner",
-      "floor": "5 of 18",
-      "bathrooms": 3,
-      "preferred_tenants": "bachelors",
-      "notes": "Car parking: 2 Covered",
-      "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVT89I9dshp2PsDOBOIFkfRzqK5LaU8/Photo_h470_w1080/86531627_3_PropertyImage1790088669757_470_1080.jpg",
-      "photo_count": 20,
+      "floor": "Ground of 1",
+      "bathrooms": 2,
+      "preferred_tenants": "family",
+      "notes": "No lift · 10 yrs old",
+      "photo": null,
+      "photo_count": 0,
       "first_seen": "2026-10-12",
-      "last_checked": "2026-10-13",
+      "last_checked": "2026-10-15",
       "missed_sweeps": 2
     },
     {
@@ -10895,6 +11003,42 @@
       "missed_sweeps": 2
     },
     {
+      "id": "nobroker-aa536d76a1",
+      "status": "inactive",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-kodungaiyur-chennai-for-rs-15000/8a9fff838a790216018a799c8d8018d0/detail",
+      "title": "2 BHK House for Rent  In Kodungaiyur",
+      "type": "independent-house",
+      "bhk": 2,
+      "rent": 15000,
+      "maintenance": null,
+      "deposit": 150000,
+      "locality": "Kodungaiyur",
+      "address": "Independent House, Sastri Nagar near medplus pharmacy, Kodungaiyur, chennai",
+      "lat": 13.13409394512964,
+      "lon": 80.25278675112203,
+      "location_precision": "listing",
+      "road_km": 7.2,
+      "minutes_peak": 29,
+      "minutes_morning": 24,
+      "area_sqft": 1200,
+      "furnishing": "unfurnished",
+      "parking": "car",
+      "available_from": "2026-11-10",
+      "posted_on": "2026-10-13",
+      "posted_at": "2026-10-13T11:00+05:30",
+      "posted_by": "owner",
+      "floor": "Ground of 2",
+      "bathrooms": 2,
+      "preferred_tenants": "family",
+      "notes": "No lift · 1 yrs old",
+      "photo": "https://assets.nobroker.in/images/8a9fff838a790216018a799c8d8018d0/8a9fff838a790216018a799c8d8018d0_17843_457454_medium.jpg",
+      "photo_count": 10,
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-15",
+      "missed_sweeps": 2
+    },
+    {
       "id": "nobroker-313f55a7b5",
       "status": "inactive",
       "source": "nobroker",
@@ -10928,6 +11072,42 @@
       "photo_count": 11,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-12",
+      "missed_sweeps": 2
+    },
+    {
+      "id": "nobroker-833fdc5d0c",
+      "status": "inactive",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-kodungaiyur-chennai-for-rs-23000/ff808181649417780164987968f61e20/detail",
+      "title": "2 BHK Flat In Jains Green Garden for Rent  In Kodungaiyur",
+      "type": "apartment",
+      "bhk": 2,
+      "rent": 23000,
+      "maintenance": null,
+      "deposit": 120000,
+      "locality": "Kodungaiyur",
+      "address": "Kamaraj Rd, Near Star Murukku, Kodungaiyur, chennai",
+      "lat": 13.131756541368732,
+      "lon": 80.24235424418032,
+      "location_precision": "listing",
+      "road_km": 7.8,
+      "minutes_peak": 32,
+      "minutes_morning": 26,
+      "area_sqft": 900,
+      "furnishing": "fully-furnished",
+      "parking": "car",
+      "available_from": "immediate",
+      "posted_on": "2026-10-10",
+      "posted_at": "2026-10-10T14:25+05:30",
+      "posted_by": "owner",
+      "floor": "2 of 4",
+      "bathrooms": 2,
+      "preferred_tenants": "any",
+      "notes": "Rent negotiable · No lift · 3 yrs old",
+      "photo": "https://assets.nobroker.in/images/ff808181649417780164987968f61e20/ff808181649417780164987968f61e20_47918_488572_medium.jpg",
+      "photo_count": 1,
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-15",
       "missed_sweeps": 2
     },
     {
@@ -11180,6 +11360,150 @@
       "photo_count": 2,
       "first_seen": "2026-10-12",
       "last_checked": "2026-10-12",
+      "missed_sweeps": 2
+    },
+    {
+      "id": "magicbricks-503b167502",
+      "status": "inactive",
+      "source": "magicbricks",
+      "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Residential-House-FOR-Rent-Kilpauk-in-Chennai&id=4d423232343332393435",
+      "title": "3BHK Residential House for Rent in Kilpauk",
+      "type": "independent-house",
+      "bhk": 3,
+      "rent": 42000,
+      "maintenance": null,
+      "deposit": 300000,
+      "locality": "Kilpauk",
+      "address": "No:904, flat no:4 , sree jaganath apt, evr periyar road, poonamalee high road, chennai -84Landmark - near sangam theatre",
+      "lat": 13.0839192,
+      "lon": 80.2388421,
+      "location_precision": "approximate",
+      "road_km": 8.7,
+      "minutes_peak": 36,
+      "minutes_morning": 30,
+      "area_sqft": 1400,
+      "furnishing": "semi-furnished",
+      "parking": "car",
+      "available_from": "immediate",
+      "posted_on": "2026-09-24",
+      "posted_at": "2026-09-24T10:10+05:30",
+      "posted_by": "owner",
+      "floor": "2 of 2",
+      "bathrooms": 2,
+      "preferred_tenants": "bachelors",
+      "notes": "Car parking: 1 Covered",
+      "photo": "https://img.staticmb.com/mbphoto/property/cropped_images/ver2/XIwvQlc61t8ZIpanz4mAnTVN99s9dcxJlofPjF6-wJmxkBru_Ytm/Photo_h470_w1080/22432945_1_HOTO20250527095458_470_1080.jpg",
+      "photo_count": 1,
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-15",
+      "missed_sweeps": 2
+    },
+    {
+      "id": "nobroker-de327591e6",
+      "status": "inactive",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/3-bhk-apartment-for-rent-in-jawahar-nagar-chennai-for-rs-30000/8a9fe28283345f6b018334b5b4eb0be7/detail",
+      "title": "3 BHK Flat In Haritham By Ganga Foundations for Rent  In Jawahar Nagar",
+      "type": "apartment",
+      "bhk": 3,
+      "rent": 30000,
+      "maintenance": null,
+      "deposit": 300000,
+      "locality": "Perambur",
+      "address": "5th Street, Jawahar Nagar, chennai",
+      "lat": 13.110854499999999,
+      "lon": 80.22743140000003,
+      "location_precision": "listing",
+      "road_km": 8.7,
+      "minutes_peak": 36,
+      "minutes_morning": 30,
+      "area_sqft": 1100,
+      "furnishing": "unfurnished",
+      "parking": "car+bike",
+      "available_from": "immediate",
+      "posted_on": "2026-09-12",
+      "posted_at": "2026-09-12T00:40+05:30",
+      "posted_by": "owner",
+      "floor": "Ground of 2",
+      "bathrooms": 2,
+      "preferred_tenants": "family",
+      "notes": "No lift · 10 yrs old · South-East facing",
+      "photo": "https://assets.nobroker.in/images/8a9fe28283345f6b018334b5b4eb0be7/8a9fe28283345f6b018334b5b4eb0be7_21502_479575_medium.jpg",
+      "photo_count": 15,
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-15",
+      "missed_sweeps": 2
+    },
+    {
+      "id": "nobroker-0b3ea40593",
+      "status": "inactive",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-kolathur-chennai-for-rs-20000/8a9f88838d9c11cb018d9c172e3402af/detail",
+      "title": "2 BHK Flat In Diamond Flats, Kolathur for Rent  In Kolathur",
+      "type": "apartment",
+      "bhk": 2,
+      "rent": 20000,
+      "maintenance": 1000,
+      "deposit": 200000,
+      "locality": "Perambur",
+      "address": "Vetri Nagar, Perambur, Kolathur, Chennai, Tamil Nadu 600082, Kolathur, chennai",
+      "lat": 13.124591,
+      "lon": 80.2278,
+      "location_precision": "listing",
+      "road_km": 8.7,
+      "minutes_peak": 36,
+      "minutes_morning": 29,
+      "area_sqft": 800,
+      "furnishing": "semi-furnished",
+      "parking": "car",
+      "available_from": "immediate",
+      "posted_on": "2026-09-22",
+      "posted_at": "2026-09-22T12:50+05:30",
+      "posted_by": "owner",
+      "floor": "Ground of 1",
+      "bathrooms": 2,
+      "preferred_tenants": "any",
+      "notes": "Rent negotiable · Maintenance included · No lift · 10 yrs old · North facing",
+      "photo": "https://assets.nobroker.in/images/8a9f88838d9c11cb018d9c172e3402af/8a9f88838d9c11cb018d9c172e3402af_85860_884769_medium.jpg",
+      "photo_count": 18,
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-15",
+      "missed_sweeps": 2
+    },
+    {
+      "id": "nobroker-b652dff968",
+      "status": "inactive",
+      "source": "nobroker",
+      "source_url": "https://www.nobroker.in/property/2-bhk-apartment-for-rent-in-kolathur-chennai-for-rs-28000/8a9f82839e0accb8019e0b90b179417b/detail",
+      "title": "2 BHK House for Rent  In Kolathur",
+      "type": "independent-house",
+      "bhk": 2,
+      "rent": 28000,
+      "maintenance": null,
+      "deposit": 200000,
+      "locality": "Kolathur",
+      "address": "Independent House, 2nd St, Santhi Nagar, Kolathur, Chennai, Tamil Nadu 600099, Kolathur, chennai",
+      "lat": 13.119834144733803,
+      "lon": 80.22234532982111,
+      "location_precision": "listing",
+      "road_km": 8.8,
+      "minutes_peak": 36,
+      "minutes_morning": 30,
+      "area_sqft": 770,
+      "furnishing": "semi-furnished",
+      "parking": "car+bike",
+      "available_from": "immediate",
+      "posted_on": "2026-08-03",
+      "posted_at": "2026-08-03T20:25+05:30",
+      "posted_by": "owner",
+      "floor": "Ground of 0",
+      "bathrooms": 2,
+      "preferred_tenants": "any",
+      "notes": "Rent negotiable · No lift · 10 yrs old · North facing",
+      "photo": "https://assets.nobroker.in/images/8a9f82839e0accb8019e0b90b179417b/8a9f82839e0accb8019e0b90b179417b_40442_887290_medium.jpg",
+      "photo_count": 27,
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-15",
       "missed_sweeps": 2
     },
     {
