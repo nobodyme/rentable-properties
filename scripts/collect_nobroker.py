@@ -7,7 +7,7 @@ Writes listings in the collection format (see UPDATING.md). Only basic
 listing-level requirements are applied here (2/3BHK, full-home rent, car
 parking, live); drive-time and move-in checks happen in update_data.py.
 """
-import base64, json, math, re, sys, time, urllib.request
+import base64, json, math, re, sys, time, urllib.error, urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -50,7 +50,14 @@ def fetch_all():
     seen = {}
     for page in range(1, 200):
         req = urllib.request.Request(API.format(sp=sp, page=page, r=RADIUS_KM), headers=HEADERS)
-        data = json.load(urllib.request.urlopen(req, timeout=60)).get("data") or []
+        for attempt in range(4):  # the API sometimes answers a single request with 403
+            try:
+                data = json.load(urllib.request.urlopen(req, timeout=60)).get("data") or []
+                break
+            except (urllib.error.URLError, TimeoutError):
+                if attempt == 3:
+                    raise
+                time.sleep(5 * (attempt + 1))
         if not data:
             break
         for x in data:
