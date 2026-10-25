@@ -4,6 +4,10 @@
     {
       "id": "magicbricks-0013349562",
       "reason": "Labelled 'The Island' but the listing's own address is Mylapore, outside the 30-minute zone (adversarial review 2026-10-12)."
+    },
+    {
+      "id": "olx-c2f1437ded",
+      "reason": "Ad gives only 'Chennai' as its location; its pin is the city-centre default, so the real location and drive time are unknown (2026-10-25)."
     }
   ]
 }
