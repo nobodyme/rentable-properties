@@ -12,7 +12,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 IST = timezone(timedelta(hours=5, minutes=30))
-LIST = "https://www.olx.in/chennai_g4059162/for-rent-houses-apartments_c1723?filter=rooms_eq_{rooms}&page={page}"
+LIST = "https://www.olx.in/chennai_g4059162/rent-apartments_c1723?filter=rooms_eq_{rooms}&page={page}"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -120,6 +120,8 @@ def convert(v, today):
 def main(out):
     today = datetime.now(IST).date()
     raw = fetch_all()
+    if not raw:
+        sys.exit("olx: 0 ads fetched; the search URL or page format has probably changed")
     rows = [r for r in (convert(v, today) for v in raw) if r]
     Path(out).write_text(json.dumps(rows, indent=1, ensure_ascii=False))
     print(f"olx: {len(raw)} fetched, {len(rows)} pass listing checks -> {out}")

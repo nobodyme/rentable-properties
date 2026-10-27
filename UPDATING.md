@@ -52,7 +52,7 @@ How each portal is reached, in case a collector breaks:
   against that appended text.
 - **OLX:** the JSON API is blocked, and Python's own HTTP client gets 403, so the collector calls `curl` with
   full browser headers. Ads are in `window.__APP = {… states: {…}}` on
-  `/chennai_g4059162/for-rent-houses-apartments_c1723?filter=rooms_eq_{2|3}&page=N`.
+  `/chennai_g4059162/rent-apartments_c1723?filter=rooms_eq_{2|3}&page=N` (renamed from `for-rent-houses-apartments_c1723` on 2026-10-27).
 - **MagicBricks:** search pages embed results in `window.SERVER_PRELOADED_STATE_`. Search one locality per
   request: comma-separated multi-locality queries silently drop results. Locality names are in
   `scripts/magicbricks_localities.txt`. Car parking comes from the `parkingD` field ("1 Covered" etc.).
