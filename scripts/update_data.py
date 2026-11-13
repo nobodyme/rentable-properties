@@ -49,7 +49,8 @@ FAR = re.compile(r"\b(" + "|".join([
     r"porur", r"vadapalani", r"kodambakkam", r"ashok\s?nagar", r"west\s?mambalam", r"k\.?\s?k\.?\s?nagar",
     r"t\.?\s?nagar", r"saidapet", r"guindy", r"adyar", r"besant\s?nagar", r"thiruvanmiyur",
     r"anna\s?nagar(?!\s?east)", r"mogappair", r"arumbakkam", r"koyambedu", r"korattur", r"padi", r"ambattur",
-    r"avadi", r"puzhal", r"surapet", r"red\s?hills", r"ennore", r"minjur"]) + r")\b", re.I)
+    r"avadi", r"puzhal", r"surapet", r"red\s?hills", r"ennore", r"minjur",
+    r"r\.?\s?a\.?\s?puram", r"raja\s?annamalai\s?puram", r"pudupakkam"]) + r")\b", re.I)
 # Bordering neighbourhoods: trusted only when the listing has its own exact pin.
 NEAR_EDGE = re.compile(r"\b(kolathur|madhavaram|retteri|aminjikarai|shenoy\s?nagar|nungambakkam|teynampet|"
                        r"(?<!mannady\s)(?<!mannadi\s)mylapore|villivakkam|manali|alwarpet|anna\s?nagar\s?east)\b", re.I)
