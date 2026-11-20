@@ -84,6 +84,8 @@ def convert(v, today):
     if (today - created).days > MAX_AGE_DAYS:
         return None
     loc = (v.get("locations") or [{}])[0]
+    if not v.get("locations_resolved", {}).get("SUBLOCALITY_LEVEL_1_name"):
+        return None  # city-level ad: its pin is Chennai's centre, so the real location is unknown
     fl, tf = p.get("floorno"), p.get("totalfloors")
     cars = int(p["carparking"])
     images = [im["url"].replace(":443", "") for im in v.get("images") or [] if im.get("url")]
