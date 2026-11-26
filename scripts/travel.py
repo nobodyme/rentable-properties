@@ -4,7 +4,7 @@ Minutes = road distance (OSRM driving route) / TomTom 2025 Chennai rush-hour spe
 Evening rush (14.6 km/h) is the worst case and is what the site reports as
 "minutes from Stanley"; morning rush (17.7 km/h) is kept alongside.
 """
-import json, urllib.request
+import http.client, json, time, urllib.request
 
 STANLEY = (13.1058, 80.2872)  # Stanley Medical College Hospital, Old Jail Rd, Royapuram
 EVENING_KMH = 14.6
@@ -13,7 +13,13 @@ UA = {"User-Agent": "rentable-properties/1.0 (personal rental search)"}
 
 
 def _get(url):
-    return json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60))
+    for attempt in range(5):  # the public OSRM server sometimes drops a connection
+        try:
+            return json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60))
+        except (OSError, http.client.HTTPException):
+            if attempt == 4:
+                raise
+            time.sleep(10 * (attempt + 1))
 
 
 def road_km(points):
